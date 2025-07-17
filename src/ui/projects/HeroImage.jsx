@@ -41,7 +41,7 @@ function HeroImage({ image, title }) {
    return (
       <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[8rem]">
          <img
-            src={`./../../../assets/${image}.webp`}
+            src={image}
             className="rounded-xl"
             alt={featuredProject?.titleEn || otherProject?.titleEn}
          />
