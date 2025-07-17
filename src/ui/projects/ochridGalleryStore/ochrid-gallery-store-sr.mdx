@@ -1,0 +1,216 @@
+import HeroImage from './../HeroImage.jsx';
+import ArticleImage from './../ArticleImage.jsx';
+
+import StoreImg0 from './../../../../assets/store-0.webp';
+import StoreImg1 from './../../../../assets/store-1.webp';
+import StoreImg2 from './../../../../assets/store-2.webp';
+import StoreImg3 from './../../../../assets/store-3.webp';
+import StoreImg4 from './../../../../assets/store-4.webp';
+import StoreImg5 from './../../../../assets/store-5.webp';
+import StoreImg6 from './../../../../assets/store-6.webp';
+import StoreImg7 from './../../../../assets/store-7.webp';
+import StoreImg8 from './../../../../assets/store-8.webp';
+import StoreImg9 from './../../../../assets/store-9.webp';
+import StoreImg10 from './../../../../assets/store-10.webp';
+import StoreImg11 from './../../../../assets/store-11.webp';
+
+import StoreMobileImg0 from './../../../../assets/store-mobile-0.webp';
+import StoreMobileImg1 from './../../../../assets/store-mobile-1.webp';
+import StoreMobileImg2 from './../../../../assets/store-mobile-2.webp';
+import StoreMobileImg3 from './../../../../assets/store-mobile-3.webp';
+import StoreMobileImg4 from './../../../../assets/store-mobile-4.webp';
+import StoreMobileImg5 from './../../../../assets/store-mobile-5.webp';
+import StoreMobileImg6 from './../../../../assets/store-mobile-6.webp';
+import StoreMobileImg7 from './../../../../assets/store-mobile-7.webp';
+import StoreMobileImg8 from './../../../../assets/store-mobile-8.webp';
+import StoreMobileImg9 from './../../../../assets/store-mobile-9.webp';
+import StoreMobileImg10 from './../../../../assets/store-mobile-10.webp';
+import StoreMobileImg11 from './../../../../assets/store-mobile-11.webp';
+
+# Охридска Галерија Веб-продавница
+
+Веб-продавница за фикционалну галерију. Садржи функционалност наручивања икона и аутентикацију корисника.
+
+<HeroImage image="ochrid-gallery-store" title="Ochrid Gallery E-commerce" />
+
+Охридска Галерија је веб-продавница која омогућава својим корисницама да разгледају и поручују иконе. Вебсајт покреће Next.js који пружа брзо почетно учитавање и рендеровање на серверу. Стилизован је преко Tailwind CSS-а и могуће га је користити на уређајима разних величина захваљујући прилагодљивом дизајну. Подаци из апликације су сачувани у Supabase-овој бази података. Сајт је хостован на Vercel-у.
+
+<br />
+<br />
+
+## Главна страница
+
+Приликом уласка на вебсајт, корисник ће прво видети главну страницу галерије. Овде се налазе неке основне информације о галерији.
+
+<br />
+
+<ArticleImage
+   image={StoreImg0}
+   imageMobile={StoreMobileImg0}
+   alt="Landing page"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+## Страница са иконама
+
+На страници галерије, односно страници са иконама, корисници могу да разгледају разне иконе које могу бити сортиране и филтриране на основу корисничких преференци.
+
+<br />
+
+<ArticleImage
+   image={StoreImg1}
+   imageMobile={StoreMobileImg1}
+   alt="Icons page"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+## Страница са детаљима о икони
+
+Свака икона има сопствену страницу са додатним информацијама и функционалностима, као што су функционалност додавања иконе у корпу за куповину и листу жеља, и могућност остављања рецензије.
+
+<br />
+
+<ArticleImage
+   image={StoreImg2}
+   imageMobile={StoreMobileImg2}
+   alt="Icon details"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+## Процес наручивања
+
+Након што је једна или више икона додано у корпу за куповину, корисник може да посети страницу где може да види тренутно стање корпе. Ова страница садржи менаџмент корпе, резиме поруџбине и пар истакнутих популарних икона. Овде корисник може да започне процес наручивања, али да би наставио даље, корисник мора бити регистрован/пријављен путем Google-а.
+
+<br />
+
+<ArticleImage
+   image={StoreImg3}
+   imageMobile={StoreMobileImg3}
+   alt="Shopping cart"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Након пријављивања, корисник може да настави даље, на страницу за бирање адресе. Овде корисник може да изабере адресу из адресара или да унесе неку другу адресу. Валидацију унесених података обрађује Zod библиотека.
+
+<br />
+
+<ArticleImage
+   image={StoreImg4}
+   imageMobile={StoreMobileImg4}
+   alt="Billing information"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Надаље имамо страницу за бирање метода плаћања, где корисник може да бира један од два понуђена начина плаћања. Овде корисник може да остави опциону белешку у случају да је портебно нешто додатно нагласити.
+
+<br />
+
+<ArticleImage
+   image={StoreImg5}
+   imageMobile={StoreMobileImg5}
+   alt="Payment method"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Задњи део процеса наручивања је страница где корисник може да провери све досад унесене информације о наруџбини. Након што је сигуран да су сви подаци тачни, корисник може да комплетира наруџбину, која ће затим бити послата CMS апликацији да је запослени у галерији потврди.
+
+<br />
+
+<ArticleImage
+   image={StoreImg6}
+   imageMobile={StoreMobileImg6}
+   alt="Review order"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+## Налог
+
+Након регистрације/пријављивања, корисник може да приступи делу вебсајта резервисаном за менаџмент налога. Када приступи овом делу сајта, корисник ће бити пребачен на страницу са прегледом налога која садржи неке статистике везане за активност налога.
+
+<br />
+
+<ArticleImage
+   image={StoreImg7}
+   imageMobile={StoreMobileImg7}
+   alt="Account page"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Следећа страница приказује историју наруџбина, где је могуће видети (комплетиране) прошле наруџбине.
+
+<br />
+
+<ArticleImage
+   image={StoreImg8}
+   imageMobile={StoreMobileImg8}
+   alt="Order history"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Настављајући даље наилазимо на листу жеља, где је могуће приступити сачуваним иконама.
+
+<br />
+
+<ArticleImage
+   image={StoreImg9}
+   imageMobile={StoreMobileImg9}
+   alt="Wishlist"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Следећа страница приказује рецензије тренутно пријављеног корисника. Да би корисник могао да остави рецензију, прво мора бити пријављен и мора купити икону за коју би написао рецензију (прецизније, могућност рецензирања одређене иконе ће бити откључана након подврде и комплетирања наруџбине чији је икона део).
+
+<br />
+
+<ArticleImage
+   image={StoreImg10}
+   imageMobile={StoreMobileImg10}
+   alt="Reviews"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Напокон, стижемо до адресара, где корисник може да сачува своје адресе и да изабере омиљену.
+
+<br />
+
+<ArticleImage
+   image={StoreImg11}
+   imageMobile={StoreMobileImg11}
+   alt="Address book"
+   isResponsive={true}
+/>
+
+<br />

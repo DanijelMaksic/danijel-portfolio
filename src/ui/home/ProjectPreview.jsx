@@ -1,0 +1,48 @@
+import { useTranslation } from 'react-i18next';
+import Tech from './Tech';
+import { Link } from 'react-router-dom';
+
+function ProjectPreview({ projectData }) {
+   const {
+      techStack,
+      titleEn,
+      titleSr,
+      image,
+      descriptionEn,
+      descriptionSr,
+      projectURL,
+   } = projectData;
+   const { i18n } = useTranslation();
+   const currentLanguage = i18n.language;
+
+   return (
+      <Link
+         to={`/${projectURL}`}
+         className="rounded-lg flex flex-col shadow-[0_1px_4px_rgba(0,0,0,0.3)] hover:shadow-[0_5px_15px_rgba(0,0,0,0.3)] overflow-hidden hover:translate-y-[-10px] transition hover:opacity-90 p-2 gap-2"
+      >
+         <img
+            src={image}
+            alt={currentLanguage === 'en' ? titleEn : titleSr}
+            className="w-full bg-primary-900 text-primary-50 h-56 rounded-xl object-cover shadow-sm"
+         />
+
+         <div className="flex flex-col gap-2 p-3">
+            <h3 className="text-2xl font-semibold text-primary-900">
+               {currentLanguage === 'en' ? titleEn : titleSr}
+            </h3>
+
+            <span className="text-lg text-primary-600 mb-3">
+               {currentLanguage === 'en' ? descriptionEn : descriptionSr}
+            </span>
+
+            <div className="flex items-center gap-2 flex-wrap">
+               {techStack.map((tech) => (
+                  <Tech icon={tech.icon} name={tech.name} key={tech.name} />
+               ))}
+            </div>
+         </div>
+      </Link>
+   );
+}
+
+export default ProjectPreview;

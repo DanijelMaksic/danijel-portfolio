@@ -1,0 +1,18 @@
+import LogoLatin from './../../assets/logo-latin-removebg-preview.png';
+import LogoCyrillic from './../../assets/logo-cyrillic-removebg-preview.png';
+import { useTranslation } from 'react-i18next';
+
+function Logo() {
+   const { i18n } = useTranslation();
+   const currentLanguage = i18n.language;
+
+   return (
+      <img
+         src={currentLanguage === 'en' ? LogoLatin : LogoCyrillic}
+         alt="Logo"
+         className="h-9 min-w-9 opacity-80"
+      />
+   );
+}
+
+export default Logo;

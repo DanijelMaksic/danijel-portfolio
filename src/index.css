@@ -1,0 +1,149 @@
+@import 'tailwindcss';
+
+html {
+   scroll-behavior: smooth;
+}
+
+@layer base {
+   body::selection {
+      @apply bg-primary-600 text-white;
+   }
+
+   /* Firefox support */
+   body::-moz-selection {
+      @apply bg-primary-600 text-white;
+   }
+}
+
+@media screen and (max-width: 2000px) {
+   html {
+      font-size: 15px;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   html {
+      font-size: 14px;
+   }
+}
+
+@media screen and (max-width: 390px) {
+   html {
+      font-size: 9px;
+   }
+}
+
+button,
+[role='button'] {
+   cursor: pointer;
+}
+
+@custom-variant xl (@media (max-width: 1580px));
+@custom-variant lg (@media (max-width: 1024px));
+@custom-variant md (@media (max-width: 768px));
+@custom-variant sm (@media (max-width: 640px));
+@custom-variant xs (@media (max-width: 450px));
+@custom-variant 2xs (@media (max-width: 390px));
+
+@theme {
+   --font-default: 'Public Sans', sans-serif;
+   --font-cyrillic: 'Inter', sans-serif;
+
+   --color-primary: #fafafa;
+   --color-secondary: #fff;
+   --color-tertiary: #f5f5f5;
+   --color-quaternary: #e5e7eb;
+
+   --color-primary-900: #1c1c1c;
+   --color-primary-800: #2b2b2b;
+   --color-primary-700: #444444;
+   --color-primary-600: #575757;
+   --color-primary-500: #757575;
+   --color-primary-400: #bcbcbc;
+   --color-primary-300: #d6d6d6;
+   --color-primary-200: #e8e8e8;
+   --color-primary-100: #f4f4f4;
+   --color-primary-50: #fafafa;
+}
+
+.background-gradient {
+   background-image: radial-gradient(
+         1240px 640px at 740px -128px,
+         #ffeab5ff 0px,
+         transparent 55%
+      ),
+      radial-gradient(
+         1240px 600px at 1140px -138px,
+         #e3abffff 0px,
+         transparent 55%
+      ),
+      radial-gradient(
+         4000px 2500px at 700px 100%,
+         #ffeab5ff 0px,
+         transparent 25%
+      ),
+      radial-gradient(
+         4000px 2500px at 1100px 100%,
+         #e3abffff 0px,
+         transparent 25%
+      ),
+      radial-gradient(circle at bottom, #f5f5f5, transparent);
+}
+
+.underlined-text {
+   text-decoration: underline;
+   text-decoration-color: transparent;
+   transition: 0.1s;
+   text-decoration-thickness: 1.6px;
+   text-underline-offset: 3px;
+
+   -webkit-text-decoration-color: transparent;
+   -moz-text-decoration-color: transparent;
+}
+
+.underlined-text:hover {
+   text-decoration-color: var(--color-underline);
+
+   -webkit-text-decoration-color: var(--color-underline);
+   -moz-text-decoration-color: var(--color-underline);
+}
+
+.shadow {
+   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.shadow--sm {
+   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.medium-zoom-overlay {
+   z-index: 1000 !important;
+}
+
+.medium-zoom-image--opened {
+   z-index: 1001 !important;
+}
+
+/* MDX Styles */
+
+h1 {
+   font-size: 3rem;
+   font-weight: bold;
+   line-height: 1.1;
+   margin-bottom: 10px;
+   margin-left: 8rem;
+   margin-right: 8rem;
+}
+
+h2 {
+   font-size: 2.3rem;
+   font-weight: 700;
+   margin: 0rem 8rem;
+   margin-bottom: 10px;
+}
+
+p {
+   color: var(--color-primary-600);
+   line-height: 1.6;
+   margin: 0rem 8rem;
+}

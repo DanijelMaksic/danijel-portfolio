@@ -1,0 +1,122 @@
+import HeroImage from './../HeroImage.jsx';
+import ArticleImage from './../ArticleImage.jsx';
+import CmsImg1 from './../../../../assets/cms-1.webp';
+import CmsImg2 from './../../../../assets/cms-2.webp';
+import CmsImg3 from './../../../../assets/cms-3.webp';
+import CmsImg4 from './../../../../assets/cms-4.webp';
+import CmsImg5 from './../../../../assets/cms-5.webp';
+import CmsImg6 from './../../../../assets/cms-6.webp';
+import CmsImg7 from './../../../../assets/cms-7.webp';
+import CmsImg8 from './../../../../assets/cms-8.webp';
+import CmsImg9 from './../../../../assets/cms-9.webp';
+import CmsImg10 from './../../../../assets/cms-10.webp';
+
+# Ochrid Gallery CMS
+
+A Content Management System (CMS) app for a fictional gallery. Limited only to the employees, it includes inventory and order management.
+
+<HeroImage image="ochrid-gallery-cms" title="Ochrid Gallery CMS" />
+
+This is the internal application of the public webstore "Ochrid Gallery". This is the closed-off app that only selected employees of the business have access to. It is an SPA powered by React, providing the user with fast navigation. App's data is stored in Supabase database. Deployed on Vercel.
+
+<br />
+<br />
+
+## Dashboard
+
+Upon logging in, user will see the dashboard page, which contains all the relevant
+information and statistics about the business. Here user can also access the incoming
+orders in the Today section.
+
+<br />
+
+<ArticleImage image={CmsImg1} alt="Dashboard" />
+
+<br />
+<br />
+
+## Inventory management
+
+First major part of the application is the inventory management. On this page user can add new icon to the inventory.
+
+<br />
+
+<ArticleImage image={CmsImg2} alt="Inventory management" />
+
+<br />
+<br />
+
+On the Icons page we can find the main part of inventory system, where icons can be browsed, edited or deleted. Any changes here will affect what the public e-commerce website displays.
+
+<br />
+
+<ArticleImage image={CmsImg3} alt="Icons page" />
+
+<br />
+<br />
+
+Each icon has its own page with some relevant information about it.
+
+<br />
+
+<ArticleImage image={CmsImg4} alt="Icon details" />
+
+<br />
+<br />
+
+## Order management
+
+Here comes the second major part of the app, the order management. Any incoming orders will be displayed here. Every order has its own Order ID which can be used to keep track of it.
+
+<br />
+
+<ArticleImage image={CmsImg5} alt="Orders page" />
+
+<br />
+<br />
+
+In the details page of the specific order, all the information about said order will be displayed in easy-to-read manner. On this page user can choose to archive (confirm and complete) the order. Archiving the order will update the inventory and the dashboard stats.
+
+<br />
+
+<ArticleImage image={CmsImg6} alt="Order page" />
+
+<br />
+<br />
+
+Archive is the other part of the order management system, where user can browse past orders if there is need for it. Dashboard uses these orders to display the statistics about individual and total sales.
+
+<br />
+
+<ArticleImage image={CmsImg7} alt="Archive" />
+
+<br />
+<br />
+
+This is the archived order page, which lists the details of specific past order. Deleting the archived order will update the statistics in dashboard.
+
+<br />
+
+<ArticleImage image={CmsImg8} alt="Archived order" />
+
+<br />
+<br />
+
+## User settings
+
+In the end we have the Users page, where new users can be added or existing ones be updated.
+
+<br />
+
+<ArticleImage image={CmsImg9} alt="Users page" />
+
+<br />
+<br />
+
+Final page is the update account page, where user can edit account information or password.
+
+<br />
+
+<ArticleImage image={CmsImg10} alt="Update user page" />
+
+<br />

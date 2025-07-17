@@ -1,0 +1,45 @@
+import HeroImage from './../HeroImage.jsx';
+import ArticleImage from './../ArticleImage.jsx';
+import useBookImg1 from './../../../../assets/use-book-1.webp';
+import useBookImg2 from './../../../../assets/use-book-2.webp';
+import useBookImg3 from './../../../../assets/use-book-3.webp';
+
+# useBook Апликација
+
+Апликација која користи REST API за преузимање података. Корисници могу да разгледају и сачувају књиге.
+
+<HeroImage image="use-book" title="useBook App" />
+
+UseBook је апликација где је могуће тражити и сачувати књиге. Направљена је са React-ом и Tailwind CSS-ом. Google books API је коришћен за преузимање података о књигама.
+
+<br />
+<br />
+
+## Тражење књиге
+
+<br />
+
+<ArticleImage image={useBookImg2} alt="Тражење књиге" isResponsive={false} />
+
+<br />
+
+Када корисник напише име књиге, на левој страни екрана ће се појавити листа са које је могуће одабрати књигу. На десној страни ће бити приказани детаљи о одабраној књизи, одакле корисник може сачувати књигу.
+
+<br />
+<br />
+
+## Преглед сачуваних књига
+
+<br />
+
+<ArticleImage
+   image={useBookImg3}
+   alt="Преглед сачуваних књига"
+   isResponsive={false}
+/>
+
+<br />
+
+По повратку на почетни екран, са десне стране ће бити приказане сачуване књиге и одређене статистике везане за њих.
+
+<br />

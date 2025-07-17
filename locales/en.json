@@ -1,0 +1,41 @@
+{
+   "Header": {
+      "nav-link-1": "Projects",
+      "nav-link-2": "About",
+      "nav-link-3": "Skills"
+   },
+
+   "HeroPart1": "I'm Danijel, I build Front-End websites using ",
+   "HeroPart2": " and ",
+
+   "Projects": {
+      "h1": "Selected Projects",
+      "show-more-btn": "Show more",
+      "show-less-btn": "Show less"
+   },
+
+   "About": {
+      "h1": "About me",
+      "name": "Danijel Maksić",
+      "p1": "I'm a self-taught Front-End web developer based in Serbia. I'm 25 and learning Next.js and React. At the moment, I'm also exploring TypeScript.",
+      "p2-part1": "I learned of ",
+      "p2-part2": " and web development in 2021 and have started slowly looking into it throughout 2022. In 2023 I decided to pursue this career seriously so I started building various small projects where I practiced HTML, CSS and Javascript.",
+      "p3-part1": "In 2024 I started learning ",
+      "p3-part2": " which completely changed the way I looked at coding. After acquainting myself with React, diving into ",
+      "p3-part3": " was the next logical step in my learning journey."
+   },
+
+   "Skills": {
+      "h1": "Skills",
+      "core-tech": "Core Technologies",
+      "other-tech": "Database and Development Tools"
+   },
+
+   "Footer": {
+      "p1-part1": "Built with ",
+      "p1-part2": " and ",
+      "p1-part3": ". Hosted on ",
+      "p1-part4": "",
+      "p2": "Copyright © 2025 Danijel Maksić. All rights reserved."
+   }
+}

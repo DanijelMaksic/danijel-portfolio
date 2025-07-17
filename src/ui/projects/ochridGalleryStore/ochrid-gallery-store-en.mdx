@@ -1,0 +1,216 @@
+import HeroImage from './../HeroImage.jsx';
+import ArticleImage from './../ArticleImage.jsx';
+
+import StoreImg0 from './../../../../assets/store-0.webp';
+import StoreImg1 from './../../../../assets/store-1.webp';
+import StoreImg2 from './../../../../assets/store-2.webp';
+import StoreImg3 from './../../../../assets/store-3.webp';
+import StoreImg4 from './../../../../assets/store-4.webp';
+import StoreImg5 from './../../../../assets/store-5.webp';
+import StoreImg6 from './../../../../assets/store-6.webp';
+import StoreImg7 from './../../../../assets/store-7.webp';
+import StoreImg8 from './../../../../assets/store-8.webp';
+import StoreImg9 from './../../../../assets/store-9.webp';
+import StoreImg10 from './../../../../assets/store-10.webp';
+import StoreImg11 from './../../../../assets/store-11.webp';
+
+import StoreMobileImg0 from './../../../../assets/store-mobile-0.webp';
+import StoreMobileImg1 from './../../../../assets/store-mobile-1.webp';
+import StoreMobileImg2 from './../../../../assets/store-mobile-2.webp';
+import StoreMobileImg3 from './../../../../assets/store-mobile-3.webp';
+import StoreMobileImg4 from './../../../../assets/store-mobile-4.webp';
+import StoreMobileImg5 from './../../../../assets/store-mobile-5.webp';
+import StoreMobileImg6 from './../../../../assets/store-mobile-6.webp';
+import StoreMobileImg7 from './../../../../assets/store-mobile-7.webp';
+import StoreMobileImg8 from './../../../../assets/store-mobile-8.webp';
+import StoreMobileImg9 from './../../../../assets/store-mobile-9.webp';
+import StoreMobileImg10 from './../../../../assets/store-mobile-10.webp';
+import StoreMobileImg11 from './../../../../assets/store-mobile-11.webp';
+
+# Ochrid Gallery E-commerce
+
+A Next.js e-commerce website for a fictional gallery. Includes checkout functionality and user authentication.
+
+<HeroImage image="ochrid-gallery-store" title="Ochrid Gallery E-commerce" />
+
+Ochrid Gallery is a webstore that enables its users to browse and order icons. Website is powered by Next.js which provides fast initial load and server-side rendering. It is styled with Tailwind CSS and can be used on variety of devices thanks to the responsive design. App's data is stored in Supabase database. Deployed on Vercel.
+
+<br />
+<br />
+
+## Landing page
+
+Upon entering the website, user will first see the gallery's landing page. Some general information about the business is outlined here.
+
+<br />
+
+<ArticleImage
+   image={StoreImg0}
+   imageMobile={StoreMobileImg0}
+   alt="Landing page"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+## Icons page
+
+On the gallery or the icons page, users can browse various icons which can be sorted and filtered based on user's preference.
+
+<br />
+
+<ArticleImage
+   image={StoreImg1}
+   imageMobile={StoreMobileImg1}
+   alt="Icons page"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+## Icon details
+
+Each icon has it's own page with some more details and features, such as the functionalities of adding the icon to cart, wishlisting it and reviewing it.
+
+<br />
+
+<ArticleImage
+   image={StoreImg2}
+   imageMobile={StoreMobileImg2}
+   alt="Icon details"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+## Checkout process
+
+After one or more icons have been added to cart, user can visit the shopping cart page. This page contains the cart management, summary of the order and some featured trending products. Here user can start the checkout process, but in order to proceed to the next part, user needs to register/log in using his Google profile.
+
+<br />
+
+<ArticleImage
+   image={StoreImg3}
+   imageMobile={StoreMobileImg3}
+   alt="Shopping cart"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+After logging in, user can continue to the billing information page. Here user can choose an adress from the address book or input some other address. Input validation is handled by Zod library.
+
+<br />
+
+<ArticleImage
+   image={StoreImg4}
+   imageMobile={StoreMobileImg4}
+   alt="Billing information"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Next is the payment method page, where one of two methods can be chosen. Here, user can leave an optional note if something about the order needs to be clarified.
+
+<br />
+
+<ArticleImage
+   image={StoreImg5}
+   imageMobile={StoreMobileImg5}
+   alt="Payment method"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+For the final part of the checkout we have the review order page, where user can review all of the order's details. After making sure everything is correct, user can place the order, which will be sent to the store's Content Management System (CMS) app for the employee to confirm it.
+
+<br />
+
+<ArticleImage
+   image={StoreImg6}
+   imageMobile={StoreMobileImg6}
+   alt="Review order"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+## Account page
+
+After registering/logging in, user can access the account management part of the website. By default, user will be greeted by the Account overview page which includes some account activity statistics.
+
+<br />
+
+<ArticleImage
+   image={StoreImg7}
+   imageMobile={StoreMobileImg7}
+   alt="Account page"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Next up is the order history page, where past (completed) orders can be seen.
+
+<br />
+
+<ArticleImage
+   image={StoreImg8}
+   imageMobile={StoreMobileImg8}
+   alt="Order history"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Continuing we come across the wishlist page, where user's saved icons can be accessed.
+
+<br />
+
+<ArticleImage
+   image={StoreImg9}
+   imageMobile={StoreMobileImg9}
+   alt="Wishlist"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+The following page showcases user's reviews. In order to review an icon, user first needs to be logged in and then buy it (more precisely, reviewing will be unlocked upon order confirmation and completion).
+
+<br />
+
+<ArticleImage
+   image={StoreImg10}
+   imageMobile={StoreMobileImg10}
+   alt="Reviews"
+   isResponsive={true}
+/>
+
+<br />
+<br />
+
+Finally, we come to the address book page, where user can save his addresses and choose his favorite one.
+
+<br />
+
+<ArticleImage
+   image={StoreImg11}
+   imageMobile={StoreMobileImg11}
+   alt="Address book"
+   isResponsive={true}
+/>
+
+<br />
