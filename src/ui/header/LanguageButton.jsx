@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import enFlag from './../../../assets/en-flag.png';
 import srFlag from './../../../assets/sr-flag.png';
-import { useOutsideClick } from '../../hooks/UseOutsideClick';
+import { useOutsideClick } from '../../hooks/useOutsideClick';
 
 const languages = [
    {
