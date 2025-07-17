@@ -1,14 +1,15 @@
 import HeroImage from './../HeroImage.jsx';
 import ArticleImage from './../ArticleImage.jsx';
+
+import UseBookImg from './../../../../assets/use-book.webp';
 import useBookImg1 from './../../../../assets/use-book-1.webp';
 import useBookImg2 from './../../../../assets/use-book-2.webp';
-import useBookImg3 from './../../../../assets/use-book-3.webp';
 
 # useBook App
 
 App which uses REST API to fetch book data. Users can browse and save the books.
 
-<HeroImage image="use-book" title="useBook App" />
+<HeroImage image={UseBookImg} title="useBook App" />
 
 UseBook is a browsing app for finding and saving books. It is built with React and Tailwind CSS. Google books API is used for data fetching.
 
@@ -20,7 +21,7 @@ UseBook is a browsing app for finding and saving books. It is built with React a
 <br />
 
 <ArticleImage
-   image={useBookImg2}
+   image={useBookImg1}
    alt="Searching for a book"
    isResponsive={false}
 />
@@ -37,7 +38,7 @@ When user searches for a book, a list of books will appear on the left, from whi
 <br />
 
 <ArticleImage
-   image={useBookImg3}
+   image={useBookImg2}
    alt="Managing saved books"
    isResponsive={false}
 />

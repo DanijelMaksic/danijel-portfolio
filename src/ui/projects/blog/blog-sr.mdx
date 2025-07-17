@@ -1,15 +1,17 @@
 import HeroImage from './../HeroImage.jsx';
 import ArticleImage from './../ArticleImage.jsx';
-import blogImg1 from './../../../../assets/blog-1.webp';
-import blogImg2 from './../../../../assets/blog-2.webp';
-import blogImg3 from './../../../../assets/blog-3.webp';
-import blogImg4 from './../../../../assets/blog-4.webp';
+
+import BlogImg from './../../../../assets/blog.webp';
+import BlogImg1 from './../../../../assets/blog-1.webp';
+import BlogImg2 from './../../../../assets/blog-2.webp';
+import BlogImg3 from './../../../../assets/blog-3.webp';
+import BlogImg4 from './../../../../assets/blog-4.webp';
 
 # Блог апликација
 
 Једноставна блогинг апликација са функцијом обележавања артикала. Направљена са ванила JavaScript-ом користећи MVC архитектуру.
 
-<HeroImage image="blog" title="Блог апликација" />
+<HeroImage image={BlogImg} title="Блог апликација" />
 
 Мој Блог је ванила JavaScript апликација која омогућава својим корисницима да пишу и објављују артикле. Направљена је у HTML-у, са ванила CSS-ом и JavaScript-ом. Апликација је структуисана користећи MVC (Mode-View-Controller) архитектуру, која раздваја апликацију у три дела зарад лакшег разумевања и мање шпагети кода.
 
@@ -22,7 +24,7 @@ import blogImg4 from './../../../../assets/blog-4.webp';
 
 <br />
 
-<ArticleImage image={blogImg1} alt="Почетни екран" />
+<ArticleImage image={BlogImg1} alt="Почетни екран" />
 
 <br />
 <br />
@@ -33,7 +35,7 @@ import blogImg4 from './../../../../assets/blog-4.webp';
 
 <br />
 
-<ArticleImage image={blogImg2} alt="Писање артикла" />
+<ArticleImage image={BlogImg2} alt="Писање артикла" />
 
 <br />
 <br />
@@ -43,7 +45,7 @@ import blogImg4 from './../../../../assets/blog-4.webp';
 <br />
 
 <ArticleImage
-   image={blogImg3}
+   image={BlogImg3}
    alt="Почетни екран са управо написаним артиклом"
 />
 
@@ -56,6 +58,6 @@ import blogImg4 from './../../../../assets/blog-4.webp';
 
 <br />
 
-<ArticleImage image={blogImg4} alt="Управљање обележеним артиклима" />
+<ArticleImage image={BlogImg4} alt="Управљање обележеним артиклима" />
 
 <br />
