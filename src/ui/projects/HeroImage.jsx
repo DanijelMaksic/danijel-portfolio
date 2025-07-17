@@ -14,7 +14,6 @@ function HeroImage({ image, title }) {
    const [featuredProject] = featured.filter(
       (item) => item.titleEn === title || item.titleSr === title
    );
-   console.log(featuredProject);
    const [otherProject] = other.filter(
       (item) => item.titleEn === title || item.titleSr === title
    );
