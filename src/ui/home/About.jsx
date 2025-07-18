@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'motion/react';
+import AboutImage from './../../../assets/about-image.jpg';
 
 function About() {
    const { t } = useTranslation();
@@ -17,11 +18,14 @@ function About() {
             {t('About.h1')}
          </span>
 
-         <div className="grid grid-cols-[1fr_1.6fr] md:grid-cols-1 gap-24 lg:gap-16">
-            <div className="shadow--sm rounded-2xl md:h-120">Placeholder</div>
+         <div className="grid grid-cols-[1fr_2.8fr] md:grid-cols-[1fr_1.2fr] xs:grid-cols-1 gap-24 lg:gap-10">
+            <img
+               src={AboutImage}
+               className="shadow--sm rounded-2xl h-120 md:h-150 object-cover xs:justify-self-center xs:h-120"
+            />
 
             <div className="flex flex-col gap-8">
-               <span className="text-4xl text-primary-800 font-bold">
+               <span className="text-3xl text-primary-800 font-bold">
                   {t('About.name')}
                </span>
 
