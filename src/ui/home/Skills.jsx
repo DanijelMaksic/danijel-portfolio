@@ -51,7 +51,7 @@ function Skills() {
 
          <div className="grid grid-cols-2 gap-6 sm:grid-cols-1">
             <div className="flex flex-col gap-3 shadow--sm rounded-lg px-4 py-4 bg-white/50 backdrop-blur-lg">
-               <h3> {t('Skills.core-tech')}</h3>
+               <h4> {t('Skills.core-tech')}</h4>
 
                <div className="grid grid-cols-2 gap-4">
                   {coreTech.map((tech) => (
@@ -61,7 +61,7 @@ function Skills() {
             </div>
 
             <div className="flex flex-col gap-3 shadow--sm rounded-lg px-4 py-4 bg-white/50 backdrop-blur-lg">
-               <h3> {t('Skills.other-tech')}</h3>
+               <h4> {t('Skills.other-tech')}</h4>
 
                <div className="grid grid-cols-2 gap-4">
                   {otherTech.map((tech) => (

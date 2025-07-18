@@ -11,11 +11,8 @@ import Blog from './ui/projects/blog/Blog';
 import Judgment from './ui/projects/judgment/Judgment';
 import Quiz from './ui/projects/quiz/Quiz';
 import UseBook from './ui/projects/useBook/useBook';
-import useDynamicFavicon from './hooks/useDynamicFavicon';
 
 function App() {
-   useDynamicFavicon();
-
    return (
       <BrowserRouter>
          <Routes>

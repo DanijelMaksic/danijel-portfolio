@@ -132,34 +132,6 @@ export const featuredProjects = [
    },
 
    {
-      titleEn: 'Blog App',
-      titleSr: 'Блог Апликација',
-      image: blogImg,
-      descriptionEn:
-         'A simple blogging app with a bookmark feature. Built with vanilla JavaScript using MVC architecture.',
-      descriptionSr:
-         'Једноставна блогинг апликација са функцијом обележавања артикала. Направљена са ванила JavaScript-ом користећи MVC архитектуру.',
-      techStack: [
-         {
-            name: 'JavaScript',
-            icon: <FaJs />,
-         },
-         {
-            name: 'Tailwind CSS',
-            icon: <RiTailwindCssFill />,
-         },
-         {
-            name: 'Responsive',
-            icon: <FaMobileScreenButton />,
-         },
-      ],
-      projectURL: 'blog',
-      codeLink: 'https://github.com/DanijelMaksic/My-Blog-App',
-   },
-];
-
-export const otherProjects = [
-   {
       titleEn: 'Judgment Website Redesign',
       titleSr: 'Judgment Вебсајт Редизајн',
       image: judgmentImg,
@@ -189,6 +161,35 @@ export const otherProjects = [
       codeLink: 'https://github.com/DanijelMaksic/judgment-site',
       demoLink: 'https://danijelmaksic.github.io/judgment-site/',
    },
+];
+
+export const otherProjects = [
+   {
+      titleEn: 'Blog App',
+      titleSr: 'Блог Апликација',
+      image: blogImg,
+      descriptionEn:
+         'A simple blogging app with a bookmark feature. Built with vanilla JavaScript using MVC architecture.',
+      descriptionSr:
+         'Једноставна блогинг апликација са функцијом обележавања артикала. Направљена са ванила JavaScript-ом користећи MVC архитектуру.',
+      techStack: [
+         {
+            name: 'JavaScript',
+            icon: <FaJs />,
+         },
+         {
+            name: 'Tailwind CSS',
+            icon: <RiTailwindCssFill />,
+         },
+         {
+            name: 'Responsive',
+            icon: <FaMobileScreenButton />,
+         },
+      ],
+      projectURL: 'blog',
+      codeLink: 'https://github.com/DanijelMaksic/My-Blog-App',
+      demoLink: 'https://danijelmaksic.github.io/My-Blog-App/',
+   },
 
    {
       titleEn: 'Old World History - Quiz',
@@ -213,8 +214,7 @@ export const otherProjects = [
          },
       ],
       projectURL: 'quiz',
-      codeLink: '/Code Link',
-      demoLink: '/Demo Link',
+      codeLink: 'https://github.com/DanijelMaksic/old-world-history-quiz',
    },
 
    {
