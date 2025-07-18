@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 function ArticleImage({ image, imageMobile, alt, isResponsive }) {
    useEffect(() => {
       const zoom = mediumZoom('.parent img', {
-         margin: 60,
+         margin: 100,
       });
 
       const handleClick = (e) => {
@@ -40,7 +40,11 @@ function ArticleImage({ image, imageMobile, alt, isResponsive }) {
    if (!isResponsive)
       return (
          <div className="parent self-center justify-self-center mb-2">
-            <img src={image} alt={alt} className="rounded-xl shadow h-110" />
+            <img
+               src={image}
+               alt={alt}
+               className="rounded-xl shadow h-110 lg:h-full"
+            />
          </div>
       );
 }

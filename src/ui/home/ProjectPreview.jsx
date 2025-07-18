@@ -27,9 +27,9 @@ function ProjectPreview({ projectData }) {
          />
 
          <div className="flex flex-col gap-2 p-3">
-            <h3 className="text-2xl font-semibold text-primary-900">
+            <h4 className="text-2xl font-semibold text-primary-900">
                {currentLanguage === 'en' ? titleEn : titleSr}
-            </h3>
+            </h4>
 
             <span className="text-lg text-primary-600 mb-3">
                {currentLanguage === 'en' ? descriptionEn : descriptionSr}

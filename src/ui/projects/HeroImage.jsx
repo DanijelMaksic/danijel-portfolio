@@ -21,7 +21,7 @@ function HeroImage({ image, title }) {
    // Image Zoom logic
    useEffect(() => {
       const zoom = mediumZoom('.parent img', {
-         margin: 60,
+         margin: 100,
       });
 
       const handleClick = (e) => {
@@ -39,7 +39,7 @@ function HeroImage({ image, title }) {
    }, []);
 
    return (
-      <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[8rem]">
+      <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[8rem] sm:mx-[4rem] xs:mx-0">
          <img
             src={image}
             className="rounded-xl"
