@@ -50,7 +50,7 @@ function Skills() {
          </span>
 
          <div className="grid grid-cols-2 gap-6 sm:grid-cols-1">
-            <div className="flex flex-col gap-3 shadow--sm rounded-lg px-4 py-4 bg-white/50 backdrop-blur-lg">
+            <div className="flex flex-col gap-3 shadow--sm rounded-lg px-4 py-4 bg-white/50 dark:bg-primary-50/80 dark:border dark:border-primary-300/70 backdrop-blur-lg">
                <h4> {t('Skills.core-tech')}</h4>
 
                <div className="grid grid-cols-2 gap-4">
@@ -60,7 +60,7 @@ function Skills() {
                </div>
             </div>
 
-            <div className="flex flex-col gap-3 shadow--sm rounded-lg px-4 py-4 bg-white/50 backdrop-blur-lg">
+            <div className="flex flex-col gap-3 shadow--sm rounded-lg px-4 py-4 bg-white/50 dark:bg-primary-50/80 dark:border dark:border-primary-300/70 backdrop-blur-lg">
                <h4> {t('Skills.other-tech')}</h4>
 
                <div className="grid grid-cols-2 gap-4">
@@ -76,7 +76,7 @@ function Skills() {
 
 function Tech({ icon, name }) {
    return (
-      <div className="flex flex-col gap-1 py-3 w-full  border border-primary-400 rounded-lg justify-center items-center text-lg hover:bg-primary-800 hover:text-primary-50 transition">
+      <div className="flex flex-col gap-1 py-3 w-full  border border-primary-400 dark:border-primary-300 rounded-lg justify-center items-center text-lg hover:bg-primary-800 hover:text-primary-50 transition dark:hover:text-primary-100 dark:hover:border-primary-100">
          {icon}
          <span className="pointer-events-none text-center">{name}</span>
       </div>

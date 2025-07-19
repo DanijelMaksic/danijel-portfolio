@@ -21,7 +21,7 @@ function About() {
          <div className="grid grid-cols-[1fr_2.8fr] md:grid-cols-[1fr_1.2fr] xs:grid-cols-1 gap-24 lg:gap-10">
             <img
                src={AboutImage}
-               className="shadow--sm rounded-2xl h-120 md:h-150 object-cover xs:justify-self-center xs:h-120"
+               className="shadow--sm rounded-2xl h-120 md:h-150 object-cover xs:justify-self-center xs:h-120 dark:opacity-90"
             />
 
             <div className="flex flex-col gap-8">

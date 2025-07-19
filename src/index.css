@@ -4,6 +4,8 @@ html {
    scroll-behavior: smooth;
 }
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 @layer base {
    body::selection {
       @apply bg-primary-600 text-white;
@@ -62,9 +64,6 @@ button,
    --font-cyrillic: 'Inter', sans-serif;
 
    --color-primary: #fafafa;
-   --color-secondary: #fff;
-   --color-tertiary: #f5f5f5;
-   --color-quaternary: #e5e7eb;
 
    --color-primary-900: #1c1c1c;
    --color-primary-800: #2b2b2b;
@@ -78,14 +77,32 @@ button,
    --color-primary-50: #fafafa;
 }
 
+@layer base {
+   [data-theme='dark'] {
+      --color-primary: rgb(9, 9, 9);
+
+      --color-primary-950: #fafafa;
+      --color-primary-900: #f4f4f4;
+      --color-primary-800: #e8e8e8;
+      --color-primary-700: #d6d6d6;
+      --color-primary-600: #bcbcbc;
+      --color-primary-500: #757575;
+      --color-primary-400: #575757;
+      --color-primary-300: #444444;
+      --color-primary-200: #2b2b2b;
+      --color-primary-100: #1c1c1c;
+      --color-primary-50: #101010cb;
+   }
+}
+
 .background-gradient {
    background-image: radial-gradient(
-         1240px 640px at 740px -128px,
+         1240px 640px at 600px -128px,
          #ffeab5ff 0px,
          transparent 55%
       ),
       radial-gradient(
-         1240px 600px at 1140px -138px,
+         1240px 600px at 800px -138px,
          #e3abffff 0px,
          transparent 55%
       ),
@@ -100,6 +117,35 @@ button,
          transparent 25%
       ),
       radial-gradient(circle at bottom, #f5f5f5, transparent);
+}
+
+[data-theme='dark'] .background-gradient {
+   background-image: radial-gradient(
+         1700px 1000px at 500px -100px,
+         rgba(83, 69, 26, 0.692) 0px,
+         transparent 30%
+      ),
+      radial-gradient(
+         2200px 1200px at 700px 50px,
+         rgba(101, 23, 23, 0.181) 0px,
+         transparent 15%
+      ),
+      radial-gradient(
+         2200px 700px at 900px 0px,
+         rgba(82, 57, 91, 0.697) 0px,
+         transparent 30%
+      ),
+      radial-gradient(
+         2000px 1400px at 600px 100%,
+         #184460dd 0px,
+         transparent 25%
+      ),
+      radial-gradient(
+         2000px 1400px at 900px 100%,
+         #4e4277d3 0px,
+         transparent 25%
+      ),
+      radial-gradient(circle at bottom, var(--color-primary), transparent);
 }
 
 .underlined-text {

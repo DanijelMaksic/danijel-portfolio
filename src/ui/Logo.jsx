@@ -1,5 +1,5 @@
-import LogoLatin from './../../assets/logo-latin-removebg-preview.png';
-import LogoCyrillic from './../../assets/logo-cyrillic-removebg-preview.png';
+import LogoLatin from './../../assets/logo-latin-no-bg.png';
+import LogoCyrillic from './../../assets/logo-cyrillic-no-bg.png';
 import { useTranslation } from 'react-i18next';
 
 function Logo() {
@@ -10,7 +10,7 @@ function Logo() {
       <img
          src={currentLanguage === 'en' ? LogoLatin : LogoCyrillic}
          alt="Logo"
-         className="h-9 min-w-9 opacity-80"
+         className="h-9 min-w-9 opacity-80 dark:invert"
       />
    );
 }

@@ -1,11 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import LanguageButton from './LanguageButton';
 import { Link, useLocation } from 'react-router-dom';
+import { useDarkMode } from '../../contexts/DarkModeContext';
+import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi';
 
 function Navigation() {
    const { t } = useTranslation();
    const location = useLocation();
    const pathname = location.pathname;
+   const { isDarkMode, toggleDarkMode } = useDarkMode();
 
    return (
       <nav className="text-base font-semibold text-primary-600">
@@ -59,7 +62,22 @@ function Navigation() {
                </>
             )}
 
-            <LanguageButton />
+            <div className="flex items-center gap-5 ml-3">
+               <button
+                  role="button"
+                  aria-label="Light/Dark Mode Button"
+                  className="hover:bg-primary-200 dark:hover:bg-primary-400/40 p-2 rounded-lg transition"
+                  onClick={toggleDarkMode}
+               >
+                  {isDarkMode ? (
+                     <HiOutlineMoon className="size-6 transition-custom" />
+                  ) : (
+                     <HiOutlineSun className="size-6 transition-custom" />
+                  )}
+               </button>
+
+               <LanguageButton />
+            </div>
          </ul>
       </nav>
    );

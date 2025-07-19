@@ -33,7 +33,7 @@ function Hero() {
                </span>
             </span>
 
-            <div className="flex items-center justify-center gap-2 shadow--sm rounded-lg w-fit px-2 py-1">
+            <div className="flex items-center justify-center gap-2 shadow--sm rounded-lg w-fit px-2 py-1 dark:border dark:border-primary-300/70">
                <Link
                   to="https://github.com/DanijelMaksic"
                   target="_blank"

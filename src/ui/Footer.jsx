@@ -8,13 +8,13 @@ function Footer() {
    const pathname = location.pathname;
 
    return (
-      <div className="mb-12 px-8 py-6 flex flex-col gap-3 items-center w-3xl lg:w-10/12 xs:w-full self-center backdrop-blur-lg rounded-xl mt-6 shadow-sm bg-white/50 overflow-hidden">
+      <div className="mb-12 px-8 py-6 flex flex-col gap-3 items-center w-3xl lg:w-10/12 xs:w-full self-center backdrop-blur-lg rounded-xl mt-6 shadow-sm bg-white/50 dark:bg-black/20 overflow-hidden">
          <div className="flex justify-between items-center w-full">
             <div className="flex items-center justify-center gap-2 rounded-lg w-fit">
                <Link
                   to="https://github.com/DanijelMaksic"
                   target="_blank"
-                  className="hover:bg-primary-200 transition p-2 rounded-md opacity-85 hover:opacity-100"
+                  className="hover:bg-primary-400/40 transition p-2 rounded-md opacity-85 hover:opacity-100 dark:hover:bg-primary-400/30"
                >
                   <FaGithub className="size-5" />
                </Link>
@@ -24,7 +24,7 @@ function Footer() {
                <Link
                   to="#"
                   target="_blank"
-                  className="hover:bg-primary-200 transition p-2 rounded-md opacity-85 hover:opacity-100"
+                  className="hover:bg-primary-400/40 transition p-2 rounded-md opacity-85 hover:opacity-100 dark:hover:bg-primary-400/30"
                >
                   <FaLinkedinIn className="size-5" />
                </Link>

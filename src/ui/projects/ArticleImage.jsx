@@ -1,11 +1,24 @@
 import mediumZoom from 'medium-zoom';
 import { useEffect } from 'react';
+import { useDarkMode } from '../../contexts/DarkModeContext';
 
 function ArticleImage({ image, imageMobile, alt, isResponsive }) {
+   const { isDarkMode } = useDarkMode();
+
    useEffect(() => {
-      const zoom = mediumZoom('.parent img', {
-         margin: 100,
-      });
+      let zoom;
+
+      if (isDarkMode) {
+         zoom = mediumZoom('.parent img', {
+            margin: 100,
+            background: 'black',
+         });
+      } else {
+         zoom = mediumZoom('.parent img', {
+            margin: 100,
+            background: 'white',
+         });
+      }
 
       const handleClick = (e) => {
          if (zoom.getZoomedImage() && !e.target.closest('.parent img')) {
@@ -19,7 +32,7 @@ function ArticleImage({ image, imageMobile, alt, isResponsive }) {
          document.removeEventListener('click', handleClick);
          zoom.detach();
       };
-   }, []);
+   }, [isDarkMode]);
 
    if (isResponsive)
       return (
@@ -27,12 +40,12 @@ function ArticleImage({ image, imageMobile, alt, isResponsive }) {
             <img
                src={image}
                alt={alt}
-               className="rounded-xl shadow h-91 object-cover lg:h-full"
+               className="rounded-xl shadow h-91 object-cover lg:h-full dark:opacity-90"
             />
             <img
                src={imageMobile}
                alt={alt}
-               className="rounded-xl shadow h-91 object-cover lg:hidden"
+               className="rounded-xl shadow h-91 object-cover lg:hidden  dark:opacity-90"
             />
          </div>
       );
@@ -43,7 +56,7 @@ function ArticleImage({ image, imageMobile, alt, isResponsive }) {
             <img
                src={image}
                alt={alt}
-               className="rounded-xl shadow h-110 lg:h-full"
+               className="rounded-xl shadow h-110 lg:h-full  dark:opacity-90"
             />
          </div>
       );

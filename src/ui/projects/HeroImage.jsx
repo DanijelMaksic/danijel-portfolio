@@ -5,10 +5,12 @@ import { featuredProjects, otherProjects } from '../home/Projects';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import mediumZoom from 'medium-zoom';
+import { useDarkMode } from '../../contexts/DarkModeContext';
 
 function HeroImage({ image, title }) {
    const featured = featuredProjects.map((item) => item);
    const other = otherProjects.map((item) => item);
+   const { isDarkMode } = useDarkMode();
 
    // Title is needed to figure out which is the current project, so we can get its techStack
    const [featuredProject] = featured.filter(
@@ -20,9 +22,19 @@ function HeroImage({ image, title }) {
 
    // Image Zoom logic
    useEffect(() => {
-      const zoom = mediumZoom('.parent img', {
-         margin: 100,
-      });
+      let zoom;
+
+      if (isDarkMode) {
+         zoom = mediumZoom('.parent img', {
+            margin: 100,
+            background: 'black',
+         });
+      } else {
+         zoom = mediumZoom('.parent img', {
+            margin: 100,
+            background: 'white',
+         });
+      }
 
       const handleClick = (e) => {
          if (zoom.getZoomedImage() && !e.target.closest('.parent img')) {
@@ -39,10 +51,10 @@ function HeroImage({ image, title }) {
    }, []);
 
    return (
-      <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[8rem] sm:mx-[4rem] xs:mx-0">
+      <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[8rem] sm:mx-[4rem] xs:mx-0 dark:border dark:border-primary-200 dark:bg-primary-50">
          <img
             src={image}
-            className="rounded-xl"
+            className="rounded-xl dark:opacity-90"
             alt={featuredProject?.titleEn || otherProject?.titleEn}
          />
 
