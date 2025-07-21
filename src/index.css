@@ -43,7 +43,7 @@ html {
 
 @media screen and (max-width: 390px) {
    html {
-      font-size: 10px;
+      font-size: 12px;
    }
 }
 
@@ -93,59 +93,6 @@ button,
       --color-primary-100: #1c1c1c;
       --color-primary-50: #101010cb;
    }
-}
-
-.background-gradient {
-   background-image: radial-gradient(
-         1240px 640px at 600px -128px,
-         #ffeab5ff 0px,
-         transparent 55%
-      ),
-      radial-gradient(
-         1240px 600px at 800px -138px,
-         #e3abffff 0px,
-         transparent 55%
-      ),
-      radial-gradient(
-         4000px 2500px at 700px 100%,
-         #ffeab5ff 0px,
-         transparent 25%
-      ),
-      radial-gradient(
-         4000px 2500px at 1100px 100%,
-         #e3abffff 0px,
-         transparent 25%
-      ),
-      radial-gradient(circle at bottom, #f5f5f5, transparent);
-}
-
-[data-theme='dark'] .background-gradient {
-   background-image: radial-gradient(
-         1700px 1000px at 500px -100px,
-         rgba(83, 69, 26, 0.692) 0px,
-         transparent 30%
-      ),
-      radial-gradient(
-         2200px 1200px at 700px 50px,
-         rgba(101, 23, 23, 0.181) 0px,
-         transparent 15%
-      ),
-      radial-gradient(
-         2200px 700px at 900px 0px,
-         rgba(82, 57, 91, 0.697) 0px,
-         transparent 30%
-      ),
-      radial-gradient(
-         2000px 1400px at 600px 100%,
-         #184460dd 0px,
-         transparent 25%
-      ),
-      radial-gradient(
-         2000px 1400px at 900px 100%,
-         #4e4277d3 0px,
-         transparent 25%
-      ),
-      radial-gradient(circle at bottom, var(--color-primary), transparent);
 }
 
 .underlined-text {
@@ -249,5 +196,402 @@ p {
 
    p {
       margin: 0rem 0rem;
+   }
+}
+
+/* Background Gradient */
+
+.background-gradient {
+   background-image: radial-gradient(
+         1240px 640px at 1100px -128px,
+         #ffeab5ff 0px,
+         transparent 55%
+      ),
+      radial-gradient(
+         1240px 600px at 1500px -138px,
+         #e3abffff 0px,
+         transparent 55%
+      ),
+      radial-gradient(
+         4000px 2500px at 1000px 100%,
+         #ffeab5ff 0px,
+         transparent 25%
+      ),
+      radial-gradient(
+         4000px 2500px at 1400px 100%,
+         #e3abffff 0px,
+         transparent 25%
+      ),
+      radial-gradient(circle at bottom, #f5f5f5, transparent);
+}
+
+@media screen and (max-width: 1921px) {
+   .background-gradient {
+      background-image: radial-gradient(
+            1240px 640px at 800px -128px,
+            #ffeab5ff 0px,
+            transparent 55%
+         ),
+         radial-gradient(
+            1240px 600px at 1000px -138px,
+            #e3abffff 0px,
+            transparent 55%
+         ),
+         radial-gradient(
+            4000px 2500px at 700px 100%,
+            #ffeab5ff 0px,
+            transparent 25%
+         ),
+         radial-gradient(
+            4000px 2500px at 1000px 100%,
+            #e3abffff 0px,
+            transparent 25%
+         ),
+         radial-gradient(circle at bottom, #f5f5f5, transparent);
+   }
+}
+
+@media screen and (max-width: 1580px) {
+   .background-gradient {
+      background-image: radial-gradient(
+            1240px 640px at 600px -128px,
+            #ffeab5ff 0px,
+            transparent 55%
+         ),
+         radial-gradient(
+            1240px 600px at 800px -138px,
+            #e3abffff 0px,
+            transparent 55%
+         ),
+         radial-gradient(
+            4000px 2500px at 400px 100%,
+            #ffeab5ff 0px,
+            transparent 25%
+         ),
+         radial-gradient(
+            4000px 2500px at 800px 100%,
+            #e3abffff 0px,
+            transparent 25%
+         ),
+         radial-gradient(circle at bottom, #f5f5f5, transparent);
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .background-gradient {
+      background-image: radial-gradient(
+            1240px 640px at 400px -128px,
+            #ffeab5ff 0px,
+            transparent 55%
+         ),
+         radial-gradient(
+            1240px 600px at 650px -138px,
+            #e3abffff 0px,
+            transparent 55%
+         ),
+         radial-gradient(
+            4000px 2500px at 300px 100%,
+            #ffeab5ff 0px,
+            transparent 25%
+         ),
+         radial-gradient(
+            4000px 2500px at 600px 100%,
+            #e3abffff 0px,
+            transparent 25%
+         ),
+         radial-gradient(circle at bottom, #f5f5f5, transparent);
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .background-gradient {
+      background-image: radial-gradient(
+            1240px 640px at 300px -128px,
+            #ffeab5ff 0px,
+            transparent 55%
+         ),
+         radial-gradient(
+            1240px 600px at 500px -138px,
+            #e3abffff 0px,
+            transparent 55%
+         ),
+         radial-gradient(
+            4000px 2000px at 200px 100%,
+            #ffeab5ff 0px,
+            transparent 25%
+         ),
+         radial-gradient(
+            4000px 2000px at 600px 100%,
+            #e3abffff 0px,
+            transparent 25%
+         ),
+         radial-gradient(circle at bottom, #f5f5f5, transparent);
+   }
+}
+
+@media screen and (max-width: 650px) {
+   .background-gradient {
+      background-image: radial-gradient(
+            1240px 640px at 200px -128px,
+            #ffeab5ff 0px,
+            transparent 55%
+         ),
+         radial-gradient(
+            1240px 600px at 400px -138px,
+            #e3abffff 0px,
+            transparent 55%
+         ),
+         radial-gradient(
+            4000px 2000px at 100px 100%,
+            #ffeab5ff 0px,
+            transparent 25%
+         ),
+         radial-gradient(
+            4000px 2000px at 500px 100%,
+            #e3abffff 0px,
+            transparent 25%
+         ),
+         radial-gradient(circle at bottom, #f5f5f5, transparent);
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .background-gradient {
+      background-image: radial-gradient(
+            1240px 640px at 100px -128px,
+            #ffeab5ff 0px,
+            transparent 55%
+         ),
+         radial-gradient(
+            1240px 600px at 300px -138px,
+            #e3abffff 0px,
+            transparent 55%
+         ),
+         radial-gradient(
+            4000px 1700px at 0px 100%,
+            #ffeab5ff 0px,
+            transparent 24%
+         ),
+         radial-gradient(
+            4000px 1700px at 200px 100%,
+            #e3abffff 0px,
+            transparent 24%
+         ),
+         radial-gradient(circle at bottom, #f5f5f5, transparent);
+   }
+}
+
+[data-theme='dark'] .background-gradient {
+   background-image: radial-gradient(
+         1700px 1000px at 1000px -100px,
+         rgba(83, 69, 26, 0.692) 0px,
+         transparent 30%
+      ),
+      radial-gradient(
+         2200px 1200px at 1200px 50px,
+         rgba(101, 23, 23, 0.181) 0px,
+         transparent 15%
+      ),
+      radial-gradient(
+         2200px 700px at 1400px 0px,
+         rgba(82, 57, 91, 0.697) 0px,
+         transparent 30%
+      ),
+      radial-gradient(
+         2000px 1400px at 1150px 100%,
+         #184460dd 0px,
+         transparent 25%
+      ),
+      radial-gradient(
+         2000px 1400px at 1500px 100%,
+         #4e4277d3 0px,
+         transparent 25%
+      ),
+      radial-gradient(circle at bottom, var(--color-primary), transparent);
+}
+
+@media screen and (max-width: 1921px) {
+   [data-theme='dark'] .background-gradient {
+      background-image: radial-gradient(
+            1700px 1000px at 700px -100px,
+            rgba(83, 69, 26, 0.692) 0px,
+            transparent 30%
+         ),
+         radial-gradient(
+            2200px 1200px at 800px 50px,
+            rgba(101, 23, 23, 0.181) 0px,
+            transparent 15%
+         ),
+         radial-gradient(
+            2200px 700px at 1000px 0px,
+            rgba(82, 57, 91, 0.697) 0px,
+            transparent 30%
+         ),
+         radial-gradient(
+            2000px 1400px at 800px 100%,
+            #184460dd 0px,
+            transparent 25%
+         ),
+         radial-gradient(
+            2000px 1400px at 1100px 100%,
+            #4e4277d3 0px,
+            transparent 25%
+         ),
+         radial-gradient(circle at bottom, var(--color-primary), transparent);
+   }
+}
+
+@media screen and (max-width: 1580px) {
+   [data-theme='dark'] .background-gradient {
+      background-image: radial-gradient(
+            1700px 1000px at 500px -100px,
+            rgba(83, 69, 26, 0.692) 0px,
+            transparent 30%
+         ),
+         radial-gradient(
+            2200px 1200px at 700px 50px,
+            rgba(101, 23, 23, 0.181) 0px,
+            transparent 15%
+         ),
+         radial-gradient(
+            2200px 700px at 900px 0px,
+            rgba(82, 57, 91, 0.697) 0px,
+            transparent 30%
+         ),
+         radial-gradient(
+            2000px 1400px at 580px 100%,
+            #184460dd 0px,
+            transparent 25%
+         ),
+         radial-gradient(
+            2000px 1400px at 900px 100%,
+            #4e4277d3 0px,
+            transparent 25%
+         ),
+         radial-gradient(circle at bottom, var(--color-primary), transparent);
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   [data-theme='dark'] .background-gradient {
+      background-image: radial-gradient(
+            1700px 1000px at 300px -100px,
+            rgba(83, 69, 26, 0.692) 0px,
+            transparent 30%
+         ),
+         radial-gradient(
+            2200px 1200px at 500px 50px,
+            rgba(101, 23, 23, 0.181) 0px,
+            transparent 15%
+         ),
+         radial-gradient(
+            2200px 700px at 600px 0px,
+            rgba(82, 57, 91, 0.697) 0px,
+            transparent 30%
+         ),
+         radial-gradient(
+            2000px 1400px at 400px 100%,
+            #184460dd 0px,
+            transparent 25%
+         ),
+         radial-gradient(
+            2000px 1400px at 700px 100%,
+            #4e4277d3 0px,
+            transparent 25%
+         ),
+         radial-gradient(circle at bottom, var(--color-primary), transparent);
+   }
+}
+
+@media screen and (max-width: 768px) {
+   [data-theme='dark'] .background-gradient {
+      background-image: radial-gradient(
+            1700px 1000px at 200px -150px,
+            rgba(83, 69, 26, 0.692) 0px,
+            transparent 30%
+         ),
+         radial-gradient(
+            2200px 1200px at 300px 0px,
+            rgba(101, 23, 23, 0.181) 0px,
+            transparent 15%
+         ),
+         radial-gradient(
+            2200px 700px at 400px -50px,
+            rgba(82, 57, 91, 0.697) 0px,
+            transparent 30%
+         ),
+         radial-gradient(
+            2000px 1400px at 300px 100%,
+            #184460dd 0px,
+            transparent 25%
+         ),
+         radial-gradient(
+            2000px 1400px at 500px 100%,
+            #4e4277d3 0px,
+            transparent 25%
+         ),
+         radial-gradient(circle at bottom, var(--color-primary), transparent);
+   }
+}
+
+@media screen and (max-width: 650px) {
+   [data-theme='dark'] .background-gradient {
+      background-image: radial-gradient(
+            1700px 1000px at 200px -150px,
+            rgba(83, 69, 26, 0.692) 0px,
+            transparent 30%
+         ),
+         radial-gradient(
+            2200px 1200px at 200px -0px,
+            rgba(101, 23, 23, 0.181) 0px,
+            transparent 15%
+         ),
+         radial-gradient(
+            2200px 700px at 300px -50px,
+            rgba(82, 57, 91, 0.697) 0px,
+            transparent 30%
+         ),
+         radial-gradient(
+            2000px 1400px at 100px 100%,
+            #184460dd 0px,
+            transparent 25%
+         ),
+         radial-gradient(
+            2000px 1400px at 400px 100%,
+            #4e4277d3 0px,
+            transparent 25%
+         ),
+         radial-gradient(circle at bottom, var(--color-primary), transparent);
+   }
+}
+
+@media screen and (max-width: 450px) {
+   [data-theme='dark'] .background-gradient {
+      background-image: radial-gradient(
+            1700px 1000px at 200px -150px,
+            rgba(83, 69, 26, 0.692) 0px,
+            transparent 30%
+         ),
+         radial-gradient(
+            2200px 1200px at 200px -0px,
+            rgba(101, 23, 23, 0.181) 0px,
+            transparent 15%
+         ),
+         radial-gradient(
+            2200px 700px at 300px -50px,
+            rgba(82, 57, 91, 0.697) 0px,
+            transparent 30%
+         ),
+         radial-gradient(
+            2000px 1400px at 0px 100%,
+            #184460dd 0px,
+            transparent 25%
+         ),
+         radial-gradient(
+            2000px 1400px at 400px 100%,
+            #4e4277d3 0px,
+            transparent 25%
+         ),
+         radial-gradient(circle at bottom, var(--color-primary), transparent);
    }
 }

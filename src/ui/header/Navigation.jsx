@@ -12,9 +12,9 @@ function Navigation() {
 
    return (
       <nav className="text-base font-semibold text-primary-600">
-         <ul className="flex gap-10 xs:gap-7 items-center">
+         <ul className="flex gap-10 xs:gap-3 items-center">
             {pathname === '/' ? (
-               <>
+               <div className="flex items-center gap-10 xs:gap-7">
                   <li>
                      <a
                         href="#projects"
@@ -39,7 +39,7 @@ function Navigation() {
                         {t('Header.nav-link-3')}
                      </a>
                   </li>
-               </>
+               </div>
             ) : (
                <>
                   <li>
@@ -56,13 +56,18 @@ function Navigation() {
                      </a>
                   </li>
 
-                  <Link to={-1} className="transition hover:text-primary-700">
-                     Return
-                  </Link>
+                  <li>
+                     <Link
+                        to={-1}
+                        className="transition hover:text-primary-700"
+                     >
+                        Return
+                     </Link>
+                  </li>
                </>
             )}
 
-            <div className="flex items-center gap-5 ml-3">
+            <li className="flex items-center gap-5 ml-3">
                <button
                   role="button"
                   aria-label="Light/Dark Mode Button"
@@ -77,7 +82,7 @@ function Navigation() {
                </button>
 
                <LanguageButton />
-            </div>
+            </li>
          </ul>
       </nav>
    );

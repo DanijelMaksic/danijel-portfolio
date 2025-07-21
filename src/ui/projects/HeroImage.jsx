@@ -25,11 +25,14 @@ function HeroImage({ image, title }) {
       let zoom;
 
       if (isDarkMode) {
+         console.log('run');
          zoom = mediumZoom('.parent img', {
             margin: 100,
             background: 'black',
          });
-      } else {
+      }
+
+      if (!isDarkMode) {
          zoom = mediumZoom('.parent img', {
             margin: 100,
             background: 'white',
@@ -48,7 +51,7 @@ function HeroImage({ image, title }) {
          document.removeEventListener('click', handleClick);
          zoom.detach();
       };
-   }, []);
+   }, [isDarkMode]);
 
    return (
       <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[8rem] sm:mx-[4rem] xs:mx-0 dark:border dark:border-primary-200 dark:bg-primary-50">
