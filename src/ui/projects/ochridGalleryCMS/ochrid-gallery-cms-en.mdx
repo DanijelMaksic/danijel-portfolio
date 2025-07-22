@@ -1,5 +1,7 @@
 import HeroImage from './../HeroImage.jsx';
 import ArticleImage from './../ArticleImage.jsx';
+import TableOfContents from './../TableOfContents';
+import ArticleH2 from './../ArticleH2';
 
 import OchridGalleryCMSImg from './../../../../assets/ochrid-gallery-cms.webp';
 import CmsImg1 from './../../../../assets/cms-1.webp';
@@ -24,7 +26,19 @@ This is the internal application of the public webstore "Ochrid Gallery". This i
 <br />
 <br />
 
-## Dashboard
+<TableOfContents
+   h2Arr={[
+      'dashboard',
+      'inventory-management',
+      'order-management',
+      'user-settings',
+   ]}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'dashboard'} text={'Dashboard'} />
 
 Upon logging in, user will see the dashboard page, which contains all the relevant
 information and statistics about the business. Here user can also access the incoming
@@ -37,7 +51,7 @@ orders in the Today section.
 <br />
 <br />
 
-## Inventory management
+<ArticleH2 id={'inventory-management'} text={'Inventory management'} />
 
 First major part of the application is the inventory management. On this page user can add new icon to the inventory.
 
@@ -66,7 +80,7 @@ Each icon has its own page with some relevant information about it.
 <br />
 <br />
 
-## Order management
+<ArticleH2 id={'order-management'} text={'Order management'} />
 
 Here comes the second major part of the app, the order management. Any incoming orders will be displayed here. Every order has its own Order ID which can be used to keep track of it.
 
@@ -104,7 +118,7 @@ This is the archived order page, which lists the details of specific past order.
 <br />
 <br />
 
-## User settings
+<ArticleH2 id={'user-settings'} text={'User settings'} />
 
 In the end we have the Users page, where new users can be added or existing ones be updated.
 

@@ -1,5 +1,7 @@
 import HeroImage from './../HeroImage.jsx';
 import ArticleImage from './../ArticleImage.jsx';
+import TableOfContents from './../TableOfContents';
+import ArticleH2 from './../ArticleH2';
 
 import QuizImg from './../../../../assets/quiz.webp';
 import QuizImg1 from './../../../../assets/quiz-1.webp';
@@ -17,7 +19,12 @@ Old World History - Quiz is a React powered app that enables the user to test hi
 <br />
 <br />
 
-## Quiz setup
+<TableOfContents h2Arr={['quiz-setup', 'quiz-page', 'results-screen']} />
+
+<br />
+<br />
+
+<ArticleH2 id={'quiz-setup'} text={'Quiz setup'} />
 
 Initial page shows some information about the time period to prepare the user for what's coming. There are four difficulty levels to choose from, with varying number of questions for each of them.
 
@@ -28,7 +35,7 @@ Initial page shows some information about the time period to prepare the user fo
 <br />
 <br />
 
-## Quiz page
+<ArticleH2 id={'quiz-page'} text={'Quiz page'} />
 
 When user is satisfied with the quiz setup, he can start the quiz. Each difficulty tier rewards a different amount of points, where highest difficulty questions net the most points. User also needs to pay attention to the timer (quiz time depends on the number of selected questions).
 
@@ -39,7 +46,7 @@ When user is satisfied with the quiz setup, he can start the quiz. Each difficul
 <br />
 <br />
 
-## Results screen
+<ArticleH2 id={'results-screen'} text={'Results screen'} />
 
 Finally, when the quiz is completed user will be navigated to the results screen, where he can see his success ratio along with the highscore.
 

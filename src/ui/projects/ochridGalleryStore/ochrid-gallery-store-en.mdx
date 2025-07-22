@@ -1,5 +1,7 @@
 import HeroImage from './../HeroImage.jsx';
 import ArticleImage from './../ArticleImage.jsx';
+import TableOfContents from './../TableOfContents';
+import ArticleH2 from './../ArticleH2';
 
 import OchridGalleryStoreImg from './../../../../assets/ochrid-gallery-store.webp';
 import StoreImg0 from './../../../../assets/store-0.webp';
@@ -39,7 +41,20 @@ Ochrid Gallery is a webstore that enables its users to browse and order icons. W
 <br />
 <br />
 
-## Landing page
+<TableOfContents
+   h2Arr={[
+      'landing-page',
+      'icons-page',
+      'icon-details',
+      'checkout-process',
+      'account-section',
+   ]}
+/>
+
+<br />
+<br />
+
+<ArticleH2 id={'landing-page'} text={'Landing page'} />
 
 Upon entering the website, user will first see the gallery's landing page. Some general information about the business is outlined here.
 
@@ -55,7 +70,7 @@ Upon entering the website, user will first see the gallery's landing page. Some 
 <br />
 <br />
 
-## Icons page
+<ArticleH2 id={'icons-page'} text={'Icons page'} />
 
 On the gallery or the icons page, users can browse various icons which can be sorted and filtered based on user's preference.
 
@@ -71,7 +86,7 @@ On the gallery or the icons page, users can browse various icons which can be so
 <br />
 <br />
 
-## Icon details
+<ArticleH2 id={'icon-details'} text={'Icon details'} />
 
 Each icon has it's own page with some more details and features, such as the functionalities of adding the icon to cart, wishlisting it and reviewing it.
 
@@ -87,7 +102,7 @@ Each icon has it's own page with some more details and features, such as the fun
 <br />
 <br />
 
-## Checkout process
+<ArticleH2 id={'checkout-process'} text={'Checkout process'} />
 
 After one or more icons have been added to cart, user can visit the shopping cart page. This page contains the cart management, summary of the order and some featured trending products. Here user can start the checkout process, but in order to proceed to the next part, user needs to register/log in using his Google profile.
 
@@ -145,7 +160,7 @@ For the final part of the checkout we have the review order page, where user can
 <br />
 <br />
 
-## Account page
+<ArticleH2 id={'account-section'} text={'Account section'} />
 
 After registering/logging in, user can access the account management part of the website. By default, user will be greeted by the Account overview page which includes some account activity statistics.
 

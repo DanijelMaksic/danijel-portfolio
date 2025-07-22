@@ -58,7 +58,7 @@ function Navigation() {
 
                   <li>
                      <Link
-                        to={-1}
+                        to={'/'}
                         className="transition hover:text-primary-700"
                      >
                         Return

@@ -1,5 +1,7 @@
 import HeroImage from './../HeroImage.jsx';
 import ArticleImage from './../ArticleImage.jsx';
+import TableOfContents from './../TableOfContents';
+import ArticleH2 from './../ArticleH2';
 
 import UseBookImg from './../../../../assets/use-book.webp';
 import useBookImg1 from './../../../../assets/use-book-1.webp';
@@ -16,7 +18,12 @@ UseBook is a browsing app for finding and saving books. It is built with React a
 <br />
 <br />
 
-## Searching for a book
+<TableOfContents h2Arr={['searching-for-a-book', 'managing-saved-books']} />
+
+<br />
+<br />
+
+<ArticleH2 id={'searching-for-a-book'} text={'Searching for a book'} />
 
 When user searches for a book, a list of books will appear on the left, from which each book can be selected. On the right side, details of the currently selected book will be displayed, from where user can save the book.
 
@@ -31,7 +38,7 @@ When user searches for a book, a list of books will appear on the left, from whi
 <br />
 <br />
 
-## Managing saved books
+<ArticleH2 id={'managing-saved-books'} text={'Managing saved books'} />
 
 Upon returning to the initial screen, book statistics will be shown on the right, along with the list of saved books.
 
