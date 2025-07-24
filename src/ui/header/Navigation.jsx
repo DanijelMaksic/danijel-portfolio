@@ -59,7 +59,7 @@ function Navigation() {
                   <li>
                      <Link
                         to={'/'}
-                        className="transition hover:text-primary-700"
+                        className="transition hover:text-primary-700 mr-3"
                      >
                         Return
                      </Link>
