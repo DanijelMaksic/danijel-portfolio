@@ -1,3 +1,3 @@
 # Portfolio website
 
-My portfolio website showcasing my Front-End projects.
+My portfolio website showcasing various Front-End projects.
