@@ -14,7 +14,7 @@ function Navigation() {
       <nav className="text-base font-semibold text-primary-600">
          <ul className="flex gap-10 xs:gap-3 items-center">
             {pathname === '/' ? (
-               <li className="flex items-center gap-10 xs:gap-7">
+               <li className="flex items-center gap-10 xs:gap-7 xs:hidden">
                   <div>
                      <a
                         href="#projects"
@@ -67,7 +67,7 @@ function Navigation() {
                </>
             )}
 
-            <li className="flex items-center gap-5 ml-3">
+            <li className="flex items-center gap-5 ml-3 xs:gap-7">
                <button
                   role="button"
                   aria-label="Light/Dark Mode Button"
