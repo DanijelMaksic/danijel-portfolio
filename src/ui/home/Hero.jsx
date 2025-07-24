@@ -37,6 +37,7 @@ function Hero() {
                <Link
                   to="https://github.com/DanijelMaksic"
                   target="_blank"
+                  aria-label="Github"
                   className="hover:bg-primary-200 transition p-2 rounded-md"
                >
                   <FaGithub className="size-6" />
@@ -47,6 +48,7 @@ function Hero() {
                <Link
                   to="#"
                   target="_blank"
+                  aria-label="LinkedIn"
                   className="hover:bg-primary-200 transition p-2 rounded-md"
                >
                   <FaLinkedin className="size-6" />

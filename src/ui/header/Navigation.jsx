@@ -14,32 +14,32 @@ function Navigation() {
       <nav className="text-base font-semibold text-primary-600">
          <ul className="flex gap-10 xs:gap-3 items-center">
             {pathname === '/' ? (
-               <div className="flex items-center gap-10 xs:gap-7">
-                  <li>
+               <li className="flex items-center gap-10 xs:gap-7">
+                  <div>
                      <a
                         href="#projects"
                         className="hover:text-primary-700 transition"
                      >
                         {t('Header.nav-link-1')}
                      </a>
-                  </li>
-                  <li>
+                  </div>
+                  <div>
                      <a
                         href="#about"
                         className="hover:text-primary-700 transition text-nowrap"
                      >
                         {t('Header.nav-link-2')}
                      </a>
-                  </li>
-                  <li>
+                  </div>
+                  <div>
                      <a
                         href="#skills"
                         className="hover:text-primary-700 transition"
                      >
                         {t('Header.nav-link-3')}
                      </a>
-                  </li>
-               </div>
+                  </div>
+               </li>
             ) : (
                <>
                   <li>

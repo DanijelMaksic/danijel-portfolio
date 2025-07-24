@@ -14,6 +14,7 @@ function Footer() {
                <Link
                   to="https://github.com/DanijelMaksic"
                   target="_blank"
+                  aria-label="Github"
                   className="hover:bg-primary-400/40 transition p-2 rounded-md opacity-85 hover:opacity-100 dark:hover:bg-primary-400/30"
                >
                   <FaGithub className="size-5" />
@@ -24,6 +25,7 @@ function Footer() {
                <Link
                   to="#"
                   target="_blank"
+                  aria-label="LinkedIn"
                   className="hover:bg-primary-400/40 transition p-2 rounded-md opacity-85 hover:opacity-100 dark:hover:bg-primary-400/30"
                >
                   <FaLinkedinIn className="size-5" />
