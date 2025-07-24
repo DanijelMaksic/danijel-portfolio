@@ -25,7 +25,6 @@ function HeroImage({ image, title }) {
       let zoom;
 
       if (isDarkMode) {
-         console.log('run');
          zoom = mediumZoom('.parent img', {
             margin: 100,
             background: 'black',
