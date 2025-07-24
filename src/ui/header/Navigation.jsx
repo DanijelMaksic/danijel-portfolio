@@ -14,7 +14,7 @@ function Navigation() {
       <nav className="text-base font-semibold text-primary-600">
          <ul className="flex gap-10 xs:gap-3 items-center">
             {pathname === '/' ? (
-               <li className="flex items-center gap-10 xs:gap-8 xs:hidden">
+               <li className="flex items-center gap-10 xs:gap-8">
                   <div>
                      <a
                         href="#projects"
@@ -23,7 +23,7 @@ function Navigation() {
                         {t('Header.nav-link-1')}
                      </a>
                   </div>
-                  <div>
+                  <div className="xs:hidden">
                      <a
                         href="#about"
                         className="hover:text-primary-700 transition text-nowrap"
@@ -31,7 +31,7 @@ function Navigation() {
                         {t('Header.nav-link-2')}
                      </a>
                   </div>
-                  <div>
+                  <div className="xs:hidden">
                      <a
                         href="#skills"
                         className="hover:text-primary-700 transition"
