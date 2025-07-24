@@ -417,7 +417,7 @@ p {
 @media screen and (max-width: 1921px) {
    [data-theme='dark'] .background-gradient {
       background-image: radial-gradient(
-            1700px 1000px at 700px -100px,
+            1700px 1000px at 500px -100px,
             rgba(83, 69, 26, 0.692) 0px,
             transparent 30%
          ),
@@ -448,7 +448,7 @@ p {
 @media screen and (max-width: 1580px) {
    [data-theme='dark'] .background-gradient {
       background-image: radial-gradient(
-            1700px 1000px at 400px -100px,
+            1700px 1000px at 300px -80px,
             rgba(83, 69, 26, 0.692) 0px,
             transparent 30%
          ),
