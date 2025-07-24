@@ -14,7 +14,7 @@ function Navigation() {
       <nav className="text-base font-semibold text-primary-600">
          <ul className="flex gap-10 xs:gap-3 items-center">
             {pathname === '/' ? (
-               <li className="flex items-center gap-10 xs:gap-7 xs:hidden">
+               <li className="flex items-center gap-10 xs:gap-8 xs:hidden">
                   <div>
                      <a
                         href="#projects"
