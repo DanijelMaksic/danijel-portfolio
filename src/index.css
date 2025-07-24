@@ -8,7 +8,11 @@ html {
 
 @layer base {
    body::selection {
-      @apply bg-primary-600 text-white;
+      @apply bg-primary-700 text-white;
+   }
+
+   [data-theme='dark'] body::selection {
+      @apply bg-primary-700 text-black;
    }
 
    /* Firefox support */
