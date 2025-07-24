@@ -68,7 +68,7 @@ export const featuredProjects = [
       titleSr: 'Охридска Галерија CMS',
       image: ochridGalleryCmsImg,
       descriptionEn:
-         'A Content Management System (CMS) app for a fictional gallery. Limited only to the employees, it includes inventory and order management.',
+         'A Content Management System (CMS) app for a fictional gallery. Limited only to employees, it includes inventory and order management.',
       descriptionSr:
          'CMS апликација за фикционалну галерију. Ограничена само за запослене, ова апликација садржи менаџмент инвентара и поруџбина.',
       techStack: [
