@@ -30,7 +30,7 @@ function About() {
                   {t('About.name')}
                </span>
 
-               <div className="flex flex-col gap-3 text-primary-600 leading-8 md:leading-9 xs:leading-10 2xs:leading-11">
+               <div className="flex flex-col gap-3 text-primary-700 leading-8 md:leading-9 xs:leading-10 2xs:leading-11">
                   <span>{t('About.p1')}</span>
 
                   <span>
