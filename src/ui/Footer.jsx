@@ -8,7 +8,7 @@ function Footer() {
    const pathname = location.pathname;
 
    return (
-      <div className="mb-12 px-8 py-6 flex flex-col gap-3 items-center w-3xl lg:w-10/12 xs:w-full self-center backdrop-blur-lg rounded-xl mt-6 shadow-sm bg-white/50 dark:bg-black/20 overflow-hidden">
+      <div className="mb-12 px-8 py-6 flex flex-col gap-3 items-center w-3xl lg:w-10/12 xs:w-full self-center backdrop-blur-lg rounded-xl mt-6 shadow-sm bg-white/50 dark:bg-black/30 overflow-hidden">
          <div className="flex justify-between items-center w-full">
             <div className="flex items-center justify-center gap-2 rounded-lg w-fit">
                <Link

@@ -387,18 +387,13 @@ p {
 
 [data-theme='dark'] .background-gradient {
    background-image: radial-gradient(
-         1700px 1000px at 1000px -100px,
-         rgba(83, 69, 26, 0.692) 0px,
+         1700px 1000px at 1150px -80px,
+         #184460b7 0px,
          transparent 30%
       ),
       radial-gradient(
-         2200px 1200px at 1200px 50px,
-         rgba(101, 23, 23, 0.181) 0px,
-         transparent 15%
-      ),
-      radial-gradient(
-         2200px 700px at 1400px 0px,
-         rgba(82, 57, 91, 0.697) 0px,
+         1700px 1000px at 1350px -80px,
+         rgba(97, 58, 111, 0.923) 0px,
          transparent 30%
       ),
       radial-gradient(
@@ -417,14 +412,14 @@ p {
 @media screen and (max-width: 1921px) {
    [data-theme='dark'] .background-gradient {
       background-image: radial-gradient(
-            1700px 1000px at 500px -100px,
-            rgba(83, 69, 26, 0.692) 0px,
+            1700px 1000px at 800px -80px,
+            #184460b7 0px,
             transparent 30%
          ),
          radial-gradient(
-            2200px 1200px at 800px 50px,
-            rgba(101, 23, 23, 0.181) 0px,
-            transparent 15%
+            1700px 1000px at 1000px -80px,
+            rgba(97, 58, 111, 0.923) 0px,
+            transparent 30%
          ),
          radial-gradient(
             2200px 700px at 1000px 0px,
@@ -448,18 +443,13 @@ p {
 @media screen and (max-width: 1580px) {
    [data-theme='dark'] .background-gradient {
       background-image: radial-gradient(
-            1700px 1000px at 370px -80px,
-            rgba(83, 69, 26, 0.692) 0px,
+            1700px 1000px at 600px -50px,
+            #184460b7 0px,
             transparent 30%
          ),
          radial-gradient(
-            2200px 1200px at 700px 50px,
-            rgba(101, 23, 23, 0.181) 0px,
-            transparent 15%
-         ),
-         radial-gradient(
-            2200px 700px at 900px 0px,
-            rgba(82, 57, 91, 0.697) 0px,
+            1700px 1000px at 800px -50px,
+            rgba(97, 58, 111, 0.923) 0px,
             transparent 30%
          ),
          radial-gradient(
@@ -479,18 +469,13 @@ p {
 @media screen and (max-width: 1024px) {
    [data-theme='dark'] .background-gradient {
       background-image: radial-gradient(
-            1700px 1000px at 300px -100px,
-            rgba(83, 69, 26, 0.692) 0px,
+            1700px 1000px at 350px -50px,
+            #184460b7 0px,
             transparent 30%
          ),
          radial-gradient(
-            2200px 1200px at 500px 50px,
-            rgba(101, 23, 23, 0.181) 0px,
-            transparent 15%
-         ),
-         radial-gradient(
-            2200px 700px at 600px 0px,
-            rgba(82, 57, 91, 0.697) 0px,
+            1700px 1000px at 550px -50px,
+            rgba(97, 58, 111, 0.923) 0px,
             transparent 30%
          ),
          radial-gradient(
@@ -510,18 +495,13 @@ p {
 @media screen and (max-width: 768px) {
    [data-theme='dark'] .background-gradient {
       background-image: radial-gradient(
-            1700px 1000px at 200px -150px,
-            rgba(83, 69, 26, 0.692) 0px,
+            1700px 1000px at 250px -50px,
+            #184460b7 0px,
             transparent 30%
          ),
          radial-gradient(
-            2200px 1200px at 300px 0px,
-            rgba(101, 23, 23, 0.181) 0px,
-            transparent 15%
-         ),
-         radial-gradient(
-            2200px 700px at 400px -50px,
-            rgba(82, 57, 91, 0.697) 0px,
+            1700px 1000px at 450px -50px,
+            rgba(97, 58, 111, 0.923) 0px,
             transparent 30%
          ),
          radial-gradient(
@@ -541,18 +521,13 @@ p {
 @media screen and (max-width: 650px) {
    [data-theme='dark'] .background-gradient {
       background-image: radial-gradient(
-            1700px 1000px at 200px -150px,
-            rgba(83, 69, 26, 0.692) 0px,
+            1700px 1000px at 150px -80px,
+            #184460b7 0px,
             transparent 30%
          ),
          radial-gradient(
-            2200px 1200px at 200px 100px,
-            rgba(101, 23, 23, 0.181) 0px,
-            transparent 15%
-         ),
-         radial-gradient(
-            2200px 700px at 300px -0px,
-            rgba(82, 57, 91, 0.697) 0px,
+            1700px 1000px at 350px -80px,
+            rgba(97, 58, 111, 0.923) 0px,
             transparent 30%
          ),
          radial-gradient(
@@ -572,18 +547,13 @@ p {
 @media screen and (max-width: 450px) {
    [data-theme='dark'] .background-gradient {
       background-image: radial-gradient(
-            1700px 1000px at 100px -130px,
-            rgba(83, 69, 26, 0.692) 0px,
+            1700px 1000px at 100px -80px,
+            #184460b7 0px,
             transparent 30%
          ),
          radial-gradient(
-            2200px 1200px at 200px 100px,
-            rgba(101, 23, 23, 0.181) 0px,
-            transparent 15%
-         ),
-         radial-gradient(
-            2200px 700px at 300px -30px,
-            rgba(82, 57, 91, 0.697) 0px,
+            1700px 1000px at 200px -80px,
+            rgba(97, 58, 111, 0.923) 0px,
             transparent 30%
          ),
          radial-gradient(
