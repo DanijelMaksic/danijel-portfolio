@@ -55,6 +55,10 @@ export const featuredProjects = [
             icon: <SiZod />,
          },
          {
+            name: 'Framer Motion',
+            icon: <TbBrandFramerMotion />,
+         },
+         {
             name: 'Responsive',
             icon: <FaMobileScreenButton />,
          },
