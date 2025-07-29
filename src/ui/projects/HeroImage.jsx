@@ -6,11 +6,13 @@ import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import mediumZoom from 'medium-zoom';
 import { useDarkMode } from '../../contexts/DarkModeContext';
+import { useMediaQuery } from 'react-responsive';
 
 function HeroImage({ image, title }) {
    const featured = featuredProjects.map((item) => item);
    const other = otherProjects.map((item) => item);
    const { isDarkMode } = useDarkMode();
+   const isMobile = useMediaQuery({ maxWidth: 768 });
 
    // Title is needed to figure out which is the current project, so we can get its techStack
    const [featuredProject] = featured.filter(
@@ -26,14 +28,16 @@ function HeroImage({ image, title }) {
 
       if (isDarkMode) {
          zoom = mediumZoom('.parent img', {
-            margin: 100,
+            margin: isMobile ? 22 : 100,
+
             background: 'black',
          });
       }
 
       if (!isDarkMode) {
          zoom = mediumZoom('.parent img', {
-            margin: 100,
+            margin: isMobile ? 22 : 100,
+
             background: 'white',
          });
       }
@@ -56,6 +60,8 @@ function HeroImage({ image, title }) {
       <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[8rem] sm:mx-[4rem] xs:mx-0 dark:border dark:border-primary-200 dark:bg-primary-50">
          <img
             src={image}
+            data-zoom-src={image}
+            loading="lazy"
             className="rounded-xl dark:opacity-90"
             alt={featuredProject?.titleEn || otherProject?.titleEn}
          />

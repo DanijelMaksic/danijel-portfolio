@@ -22,6 +22,7 @@ function ProjectPreview({ projectData }) {
       >
          <img
             src={image}
+            loading="lazy"
             alt={currentLanguage === 'en' ? titleEn : titleSr}
             className="w-full bg-primary-900 text-primary-50 h-56 rounded-xl object-cover shadow-sm dark:opacity-90"
          />
