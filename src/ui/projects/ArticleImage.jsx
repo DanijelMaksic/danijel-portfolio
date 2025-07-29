@@ -1,21 +1,23 @@
 import mediumZoom from 'medium-zoom';
 import { useEffect } from 'react';
 import { useDarkMode } from '../../contexts/DarkModeContext';
+import { useMediaQuery } from 'react-responsive';
 
 function ArticleImage({ image, imageMobile, alt, isResponsive }) {
    const { isDarkMode } = useDarkMode();
+   const isMobile = useMediaQuery({ maxWidth: 768 });
 
    useEffect(() => {
       let zoom;
 
       if (isDarkMode) {
          zoom = mediumZoom('.parent img', {
-            margin: 100,
+            margin: isMobile ? 22 : 100,
             background: 'black',
          });
       } else {
          zoom = mediumZoom('.parent img', {
-            margin: 100,
+            margin: isMobile ? 22 : 100,
             background: 'white',
          });
       }
