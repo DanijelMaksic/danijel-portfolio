@@ -9,6 +9,11 @@ import BlogImg2 from './../../../../assets/blog-2.webp';
 import BlogImg3 from './../../../../assets/blog-3.webp';
 import BlogImg4 from './../../../../assets/blog-4.webp';
 
+import BlogMobileImg1 from './../../../../assets/blog-mobile-1.webp';
+import BlogMobileImg2 from './../../../../assets/blog-mobile-2.webp';
+import BlogMobileImg3 from './../../../../assets/blog-mobile-3.webp';
+import BlogMobileImg4 from './../../../../assets/blog-mobile-4.webp';
+
 # Blog App
 
 ### A simple blogging app with a bookmark feature. Built with vanilla JavaScript using MVC architecture.
@@ -37,7 +42,12 @@ If there are no articles yet, user will be greeted with this message. Articles c
 
 <br />
 
-<ArticleImage image={BlogImg1} alt="Initial screen" />
+<ArticleImage
+   image={BlogImg1}
+   alt="Initial screen"
+   isResponsive={true}
+   imageMobile={BlogMobileImg1}
+/>
 
 <br />
 <br />
@@ -48,7 +58,12 @@ When add article button is clicked, a modal will pop out. In this modal window u
 
 <br />
 
-<ArticleImage image={BlogImg2} alt="Article creator" />
+<ArticleImage
+   image={BlogImg2}
+   alt="Article creator"
+   isResponsive={true}
+   imageMobile={BlogMobileImg2}
+/>
 
 <br />
 <br />
@@ -60,6 +75,8 @@ After publishing the article, modal will close and article will be displayed now
 <ArticleImage
    image={BlogImg3}
    alt="Initial screen with newlt published article"
+   isResponsive={true}
+   imageMobile={BlogMobileImg3}
 />
 
 <br />
@@ -74,6 +91,11 @@ Articles can be saved to the bookmarks, which can be found on the top-left part 
 
 <br />
 
-<ArticleImage image={BlogImg4} alt="Managing bookmarks" />
+<ArticleImage
+   image={BlogImg4}
+   alt="Managing bookmarks"
+   isResponsive={true}
+   imageMobile={BlogMobileImg4}
+/>
 
 <br />

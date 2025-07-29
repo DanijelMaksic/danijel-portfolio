@@ -9,6 +9,11 @@ import BlogImg2 from './../../../../assets/blog-2.webp';
 import BlogImg3 from './../../../../assets/blog-3.webp';
 import BlogImg4 from './../../../../assets/blog-4.webp';
 
+import BlogMobileImg1 from './../../../../assets/blog-mobile-1.webp';
+import BlogMobileImg2 from './../../../../assets/blog-mobile-2.webp';
+import BlogMobileImg3 from './../../../../assets/blog-mobile-3.webp';
+import BlogMobileImg4 from './../../../../assets/blog-mobile-4.webp';
+
 # Блог апликација
 
 ### Једноставна блогинг апликација са функцијом обележавања артикала. Направљена са ванила JavaScript-ом користећи MVC архитектуру.
@@ -33,7 +38,12 @@ import BlogImg4 from './../../../../assets/blog-4.webp';
 
 <br />
 
-<ArticleImage image={BlogImg1} alt="Почетни екран" />
+<ArticleImage
+   image={BlogImg1}
+   alt="Почетни екран"
+   isResponsive={true}
+   imageMobile={BlogMobileImg1}
+/>
 
 <br />
 <br />
@@ -46,7 +56,12 @@ import BlogImg4 from './../../../../assets/blog-4.webp';
 
 <br />
 
-<ArticleImage image={BlogImg2} alt="Писање артикла" />
+<ArticleImage
+   image={BlogImg2}
+   alt="Писање артикла"
+   isResponsive={true}
+   imageMobile={BlogMobileImg2}
+/>
 
 <br />
 <br />
@@ -58,6 +73,8 @@ import BlogImg4 from './../../../../assets/blog-4.webp';
 <ArticleImage
    image={BlogImg3}
    alt="Почетни екран са управо написаним артиклом"
+   isResponsive={true}
+   imageMobile={BlogMobileImg3}
 />
 
 <br />
@@ -72,6 +89,11 @@ import BlogImg4 from './../../../../assets/blog-4.webp';
 
 <br />
 
-<ArticleImage image={BlogImg4} alt="Управљање обележеним артиклима" />
+<ArticleImage
+   image={BlogImg4}
+   alt="Управљање обележеним артиклима"
+   isResponsive={true}
+   imageMobile={BlogMobileImg4}
+/>
 
 <br />
