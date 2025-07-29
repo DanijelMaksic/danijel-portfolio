@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'motion/react';
-import AboutImage from './../../../assets/about-image.webp';
+import AboutImage from './../../../assets/about-image.jpg';
 
 function About() {
    const { t } = useTranslation();
