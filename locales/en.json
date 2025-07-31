@@ -2,7 +2,8 @@
    "Header": {
       "nav-link-1": "Projects",
       "nav-link-2": "About",
-      "nav-link-3": "Skills"
+      "nav-link-3": "Skills",
+      "nav-link-4": "Return"
    },
 
    "HeroPart1": "I'm Danijel, I build Front-End websites using ",

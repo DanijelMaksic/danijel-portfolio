@@ -61,7 +61,7 @@ function Navigation() {
                         to={'/'}
                         className="transition hover:text-primary-700 mr-3"
                      >
-                        Return
+                        {t('Header.nav-link-4')}
                      </Link>
                   </li>
                </>
