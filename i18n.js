@@ -4,6 +4,8 @@ import i18n from 'i18next';
 import translationEN from './locales/en.json';
 import translationSR from './locales/sr-cyrl.json';
 
+import detector from 'i18next-browser-languagedetector';
+
 const resources = {
    en: {
       translation: translationEN,
@@ -13,14 +15,19 @@ const resources = {
    },
 };
 
-i18n.use(initReactI18next).init({
-   resources,
-   lng: 'en',
-   fallbackLng: 'en',
+const i18nextLng = localStorage.getItem('i18nextLng');
 
-   interpolation: {
-      escapeValue: false,
-   },
-});
+i18n
+   .use(detector)
+   .use(initReactI18next)
+   .init({
+      resources,
+      lng: i18nextLng,
+      fallbackLng: 'en',
+
+      interpolation: {
+         escapeValue: false,
+      },
+   });
 
 export default i18n;
