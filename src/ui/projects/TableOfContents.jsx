@@ -10,7 +10,7 @@ function TableOfContents({ h2Arr }) {
    };
 
    return (
-      <div className="mx-32 sm:mx-16 xs:mx-0 flex flex-col gap-5">
+      <div className="mx-32 md:mx-16 xs:mx-0 flex flex-col gap-5">
          <span className="font-bold border-b border-primary-400/80 dark:border-primary-200 pb-3">
             {t('TableOfContents')}
          </span>
