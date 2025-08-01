@@ -46,7 +46,7 @@ function Hero() {
                <div className="h-5 w-1 border-r border-primary-400"></div>
 
                <Link
-                  to="www.linkedin.com/in/danijel-maksic-825025378"
+                  to="https://www.linkedin.com/in/danijel-maksic-825025378"
                   target="_blank"
                   aria-label="LinkedIn"
                   className="hover:bg-primary-200 transition p-2 rounded-md"
