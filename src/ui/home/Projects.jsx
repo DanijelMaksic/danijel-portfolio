@@ -23,7 +23,7 @@ import judgmentImg from './../../../assets/judgment.webp';
 import quizImg from './../../../assets/quiz.webp';
 import useBookImg from './../../../assets/use-book.webp';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
-import { TbBrandFramerMotion } from 'react-icons/tb';
+import { TbApi, TbBrandFramerMotion } from 'react-icons/tb';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'motion/react';
 
@@ -43,7 +43,7 @@ export const featuredProjects = [
             icon: <RiNextjsFill />,
          },
          {
-            name: 'Tailwind CSS',
+            name: 'Tailwind',
             icon: <RiTailwindCssFill />,
          },
          {
@@ -55,7 +55,7 @@ export const featuredProjects = [
             icon: <SiZod />,
          },
          {
-            name: 'Framer Motion',
+            name: 'Motion',
             icon: <TbBrandFramerMotion />,
          },
          {
@@ -81,7 +81,7 @@ export const featuredProjects = [
             icon: <FaReact />,
          },
          {
-            name: 'Tailwind CSS',
+            name: 'Tailwind',
             icon: <RiTailwindCssFill />,
          },
          {
@@ -97,7 +97,7 @@ export const featuredProjects = [
             icon: <RiSupabaseFill />,
          },
          {
-            name: 'Framer Motion',
+            name: 'Motion',
             icon: <TbBrandFramerMotion />,
          },
       ],
@@ -174,15 +174,14 @@ export const otherProjects = [
       image: blogImg,
       descriptionEn:
          'A simple blogging app with a bookmark feature. Built with vanilla JavaScript using MVC architecture.',
-      descriptionSr:
-         'Једноставна блогинг апликација са функцијом обележавања артикала. Направљена са ванила JavaScript-ом користећи MVC архитектуру.',
+      descriptionSr: `Једноставна блогинг апликација са функцијом обележавања артикала. Направљена са ванила JavaScript-ом користећи MVC архитектуру.`,
       techStack: [
          {
             name: 'JavaScript',
             icon: <FaJs />,
          },
          {
-            name: 'Tailwind CSS',
+            name: 'Tailwind',
             icon: <RiTailwindCssFill />,
          },
          {
@@ -202,14 +201,14 @@ export const otherProjects = [
       descriptionEn:
          'A quiz made to test your knowledge of the history of the old world.',
       descriptionSr:
-         'Квиз направљен да тестира твоје знање историје старог света.',
+         'Квиз направљен да тестира ваше знање историје старог света.',
       techStack: [
          {
             name: 'React',
             icon: <FaReact />,
          },
          {
-            name: 'Tailwind CSS',
+            name: 'Tailwind',
             icon: <RiTailwindCssFill />,
          },
          {
@@ -235,8 +234,12 @@ export const otherProjects = [
             icon: <FaReact />,
          },
          {
-            name: 'Tailwind CSS',
+            name: 'Tailwind',
             icon: <RiTailwindCssFill />,
+         },
+         {
+            name: 'REST',
+            icon: <TbApi />,
          },
       ],
       projectURL: 'use-book',

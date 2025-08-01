@@ -27,10 +27,6 @@ function About() {
             />
 
             <div className="flex flex-col gap-8">
-               <span className="text-3xl text-primary-800 font-bold">
-                  {t('About.name')}
-               </span>
-
                <div className="flex flex-col gap-3 text-primary-700 leading-8 md:leading-9 xs:leading-10 2xs:leading-11">
                   <span>{t('About.p1')}</span>
 
@@ -46,6 +42,10 @@ function About() {
                      {t('About.p3-part3')}
                   </span>
                </div>
+
+               <span className="text-5xl text-primary-800 self-end font-stylish">
+                  {t('About.name')}
+               </span>
             </div>
          </div>
       </motion.div>

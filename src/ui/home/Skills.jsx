@@ -6,6 +6,7 @@ import {
    RiTailwindCssFill,
 } from 'react-icons/ri';
 import { motion } from 'motion/react';
+import { SiAdobephotoshop, SiMdx } from 'react-icons/si';
 
 const coreTech = [
    { icon: <RiNextjsFill className="size-9" />, name: 'Next.js' },
@@ -31,6 +32,8 @@ const coreTech = [
 const otherTech = [
    { icon: <RiSupabaseFill className="size-8" />, name: 'Supabase' },
    { icon: <FaGithub className="size-8" />, name: 'Github' },
+   { icon: <SiMdx className="size-8" />, name: 'MDX' },
+   { icon: <SiAdobephotoshop className="size-8" />, name: 'Photoshop' },
 ];
 
 function Skills() {

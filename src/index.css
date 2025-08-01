@@ -4,6 +4,17 @@ html {
    scroll-behavior: smooth;
 }
 
+@font-face {
+   font-family: 'stylish';
+   src: url('../fonts/HoperBegin.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+.font-stylish {
+   font-family: 'stylish', sans-serif;
+}
+
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @layer base {

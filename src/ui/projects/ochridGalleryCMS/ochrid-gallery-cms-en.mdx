@@ -4,6 +4,7 @@ import TableOfContents from './../TableOfContents';
 import ArticleH2 from './../ArticleH2';
 
 import OchridGalleryCMSImg from './../../../../assets/ochrid-gallery-cms.webp';
+import CmsImgLogin from './../../../../assets/cms-login.webp';
 import CmsImg1 from './../../../../assets/cms-1.webp';
 import CmsImg2 from './../../../../assets/cms-2.webp';
 import CmsImg3 from './../../../../assets/cms-3.webp';
@@ -21,13 +22,18 @@ import CmsImg10 from './../../../../assets/cms-10.webp';
 
 <HeroImage image={OchridGalleryCMSImg} title="Ochrid Gallery CMS" />
 
-This is the internal application of the public webstore "Ochrid Gallery". This is the closed-off app that only selected employees of the business have access to. It is an SPA powered by React, providing user with fast navigation. The app's data is stored in the Supabase database. Deployed on Vercel.
+This is the internal application of the public webstore "Ochrid Gallery". This is the closed-off app that only selected employees of the business have access to. It is an SPA powered by **React**, providing user with fast navigation.
+
+<br />
+
+The app's data is stored in the **Supabase** database, which also handles user authentication and authorization. Deployed on **Vercel**.
 
 <br />
 <br />
 
 <TableOfContents
    h2Arr={[
+      'login-screen',
       'dashboard',
       'inventory-management',
       'order-management',
@@ -38,9 +44,20 @@ This is the internal application of the public webstore "Ochrid Gallery". This i
 <br />
 <br />
 
+<ArticleH2 id={'login-screen'} text={'Login Screen'} />
+
+Firstly, only approved users can log in. Existing users are the only ones who can create new user accounts. When a new user wants to gain access to the website, they use a password provided by an existing user and, after they verify their e-mail address, they can log in.
+
+<br />
+
+<ArticleImage image={CmsImgLogin} alt="Login Screen" />
+
+<br />
+<br />
+
 <ArticleH2 id={'dashboard'} text={'Dashboard'} />
 
-Upon logging in, user will see the dashboard page, which contains all the relevant
+After logging in, user will see the dashboard page, which contains all the relevant
 information and statistics about the business. Here user can also access the incoming
 orders in the Today section.
 
