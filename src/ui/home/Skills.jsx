@@ -6,19 +6,30 @@ import {
    RiTailwindCssFill,
 } from 'react-icons/ri';
 import { motion } from 'motion/react';
-import { SiAdobephotoshop, SiMdx } from 'react-icons/si';
+import {
+   SiAdobephotoshop,
+   SiJavascript,
+   SiMdx,
+   SiReactquery,
+   SiRedux,
+   SiTypescript,
+} from 'react-icons/si';
 
 const coreTech = [
    { icon: <RiNextjsFill className="size-9" />, name: 'Next.js' },
    { icon: <FaReact className="size-9" />, name: 'React' },
    {
-      icon: <FaJs className="size-9" />,
+      icon: <SiJavascript className="size-9 rounded-xs" />,
       name: 'Javascript',
    },
    {
       icon: <RiTailwindCssFill className="size-9" />,
       name: 'Tailwind CSS',
    },
+   // {
+   //    icon: <SiTypescript className="size-9" />,
+   //    name: 'TypeScript',
+   // },
    {
       icon: <FaCss3Alt className="size-9" />,
       name: 'CSS',
@@ -31,8 +42,13 @@ const coreTech = [
 
 const otherTech = [
    { icon: <RiSupabaseFill className="size-8" />, name: 'Supabase' },
+   { icon: <SiRedux className="size-8" />, name: 'Redux' },
+   { icon: <SiReactquery className="size-8" />, name: 'React Query' },
+   // {
+   //    icon: <RiTailwindCssFill className="size-9" />,
+   //    name: 'Tailwind CSS',
+   // },
    { icon: <FaGithub className="size-8" />, name: 'Github' },
-   { icon: <SiMdx className="size-8" />, name: 'MDX' },
    { icon: <SiAdobephotoshop className="size-8" />, name: 'Photoshop' },
 ];
 
@@ -79,8 +95,8 @@ function Skills() {
 
 function Tech({ icon, name }) {
    return (
-      <div className="flex flex-col gap-1 py-3 w-full  border border-primary-400 dark:border-primary-300 rounded-lg justify-center items-center text-lg hover:bg-primary-800 hover:text-primary-50 transition dark:hover:text-primary-100 dark:hover:border-primary-100">
-         {icon}
+      <div className="flex flex-col gap-1 py-4 w-full  border border-primary-400 dark:border-primary-300 rounded-lg justify-center items-center text-lg hover:bg-primary-800 hover:text-primary-50 transition dark:hover:text-primary-100 dark:hover:border-primary-100">
+         <span className="h-9">{icon}</span>
          <span className="pointer-events-none text-center">{name}</span>
       </div>
    );
