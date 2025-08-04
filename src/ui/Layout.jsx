@@ -13,8 +13,8 @@ function Layout() {
       <div>
          <div className="background-gradient bg-primary dark:bg-primary transition">
             <main
-               className={`mx-auto w-full flex flex-col min-h-screen text-xl antialiased px-4 text-primary-800 ${
-                  pathname !== '/' ? 'max-w-5xl' : 'max-w-5xl'
+               className={`mx-auto w-full max-w-5xl flex flex-col min-h-screen text-xl antialiased px-4 md:px-6 xs:px-8 text-primary-800 ${
+                  pathname !== '/' ? 'gap-16 xs:gap-10' : 'gap-32 md:gap-28'
                } ${
                   currentLanguage === 'en' ? 'font-default' : 'font-cyrillic'
                }`}

@@ -257,7 +257,7 @@ function Projects() {
          viewport={{ once: true }}
          transition={{ duration: 0.8 }}
          id="projects"
-         className="my-30 flex flex-col gap-10 scroll-mt-24 md:px-12 xs:px-2"
+         className="flex flex-col gap-10 scroll-mt-24 md:px-12 xs:px-0"
       >
          <span className="text-4xl text-primary-800 font-bold text-center">
             {t('Projects.h1')}

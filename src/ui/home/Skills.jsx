@@ -46,7 +46,7 @@ function Skills() {
          viewport={{ once: true }}
          transition={{ duration: 0.7 }}
          id="skills"
-         className="px-6 py-3 mb-30 flex flex-col gap-10 scroll-mt-24 md:px-12 xs:px-2"
+         className="px-6 py-3 flex flex-col gap-10 scroll-mt-24 md:px-12 xs:px-0"
       >
          <span className="text-4xl text-primary-800 font-bold text-center">
             {t('Skills.h1')}

@@ -15,13 +15,13 @@ function Hero() {
          viewport={{ once: true }}
          transition={{ duration: 0.5 }}
          id="#hero"
-         className="grid grid-cols-2 md:grid-cols-1 gap-24 lg:gap-10 xs:gap-12 lg:px-8 xs:px-2 2xs:px-10! self-center mt-40 xs:mt-12 2xs:mt-16"
+         className="grid grid-cols-2 md:grid-cols-1 gap-24 lg:gap-10 xs:gap-12 lg:px-8 xs:px-0 self-center"
       >
-         <div className="flex flex-col gap-10 xs:gap-8 2xs:gap-10">
+         <div className="flex flex-col gap-10 xs:gap-8 2xs:gap-10 md:px-12 xs:px-0">
             <span
                className={`${
                   currentLanguage === 'en' ? 'text-5xl' : 'text-[2.5rem]'
-               } xs:text-[2.5rem] 2xs:text-5xl font-bold text-primary-800 leading-13.5 xs:leading-11.5 2xs:leading-14`}
+               } md:text-[3.2rem] 2xs:text-5xl font-bold text-primary-800 leading-13.5 md:leading-14 2xs:leading-14 md:text-center`}
             >
                {t('HeroPart1')}
                <span className="font-extrabold bg-clip-text text-transparent bg-linear-to-r from-[#0077ff] to-[#00cec7]">
@@ -33,7 +33,7 @@ function Hero() {
                </span>
             </span>
 
-            <div className="flex items-center justify-center gap-2 shadow--sm rounded-lg w-fit px-2 py-1 dark:border dark:border-primary-300/70">
+            <div className="flex items-center justify-center gap-2 shadow--sm rounded-lg w-fit px-2 py-1 dark:border dark:border-primary-300/70 md:self-center">
                <Link
                   to="https://github.com/DanijelMaksic"
                   target="_blank"

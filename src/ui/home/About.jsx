@@ -12,7 +12,7 @@ function About() {
          viewport={{ once: true }}
          transition={{ duration: 0.9 }}
          id="about"
-         className="flex flex-col mb-30 gap-10 scroll-mt-24 md:px-12 xs:px-2"
+         className="flex flex-col gap-10 scroll-mt-24 md:px-12 xs:px-0"
       >
          <span span className="text-4xl text-primary-800 font-bold text-center">
             {t('About.h1')}

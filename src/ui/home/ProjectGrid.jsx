@@ -17,7 +17,7 @@ import { TbBrandFramerMotion } from 'react-icons/tb';
 
 function ProjectGrid() {
    return (
-      <div className="grid grid-cols-10 grid-rows-6 gap-[1px] relative md:h-98 xs:h-70">
+      <div className="grid grid-cols-10 grid-rows-6 gap-[1px] relative md:hidden">
          <span className="bg-white/50 dark:bg-black/20 dark:border dark:border-primary-300/70 dark:hover:border-primary-300/90 backdrop-blur-sm rounded-xl p-3 absolute top-8 left-6 md:top-12 xs:top-6 md:left-22 xs:left-4 hover:scale-110 transition z-4 shadow-[0_1px_3px_rgba(0,0,0,0.3)] hover:shadow-[0_5px_10px_rgba(0,0,0,0.2)]">
             <FaReact className="size-18 md:size-26 xs:size-18 text-primary-600" />
          </span>

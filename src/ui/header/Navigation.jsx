@@ -3,16 +3,18 @@ import LanguageButton from './LanguageButton';
 import { Link, useLocation } from 'react-router-dom';
 import { useDarkMode } from '../../contexts/DarkModeContext';
 import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi';
+import { useMediaQuery } from 'react-responsive';
 
 function Navigation() {
    const { t } = useTranslation();
    const location = useLocation();
    const pathname = location.pathname;
    const { isDarkMode, toggleDarkMode } = useDarkMode();
+   const isMobile = useMediaQuery({ maxWidth: 768 });
 
    return (
       <nav className="text-base font-semibold text-primary-600">
-         <ul className="flex gap-10 xs:gap-3 items-center">
+         <ul className="flex gap-10 lg:gap-8 xs:gap-3 items-center">
             {pathname === '/' ? (
                <li className="flex items-center gap-10 xs:gap-8 xs:hidden">
                   <div>
@@ -41,33 +43,23 @@ function Navigation() {
                   </div>
                </li>
             ) : (
-               <>
-                  <li>
-                     <a href="#about" className="text-white invisible">
-                        {t('Header.nav-link-1')}
-                     </a>
-                  </li>
-                  <li>
-                     <a
-                        href="#skills"
-                        className="text-white invisible pr-[0.162rem]"
-                     >
-                        Skill
-                     </a>
-                  </li>
-
-                  <li>
-                     <Link
-                        to={'/'}
-                        className="transition hover:text-primary-700 mr-3"
-                     >
-                        {t('Header.nav-link-4')}
-                     </Link>
-                  </li>
-               </>
+               <li>
+                  <Link
+                     to={'/'}
+                     className="transition hover:text-primary-700 mr-3"
+                  >
+                     {t('Header.nav-link-4')}
+                  </Link>
+               </li>
             )}
 
-            <li className="flex items-center gap-5 ml-3 xs:gap-7">
+            <div
+               className={`h-5 w-1 border-r border-primary-400 ${
+                  isMobile && pathname === '/' && 'xs:hidden'
+               }`}
+            />
+
+            <li className="flex items-center gap-5 xs:gap-7">
                <button
                   role="button"
                   aria-label="Light/Dark Mode Button"

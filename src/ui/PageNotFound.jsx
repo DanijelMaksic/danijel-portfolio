@@ -2,11 +2,13 @@ import { Link } from 'react-router-dom';
 
 function PageNotFound() {
    return (
-      <div className="bg-primary-50 h-screen flex items-center justify-center text-primary-900">
-         <div className="flex flex-col items-center gap-8 bg-primary-100 px-20 py-10 rounded-md mb-32 border-2 border-primary-300">
-            <p className="text-5xl">Page not Found...</p>
+      <div className="bg-primary-50 dark:bg-primary-100 h-screen flex items-center justify-center text-primary-900">
+         <div className="flex flex-col items-center gap-6 md:gap-4 xs:gap-6 bg-primary-100 dark:bg-primary-200/45 px-12 sm:px-4 sm:mx-12 py-10 shadow--sm dark:shadow-none rounded-xl mb-32 dark:border-2 dark:border-primary-200">
+            <p className="text-5xl text-center font-semibold">
+               Page not Found...
+            </p>
             <Link to="/">
-               <button className="text-xl underlined-text">
+               <button className="text-xl xs:text-2xl underlined-text text-primary-600">
                   &larr; &nbsp;Go back
                </button>
             </Link>

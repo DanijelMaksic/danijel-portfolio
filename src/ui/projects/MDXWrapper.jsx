@@ -9,7 +9,7 @@ function MDXWrapper({ children }) {
             animate={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.2 }}
-            className="mt-30 xs:mt-12 pb-20"
+            className="pb-20"
          >
             {children}
          </motion.div>
