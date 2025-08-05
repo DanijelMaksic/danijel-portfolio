@@ -272,7 +272,7 @@ function Projects() {
          {!open && (
             <button
                onClick={() => setOpen((open) => !open)}
-               className="flex items-center gap-2 self-center text-lg text-primary-600 rounded-xl pr-3 pl-4 py-1 shadow--sm hover:translate-y-1 transition dark:border dark:border-primary-200 dark:bg-primary-50"
+               className="flex items-center gap-2 self-center text-lg text-primary-600 rounded-lg pr-3 pl-4 py-1 shadow--sm hover:translate-y-1 transition dark:border dark:border-primary-200 dark:bg-primary-50"
             >
                <span>{t('Projects.show-more-btn')}</span>
                <FaCaretDown />
@@ -297,7 +297,7 @@ function Projects() {
             <a
                href="#projects"
                onClick={() => setOpen((open) => !open)}
-               className="flex items-center gap-2 self-center text-lg text-primary-600 rounded-xl pr-3 pl-4 py-1 shadow--sm hover:translate-y-[-4px] transition dark:border dark:border-primary-200 dark:bg-primary-50"
+               className="flex items-center gap-2 self-center text-lg text-primary-600 rounded-lg pr-3 pl-4 py-1 shadow--sm hover:translate-y-[-4px] transition dark:border dark:border-primary-200 dark:bg-primary-50"
             >
                <span>{t('Projects.show-less-btn')}</span>
                <FaCaretUp />
