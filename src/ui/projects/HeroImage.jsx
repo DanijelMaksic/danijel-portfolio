@@ -76,7 +76,7 @@ function HeroImage({ image, title }) {
                   ))}
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 sm:flex-col sm:gap-2">
                {featuredProject?.codeLink !== undefined ||
                otherProject?.codeLink !== undefined ? (
                   <Link

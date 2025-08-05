@@ -23,7 +23,7 @@ function Footer() {
                <div className="h-5 w-1 border-r border-primary-400"></div>
 
                <Link
-                  to="https://www.linkedin.com/in/danijel-maksic-825025378"
+                  to="https://www.linkedin.com/in/danijel-maksi%C4%87-825025378"
                   target="_blank"
                   aria-label="LinkedIn"
                   className="hover:bg-primary-400/40 transition p-2 rounded-md opacity-85 hover:opacity-100 dark:hover:bg-primary-400/30"

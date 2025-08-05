@@ -14,33 +14,27 @@ function Navigation() {
 
    return (
       <nav className="text-base font-semibold text-primary-600">
-         <ul className="flex gap-10 lg:gap-8 xs:gap-3 items-center">
+         <ul className="flex gap-10 lg:gap-8 xs:gap-6 items-center">
             {pathname === '/' ? (
                <li className="flex items-center gap-10 xs:gap-8 xs:hidden">
-                  <div>
-                     <a
-                        href="#projects"
-                        className="hover:text-primary-700 transition"
-                     >
-                        {t('Header.nav-link-1')}
-                     </a>
-                  </div>
-                  <div>
-                     <a
-                        href="#about"
-                        className="hover:text-primary-700 transition text-nowrap"
-                     >
-                        {t('Header.nav-link-2')}
-                     </a>
-                  </div>
-                  <div>
-                     <a
-                        href="#skills"
-                        className="hover:text-primary-700 transition"
-                     >
-                        {t('Header.nav-link-3')}
-                     </a>
-                  </div>
+                  <a
+                     href="#projects"
+                     className="hover:text-primary-700 transition"
+                  >
+                     {t('Header.nav-link-1')}
+                  </a>
+                  <a
+                     href="#about"
+                     className="hover:text-primary-700 transition text-nowrap"
+                  >
+                     {t('Header.nav-link-2')}
+                  </a>
+                  <a
+                     href="#skills"
+                     className="hover:text-primary-700 transition"
+                  >
+                     {t('Header.nav-link-3')}
+                  </a>
                </li>
             ) : (
                <li>
@@ -59,7 +53,7 @@ function Navigation() {
                }`}
             />
 
-            <li className="flex items-center gap-5 xs:gap-7">
+            <li className="flex items-center gap-5 xs:gap-6">
                <button
                   role="button"
                   aria-label="Light/Dark Mode Button"
