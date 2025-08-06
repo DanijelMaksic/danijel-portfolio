@@ -10,7 +10,7 @@
    "HeroPart2": " and ",
 
    "Projects": {
-      "h1": "Selected Projects",
+      "h1": "Selected projects",
       "show-more-btn": "Show more",
       "show-less-btn": "Show less"
    },
@@ -40,5 +40,7 @@
       "p2": "Copyright © 2025 Danijel Maksić. All rights reserved."
    },
 
-   "TableOfContents": "Table of contents"
+   "TableOfContents": "Table of contents",
+   "PageNotFound": "Page not found...",
+   "GoBack": "Go back"
 }

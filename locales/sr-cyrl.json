@@ -40,5 +40,7 @@
       "p2": "Copyright © 2025 Данијел Максић. Сва права су задржама."
    },
 
-   "TableOfContents": "Садржај"
+   "TableOfContents": "Садржај",
+   "PageNotFound": "Страница није пронађена...",
+   "GoBack": "Назад"
 }
