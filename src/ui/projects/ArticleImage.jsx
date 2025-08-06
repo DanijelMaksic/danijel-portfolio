@@ -8,19 +8,9 @@ function ArticleImage({ image, imageMobile, alt, isResponsive }) {
    const isMobile = useMediaQuery({ maxWidth: 768 });
 
    useEffect(() => {
-      let zoom;
-
-      if (isDarkMode) {
-         zoom = mediumZoom('.parent img', {
-            margin: isMobile ? 22 : 100,
-            background: 'black',
-         });
-      } else {
-         zoom = mediumZoom('.parent img', {
-            margin: isMobile ? 22 : 100,
-            background: 'white',
-         });
-      }
+      const zoom = mediumZoom('.parent img', {
+         margin: isMobile ? 20 : 60,
+      });
 
       const handleClick = (e) => {
          if (zoom.getZoomedImage() && !e.target.closest('.parent img')) {
