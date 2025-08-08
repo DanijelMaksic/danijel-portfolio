@@ -1,8 +1,10 @@
+import { useEffect } from 'react';
+
+import { useTranslation } from 'react-i18next';
+
 import QuizEnMdx from './quiz-en.mdx';
 import QuizSrMdx from './quiz-sr.mdx';
 import MDXWrapper from '../MDXWrapper';
-import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 
 function Quiz() {
    const { i18n } = useTranslation();

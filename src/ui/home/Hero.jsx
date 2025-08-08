@@ -1,8 +1,10 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
-import ProjectGrid from './ProjectGrid';
+
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
+import { FaGithub, FaLinkedin } from 'react-icons/fa6';
+
+import ProjectGrid from './ProjectGrid';
 
 function Hero() {
    const { i18n, t } = useTranslation();

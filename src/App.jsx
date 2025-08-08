@@ -1,17 +1,18 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import './../i18n';
+import { DarkModeProvider } from './contexts/DarkModeContext';
 
 import Layout from './ui/Layout';
-import PageNotFound from './ui/PageNotFound';
 import Home from './ui/home/Home';
-import OchridGalleryStore from './ui/projects/ochridGalleryStore/OchridGalleryStore';
-import OchridGalleryCMS from './ui/projects/ochridGalleryCMS/OchridGalleryCMS';
-import Porta from './ui/projects/porta/Porta';
 import Blog from './ui/projects/blog/Blog';
-import Judgment from './ui/projects/judgment/Judgment';
 import Quiz from './ui/projects/quiz/Quiz';
+import Porta from './ui/projects/porta/Porta';
+import PageNotFound from './ui/PageNotFound';
 import UseBook from './ui/projects/useBook/useBook';
-import { DarkModeProvider } from './contexts/DarkModeContext';
+import Judgment from './ui/projects/judgment/Judgment';
+import OchridGalleryCMS from './ui/projects/ochridGalleryCMS/OchridGalleryCMS';
+import OchridGalleryStore from './ui/projects/ochridGalleryStore/OchridGalleryStore';
 
 function App() {
    return (

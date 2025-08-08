@@ -1,3 +1,13 @@
+import { motion } from 'motion/react';
+import { useTranslation } from 'react-i18next';
+import { TbApi, TbBrandFramerMotion } from 'react-icons/tb';
+import { useLocalStorage } from '../../hooks/useLocalStorage';
+import { SiReactquery, SiRedux, SiZod, SiReactrouter } from 'react-icons/si';
+import {
+   RiNextjsFill,
+   RiSupabaseFill,
+   RiTailwindCssFill,
+} from 'react-icons/ri';
 import {
    FaCaretDown,
    FaCaretUp,
@@ -8,24 +18,15 @@ import {
    FaReact,
    FaSass,
 } from 'react-icons/fa6';
+
 import ProjectPreview from './ProjectPreview';
-import {
-   RiNextjsFill,
-   RiSupabaseFill,
-   RiTailwindCssFill,
-} from 'react-icons/ri';
-import { SiReactquery, SiRedux, SiZod, SiReactrouter } from 'react-icons/si';
-import ochridGalleryStoreImg from './../../../assets/ochrid-gallery-store.webp';
-import ochridGalleryCmsImg from './../../../assets/ochrid-gallery-cms.webp';
-import portaImg from './../../../assets/porta.webp';
 import blogImg from './../../../assets/blog.webp';
-import judgmentImg from './../../../assets/judgment.webp';
 import quizImg from './../../../assets/quiz.webp';
+import portaImg from './../../../assets/porta.webp';
 import useBookImg from './../../../assets/use-book.webp';
-import { useLocalStorage } from '../../hooks/useLocalStorage';
-import { TbApi, TbBrandFramerMotion } from 'react-icons/tb';
-import { useTranslation } from 'react-i18next';
-import { motion } from 'motion/react';
+import judgmentImg from './../../../assets/judgment.webp';
+import ochridGalleryCmsImg from './../../../assets/ochrid-gallery-cms.webp';
+import ochridGalleryStoreImg from './../../../assets/ochrid-gallery-store.webp';
 
 // IF YOU WANT TO CHANGE THE TITLE OF A PROJECT, YOU ALSO NEED TO CHANGE IT IN MDX FILE OF THAT PROJECT
 export const featuredProjects = [

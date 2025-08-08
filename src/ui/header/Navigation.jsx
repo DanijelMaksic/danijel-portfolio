@@ -1,9 +1,10 @@
 import { useTranslation } from 'react-i18next';
-import LanguageButton from './LanguageButton';
+import { useMediaQuery } from 'react-responsive';
 import { Link, useLocation } from 'react-router-dom';
 import { useDarkMode } from '../../contexts/DarkModeContext';
 import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi';
-import { useMediaQuery } from 'react-responsive';
+
+import LanguageButton from './LanguageButton';
 
 function Navigation() {
    const { t } = useTranslation();

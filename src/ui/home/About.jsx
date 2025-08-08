@@ -1,5 +1,6 @@
-import { useTranslation } from 'react-i18next';
 import { motion } from 'motion/react';
+import { useTranslation } from 'react-i18next';
+
 import AboutImage from './../../../assets/about-image.jpg';
 
 function About() {

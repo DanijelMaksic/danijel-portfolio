@@ -1,5 +1,5 @@
-import { MDXProvider } from '@mdx-js/react';
 import { motion } from 'motion/react';
+import { MDXProvider } from '@mdx-js/react';
 
 function MDXWrapper({ children }) {
    return (

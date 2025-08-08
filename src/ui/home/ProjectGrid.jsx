@@ -1,19 +1,11 @@
-import {
-   FaCss3Alt,
-   FaGithub,
-   FaHtml5,
-   FaJs,
-   FaLinkedin,
-   FaReact,
-   FaSass,
-} from 'react-icons/fa6';
+import { SiRedux, SiZod } from 'react-icons/si';
+import { TbBrandFramerMotion } from 'react-icons/tb';
+import { FaCss3Alt, FaHtml5, FaJs, FaReact, FaSass } from 'react-icons/fa6';
 import {
    RiNextjsFill,
    RiSupabaseFill,
    RiTailwindCssFill,
 } from 'react-icons/ri';
-import { SiRedux, SiZod } from 'react-icons/si';
-import { TbBrandFramerMotion } from 'react-icons/tb';
 
 function ProjectGrid() {
    return (

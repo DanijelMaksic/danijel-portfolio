@@ -1,6 +1,7 @@
+import { motion } from 'motion/react';
+
 import Logo from './../Logo';
 import Navigation from './Navigation';
-import { motion } from 'motion/react';
 
 function Header() {
    return (

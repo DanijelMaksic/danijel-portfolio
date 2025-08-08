@@ -1,6 +1,7 @@
+import { useTranslation } from 'react-i18next';
+
 import LogoLatin from './../../assets/logo-latin-no-bg.png';
 import LogoCyrillic from './../../assets/logo-cyrillic-no-bg.png';
-import { useTranslation } from 'react-i18next';
 
 function Logo() {
    const { i18n } = useTranslation();

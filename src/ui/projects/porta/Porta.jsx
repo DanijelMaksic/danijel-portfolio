@@ -1,8 +1,10 @@
+import { useEffect } from 'react';
+
+import { useTranslation } from 'react-i18next';
+
+import MDXWrapper from '../MDXWrapper';
 import PortaEnMdx from './porta-en.mdx';
 import PortaSrMdx from './porta-sr.mdx';
-import MDXWrapper from '../MDXWrapper';
-import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 
 function Porta() {
    const { i18n } = useTranslation();

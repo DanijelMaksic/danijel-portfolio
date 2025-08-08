@@ -1,12 +1,14 @@
-import { FaGithub } from 'react-icons/fa6';
-import { FiExternalLink } from 'react-icons/fi';
-import Tech from '../home/Tech';
-import { featuredProjects, otherProjects } from '../home/Projects';
-import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
-import mediumZoom from 'medium-zoom';
-import { useDarkMode } from '../../contexts/DarkModeContext';
+import { Link } from 'react-router-dom';
+
+import { FaGithub } from 'react-icons/fa6';
 import { useMediaQuery } from 'react-responsive';
+import { FiExternalLink } from 'react-icons/fi';
+import { useDarkMode } from '../../contexts/DarkModeContext';
+import { featuredProjects, otherProjects } from '../home/Projects';
+
+import Tech from '../home/Tech';
+import mediumZoom from 'medium-zoom';
 
 function HeroImage({ image, title }) {
    const featured = featuredProjects.map((item) => item);

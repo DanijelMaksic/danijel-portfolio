@@ -1,10 +1,11 @@
 import { useState } from 'react';
+
 import { useTranslation } from 'react-i18next';
+import { AnimatePresence } from 'motion/react';
+import { useOutsideClick } from '../../hooks/useOutsideClick';
 
 import enFlag from './../../../assets/en-flag.png';
 import srFlag from './../../../assets/sr-flag.png';
-import { useOutsideClick } from '../../hooks/useOutsideClick';
-import { AnimatePresence } from 'motion/react';
 
 const languages = [
    {

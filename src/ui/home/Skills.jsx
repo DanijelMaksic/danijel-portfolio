@@ -1,15 +1,14 @@
+import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
-import { FaCss3Alt, FaGithub, FaHtml5, FaJs, FaReact } from 'react-icons/fa6';
+import { FaCss3Alt, FaGithub, FaHtml5, FaReact } from 'react-icons/fa6';
 import {
    RiNextjsFill,
    RiSupabaseFill,
    RiTailwindCssFill,
 } from 'react-icons/ri';
-import { motion } from 'motion/react';
 import {
    SiAdobephotoshop,
    SiJavascript,
-   SiMdx,
    SiReactquery,
    SiRedux,
    SiTypescript,

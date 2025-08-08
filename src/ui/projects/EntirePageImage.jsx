@@ -1,5 +1,5 @@
-import mediumZoom from 'medium-zoom';
 import { useEffect } from 'react';
+import mediumZoom from 'medium-zoom';
 
 function EntirePageImage({ image, alt }) {
    useEffect(() => {

@@ -1,7 +1,9 @@
-import mediumZoom from 'medium-zoom';
 import { useEffect } from 'react';
-import { useDarkMode } from '../../contexts/DarkModeContext';
+
 import { useMediaQuery } from 'react-responsive';
+import { useDarkMode } from '../../contexts/DarkModeContext';
+
+import mediumZoom from 'medium-zoom';
 
 function ArticleImage({ image, imageMobile, alt, isResponsive }) {
    const { isDarkMode } = useDarkMode();

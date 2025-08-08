@@ -1,7 +1,7 @@
-import About from './About';
 import Hero from './Hero';
-import Projects from './Projects';
+import About from './About';
 import Skills from './Skills';
+import Projects from './Projects';
 
 function Home() {
    document.documentElement.style.scrollBehavior = 'smooth';

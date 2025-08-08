@@ -1,7 +1,9 @@
 import { Outlet, useLocation } from 'react-router-dom';
-import Header from './header/Header';
-import Footer from './Footer';
+
 import { useTranslation } from 'react-i18next';
+
+import Footer from './Footer';
+import Header from './header/Header';
 
 function Layout() {
    const location = useLocation();

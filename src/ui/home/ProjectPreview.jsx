@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Tech from './Tech';
-import { Link } from 'react-router-dom';
 
 function ProjectPreview({ projectData }) {
    const {

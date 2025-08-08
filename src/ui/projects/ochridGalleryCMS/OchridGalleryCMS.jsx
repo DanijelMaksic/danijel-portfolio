@@ -1,8 +1,10 @@
+import { useEffect } from 'react';
+
+import { useTranslation } from 'react-i18next';
+
+import MDXWrapper from './../MDXWrapper';
 import OchridGalleryCmsEnMdx from './ochrid-gallery-cms-en.mdx';
 import OchridGalleryCmsSrMdx from './ochrid-gallery-cms-sr.mdx';
-import MDXWrapper from './../MDXWrapper';
-import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 
 function OchridGalleryCMS() {
    const { i18n } = useTranslation();

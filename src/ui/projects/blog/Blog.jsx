@@ -1,8 +1,10 @@
+import { useEffect } from 'react';
+
+import { useTranslation } from 'react-i18next';
+
 import BlogEnMdx from './blog-en.mdx';
 import BlogSrMdx from './blog-sr.mdx';
 import MDXWrapper from '../MDXWrapper';
-import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 
 function Blog() {
    const { i18n } = useTranslation();
