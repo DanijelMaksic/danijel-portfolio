@@ -56,7 +56,7 @@ function HeroImage({ image, title }) {
          document.removeEventListener('click', handleClick);
          zoom.detach();
       };
-   }, [isDarkMode]);
+   }, [isDarkMode, isMobile]);
 
    return (
       <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[7rem] md:mx-[4rem] xs:mx-0 dark:border dark:border-primary-200 dark:bg-primary-50">

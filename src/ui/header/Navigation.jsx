@@ -1,6 +1,8 @@
+import { Link, useLocation } from 'react-router-dom';
+
+import { TbArrowBackUp } from 'react-icons/tb';
 import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from 'react-responsive';
-import { Link, useLocation } from 'react-router-dom';
 import { useDarkMode } from '../../contexts/DarkModeContext';
 import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi';
 
@@ -41,9 +43,13 @@ function Navigation() {
                <li>
                   <Link
                      to={'/'}
-                     className="transition hover:text-primary-700 mr-3"
+                     className="transition hover:text-primary-700 flex"
                   >
-                     {t('Header.nav-link-4')}
+                     {isMobile ? (
+                        <TbArrowBackUp className="size-8 stroke-[1.6px]" />
+                     ) : (
+                        <span>{t('Header.nav-link-4')}</span>
+                     )}
                   </Link>
                </li>
             )}
