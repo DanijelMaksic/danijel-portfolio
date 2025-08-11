@@ -238,7 +238,7 @@ p {
 
 /* Background Gradient */
 
-@media screen and (min-width: 3838px) {
+@media screen and (max-width: 3850px) {
    .background-gradient {
       background-image: radial-gradient(
             2240px 1000px at 1400px -128px,
@@ -446,7 +446,7 @@ p {
    }
 }
 
-@media screen and (min-width: 3838px) {
+@media screen and (max-width: 3850px) {
    [data-theme='dark'] .background-gradient {
       background-image: radial-gradient(
             3240px 1600px at 1400px 0px,
