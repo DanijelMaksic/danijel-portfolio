@@ -10,26 +10,26 @@ This project was inspired by the following portfolios:
 
 <ul>
    <li>
-    <a href="https://nelsonlai.me/" target="_blank">nelsonlai.me</a>
+    <a href="https://nelsonlai.me/">nelsonlai.me</a>
    </li>
 
    <li>
-    <a href="https://theodorusclarence.com/" target="_blank">theodorusclarence.com</a>
+    <a href="https://theodorusclarence.com/">theodorusclarence.com</a>
    </li>
 
    <li>
-    <a href="https://nabeelhassan.dev/" target="_blank">nabeelhassan.dev</a>
+    <a href="https://nabeelhassan.dev/">nabeelhassan.dev</a>
    </li>
 
    <li>
-    <a href="https://radnaabazar.vercel.app/en" target="_blank">Radnaabazar.vercel.app</a>
+    <a href="https://radnaabazar.vercel.app/en">Radnaabazar.vercel.app</a>
    </li>
 
    <li>
-    <a href="https://www.benoldham.dev/" target="_blank">benoldham.dev</a>
+    <a href="https://www.benoldham.dev/">benoldham.dev</a>
    </li>
 
    <li>
-    <a href="https://bilelhamitouche.vercel.app/" target="_blank">bilelhamitouche.vercel.app</a>
+    <a href="https://bilelhamitouche.vercel.app/">bilelhamitouche.vercel.app</a>
    </li>
 </ul>
