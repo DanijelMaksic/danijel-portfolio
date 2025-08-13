@@ -20,6 +20,8 @@ i18n
    .init(
       {
          fallbackLng: 'en',
+         supportedLngs: ['en', 'sr'],
+         nonExplicitSupportedLngs: true,
          resources,
          detection: {
             order: ['localStorage', 'navigator'],
@@ -31,10 +33,12 @@ i18n
          },
       },
       () => {
-         // This callback runs after init completes
          const baseLang = i18n.language.split('-')[0];
-         if (baseLang !== i18n.language) {
+         const availableLanguages = Object.keys(resources);
+         if (availableLanguages.includes(baseLang)) {
             i18n.changeLanguage(baseLang); // normalize and persist
+         } else {
+            i18n.changeLanguage('en'); // fallback to English
          }
       }
    );
