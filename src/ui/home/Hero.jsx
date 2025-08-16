@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 
 import ProjectGrid from './ProjectGrid';
+import { SiReaddotcv } from 'react-icons/si';
 
 function Hero() {
    const { i18n, t } = useTranslation();
@@ -54,6 +55,18 @@ function Hero() {
                   className="hover:bg-primary-200 transition p-2 rounded-md"
                >
                   <FaLinkedin className="size-6" />
+               </Link>
+
+               <div className="h-5 w-1 border-r border-primary-400"></div>
+
+               <Link
+                  to="https://drive.google.com/file/d/1EyyQZioc9PXB1FltapM6Mi1B_7I0LOPd/view?usp=drive_link"
+                  target="_blank"
+                  aria-label="Resume"
+                  className="hover:bg-primary-200 transition p-2 rounded-md flex items-center justify-center gap-2"
+               >
+                  <SiReaddotcv className="size-6" />
+                  <span>{t('HeroResume')}</span>
                </Link>
             </div>
          </div>
