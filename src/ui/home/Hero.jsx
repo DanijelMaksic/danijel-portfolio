@@ -20,7 +20,7 @@ function Hero() {
          id="#hero"
          className="grid grid-cols-2 md:grid-cols-1 gap-24 lg:gap-10 xs:gap-12 lg:px-8 xs:px-0 self-center"
       >
-         <div className="flex flex-col gap-10 xs:gap-8 2xs:gap-10 md:px-12 xs:px-0">
+         <div className="flex flex-col gap-10 xs:gap-8 2xs:gap-10 md:px-6 xs:px-0">
             <span
                className={`${
                   currentLanguage === 'en' ? 'text-5xl' : 'text-[2.5rem]'

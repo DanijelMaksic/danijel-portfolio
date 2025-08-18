@@ -2,14 +2,17 @@ import { Link, useLocation } from 'react-router-dom';
 
 import { useTranslation } from 'react-i18next';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa6';
+import { useMediaQuery } from 'react-responsive';
 
 function Footer() {
    const { t } = useTranslation();
    const location = useLocation();
    const pathname = location.pathname;
 
+   const isMobile = useMediaQuery({ maxWidth: 450 });
+
    return (
-      <div className="mb-12 px-8 py-6 flex flex-col gap-3 items-center w-3xl lg:w-10/12 xs:w-full self-center backdrop-blur-lg rounded-xl mt-6 shadow-sm bg-white/50 dark:bg-black/30 overflow-hidden">
+      <div className="mb-12 px-8 py-6 flex flex-col gap-3 items-center w-3xl lg:w-10/12 sm:w-full! self-center backdrop-blur-lg rounded-xl mt-6 shadow-sm bg-white/50 dark:bg-black/30 overflow-hidden">
          <div className="flex justify-between items-center w-full">
             <div className="flex items-center justify-center gap-2 rounded-lg w-fit">
                <Link
@@ -33,7 +36,7 @@ function Footer() {
                </Link>
             </div>
 
-            {pathname === '/' && (
+            {pathname === '/' && !isMobile && (
                <ul className="flex items-center gap-10 xs:gap-7 text-lg text-primary-600">
                   <li>
                      <a

@@ -40,13 +40,13 @@ html {
 
 @media screen and (max-width: 1024px) {
    html {
-      font-size: 14px;
+      font-size: 17px;
    }
 }
 
 @media screen and (max-width: 650px) {
    html {
-      font-size: 13px;
+      font-size: 19px;
    }
 }
 
@@ -217,7 +217,7 @@ p {
    }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
    h1 {
       margin-left: 0rem;
       margin-right: 0rem;

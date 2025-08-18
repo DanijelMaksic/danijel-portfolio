@@ -61,15 +61,15 @@ function Skills() {
          viewport={{ once: true }}
          transition={{ duration: 0.7 }}
          id="skills"
-         className="px-6 py-3 flex flex-col gap-10 scroll-mt-24 md:px-12 xs:px-0"
+         className="px-6 py-3 flex flex-col gap-10 scroll-mt-24 md:px-6 xs:px-0"
       >
-         <span className="text-4xl text-primary-800 font-bold text-center">
+         <span className="text-[1.7rem] tracking-wide text-primary-800 font-bold text-center uppercase">
             {t('Skills.h1')}
          </span>
 
          <div className="grid grid-cols-2 gap-6 sm:grid-cols-1">
             <div className="flex flex-col gap-3 shadow--sm rounded-xl px-4 py-4 bg-white/50 dark:bg-primary-50/80 dark:border dark:border-primary-300/70 backdrop-blur-lg">
-               <h4> {t('Skills.core-tech')}</h4>
+               <h4 className="text-center"> {t('Skills.core-tech')}</h4>
 
                <div className="grid grid-cols-2 gap-4">
                   {coreTech.map((tech) => (
@@ -79,7 +79,7 @@ function Skills() {
             </div>
 
             <div className="flex flex-col gap-3 shadow--sm rounded-xl px-4 py-4 bg-white/50 dark:bg-primary-50/80 dark:border dark:border-primary-300/70 backdrop-blur-lg">
-               <h4> {t('Skills.other-tech')}</h4>
+               <h4 className="text-center"> {t('Skills.other-tech')}</h4>
 
                <div className="grid grid-cols-2 gap-4">
                   {otherTech.map((tech) => (

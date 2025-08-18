@@ -17,9 +17,9 @@ function Navigation() {
 
    return (
       <nav className="text-base font-semibold text-primary-600">
-         <ul className="flex gap-8 xs:gap-6 items-center">
+         <ul className="flex gap-8 sm:gap-4! xs:gap-6 items-center">
             {pathname === '/' ? (
-               <li className="flex items-center gap-10 xs:gap-8 xs:hidden">
+               <li className="flex items-center gap-10 sm:gap-8! xs:gap-8 xs:hidden">
                   <a
                      href="#projects"
                      className="hover:text-primary-700 transition"

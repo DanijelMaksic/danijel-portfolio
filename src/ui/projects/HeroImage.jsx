@@ -59,7 +59,7 @@ function HeroImage({ image, title }) {
    }, [isDarkMode, isMobile]);
 
    return (
-      <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[7rem] md:mx-[4rem] xs:mx-0 dark:border dark:border-primary-200 dark:bg-primary-50">
+      <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[7rem] md:mx-[4rem] sm:mx-0! dark:border dark:border-primary-200 dark:bg-primary-50">
          <img
             src={image}
             data-zoom-src={image}
