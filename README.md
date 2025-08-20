@@ -4,9 +4,17 @@ My portfolio website showcasing various Front-End projects.
 
 You can check out the [live demo](https://danijelmaksic.vercel.app/).
 
+<br/>
+
+Installation:
+```
+npm i
+npm run dev
+```
+
 ![portfolio image](/assets/portfolio.webp)
 
-This project was inspired by the following portfolios:
+This project was inspired by following portfolios:
 
 <ul>
    <li>
