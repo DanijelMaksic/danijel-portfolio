@@ -22,7 +22,7 @@ function About() {
             {t('About.h1')}
          </span>
 
-         <div className="grid grid-cols-[1fr_2.8fr]md:grid-cols-1 gap-24 lg:gap-10">
+         <div className="grid grid-cols-[1fr_2.8fr] md:grid-cols-1 gap-24 lg:gap-10">
             <img
                src={AboutImage}
                loading="lazy"
