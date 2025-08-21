@@ -64,7 +64,7 @@ function HeroImage({ image, title }) {
             src={image}
             data-zoom-src={image}
             loading="lazy"
-            className="rounded-xl dark:opacity-90"
+            className="rounded-xl dark:opacity-90 max-h-96 object-cover"
             alt={featuredProject?.titleEn || otherProject?.titleEn}
          />
 
