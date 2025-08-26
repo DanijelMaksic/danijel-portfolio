@@ -13,7 +13,6 @@ import UseBook from './ui/projects/useBook/useBook';
 import Judgment from './ui/projects/judgment/Judgment';
 import OchridGalleryCMS from './ui/projects/ochridGalleryCMS/OchridGalleryCMS';
 import OchridGalleryStore from './ui/projects/ochridGalleryStore/OchridGalleryStore';
-import ArtPortfolio from './ui/projects/artPortfolio/artPortfolio';
 
 function App() {
    return (
@@ -35,7 +34,6 @@ function App() {
                   <Route path="/judgment" element={<Judgment />} />
                   <Route path="/quiz" element={<Quiz />} />
                   <Route path="/use-book" element={<UseBook />} />
-                  <Route path="/art-portfolio" element={<ArtPortfolio />} />
                </Route>
 
                <Route path="*" element={<PageNotFound />} />

@@ -33,7 +33,6 @@ import portaImg from './../../../assets/porta.webp';
 import useBookImg from './../../../assets/use-book.webp';
 import judgmentImg from './../../../assets/judgment.webp';
 import ochridGalleryCmsImg from './../../../assets/ochrid-gallery-cms.webp';
-import underConstructionImg from './../../../assets/under-construction.webp';
 import ochridGalleryStoreImg from './../../../assets/ochrid-gallery-store.webp';
 
 // IF YOU WANT TO CHANGE THE TITLE OF A PROJECT, YOU ALSO NEED TO CHANGE IT IN MDX FILE OF THAT PROJECT
@@ -252,42 +251,6 @@ export const otherProjects = [
          },
       ],
       projectURL: 'use-book',
-   },
-
-   {
-      titleEn: 'Art Portfolio',
-      titleSr: 'Уметнички Портфолио',
-      image: underConstructionImg,
-      descriptionEn: 'Art gallery showcasing my illustrations and sketches.',
-      descriptionSr:
-         'Уметничка галерија која приказује моје илустрације и скице.',
-      techStack: [
-         {
-            name: 'React',
-            icon: <FaReact />,
-         },
-         {
-            name: 'TypeScript',
-            icon: <SiTypescript />,
-         },
-         {
-            name: 'React Router',
-            icon: <SiReactrouter />,
-         },
-         {
-            name: 'Styled Components',
-            icon: <SiStyledcomponents size={22} />,
-         },
-         {
-            name: 'Motion',
-            icon: <TbBrandFramerMotion />,
-         },
-         {
-            name: 'Responsive',
-            icon: <FaMobileScreenButton />,
-         },
-      ],
-      projectURL: 'art-portfolio',
    },
 ];
 
