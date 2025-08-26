@@ -22,13 +22,9 @@ const coreTech = [
       name: 'Javascript',
    },
    {
-      icon: <RiTailwindCssFill className="size-9" />,
-      name: 'Tailwind CSS',
+      icon: <SiTypescript className="size-9" />,
+      name: 'TypeScript',
    },
-   // {
-   //    icon: <SiTypescript className="size-9" />,
-   //    name: 'TypeScript',
-   // },
    {
       icon: <FaCss3Alt className="size-9" />,
       name: 'CSS',
@@ -43,10 +39,10 @@ const otherTech = [
    { icon: <RiSupabaseFill className="size-8" />, name: 'Supabase' },
    { icon: <SiRedux className="size-8" />, name: 'Redux' },
    { icon: <SiReactquery className="size-8" />, name: 'TanStack Query' },
-   // {
-   //    icon: <RiTailwindCssFill className="size-9" />,
-   //    name: 'Tailwind CSS',
-   // },
+   {
+      icon: <RiTailwindCssFill className="size-9" />,
+      name: 'Tailwind CSS',
+   },
    { icon: <FaGithub className="size-8" />, name: 'Github' },
    { icon: <SiAdobephotoshop className="size-8" />, name: 'Photoshop' },
 ];

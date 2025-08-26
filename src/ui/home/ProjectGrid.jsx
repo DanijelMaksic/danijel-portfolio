@@ -1,6 +1,6 @@
-import { SiRedux, SiZod } from 'react-icons/si';
 import { TbBrandFramerMotion } from 'react-icons/tb';
-import { FaCss3Alt, FaHtml5, FaJs, FaReact, FaSass } from 'react-icons/fa6';
+import { SiRedux, SiTypescript, SiZod } from 'react-icons/si';
+import { FaCss3Alt, FaHtml5, FaJs, FaReact } from 'react-icons/fa6';
 import {
    RiNextjsFill,
    RiSupabaseFill,
@@ -43,7 +43,7 @@ function ProjectGrid() {
          </span>
 
          <span className="bg-white/50 dark:bg-black/20 dark:border dark:border-primary-300/70 dark:hover:border-primary-300/90 backdrop-blur-sm rounded-xl shadow-[0_1px_3px_rgba(0,0,0,0.3)] hover:shadow-[0_3px_8px_rgba(0,0,0,0.2)] p-2.5 absolute top-[-15px] left-50 md:left-77 xs:left-47 hover:scale-108 transition z-4">
-            <FaSass className="size-7 md:size-10 xs:size-7 text-primary-600" />
+            <SiTypescript className="size-7 md:size-10 xs:size-7 text-primary-600" />
          </span>
 
          <span className="bg-white/50 dark:bg-black/20 dark:border dark:border-primary-300/70 dark:hover:border-primary-300/90 backdrop-blur-sm rounded-xl shadow-[0_1px_3px_rgba(0,0,0,0.3)] hover:shadow-[0_3px_6px_rgba(0,0,0,0.2)] p-2.5 absolute bottom-16 md:bottom-28 xs:bottom-16 right-39 md:right-60 xs:right-37 hover:scale-108 transition z-4">
