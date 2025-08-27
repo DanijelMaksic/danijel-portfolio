@@ -1,6 +1,9 @@
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { FiExternalLink } from 'react-icons/fi';
+import { LuBookOpen } from 'react-icons/lu';
+
 import Tech from './Tech';
+import { Link } from 'react-router-dom';
 
 function ProjectPreview({ projectData }) {
    const {
@@ -11,15 +14,15 @@ function ProjectPreview({ projectData }) {
       descriptionEn,
       descriptionSr,
       projectURL,
+      demoLink,
+      visitBtnStyles,
+      readBtnStyles,
    } = projectData;
    const { i18n } = useTranslation();
    const currentLanguage = i18n.language;
 
    return (
-      <Link
-         to={`/${projectURL}`}
-         className="rounded-xl flex flex-col shadow-[0_1px_4px_rgba(0,0,0,0.3)] hover:shadow-[0_5px_15px_rgba(0,0,0,0.3)] dark:border dark:border-primary-200 overflow-hidden hover:translate-y-[-10px] transition hover:opacity-90 p-2 gap-2 dark:bg-primary-50 dark:hover:opacity-100 dark:hover:brightness-115"
-      >
+      <div className="rounded-xl flex flex-col shadow-[0_1px_4px_rgba(0,0,0,0.3)] dark:border dark:border-primary-200 overflow-hidden transition p-2 gap-2 dark:bg-primary-50">
          <img
             src={image}
             loading="lazy"
@@ -42,7 +45,28 @@ function ProjectPreview({ projectData }) {
                ))}
             </div>
          </div>
-      </Link>
+
+         <div className="flex items-center justify-center gap-2 mt-2">
+            {demoLink && (
+               <Link
+                  to={demoLink}
+                  target="_blank"
+                  className={`flex items-center justify-center gap-2 rounded-lg w-full py-2.5 font-semibold hover:-translate-y-1 transition font-mono ease-out hover:saturate-120 ${visitBtnStyles}`}
+               >
+                  <span>Visit</span>
+                  <FiExternalLink className="stroke-[2.5px]" />
+               </Link>
+            )}
+
+            <Link
+               to={projectURL}
+               className={`flex items-center ease-out justify-center gap-2 rounded-lg w-full py-2.5 font-semibold hover:-translate-y-1 hover:saturate-120 transition font-mono ${readBtnStyles}`}
+            >
+               <span>Read more</span>
+               <LuBookOpen className="stroke-[2.5px]" />
+            </Link>
+         </div>
+      </div>
    );
 }
 

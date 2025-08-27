@@ -2,14 +2,7 @@ import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { TbApi, TbBrandFramerMotion } from 'react-icons/tb';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
-import {
-   SiReactquery,
-   SiRedux,
-   SiZod,
-   SiReactrouter,
-   SiTypescript,
-   SiStyledcomponents,
-} from 'react-icons/si';
+import { SiReactquery, SiRedux, SiZod, SiReactrouter } from 'react-icons/si';
 import {
    RiNextjsFill,
    RiSupabaseFill,
@@ -73,6 +66,10 @@ export const featuredProjects = [
       ],
       projectURL: 'ochrid-gallery-store',
       demoLink: 'https://ochrid-gallery.vercel.app/',
+      visitBtnStyles:
+         'bg-blue-700/16 dark:bg-blue-200/15 hover:bg-blue-700/55 dark:hover:bg-blue-300/40 text-blue-800/65 dark:text-blue-200/65 hover:text-blue-50 hover:shadow-hue hover:shadow-blue-700/25 dark:hover:shadow-blue-300/15',
+      readBtnStyles:
+         'bg-amber-700/16 dark:bg-amber-200/15 hover:bg-amber-700/55 dark:hover:bg-amber-300/40 text-amber-800/65 dark:text-amber-200/65 hover:text-amber-50 hover:shadow-hue hover:shadow-amber-700/25 dark:hover:shadow-amber-300/15',
    },
 
    {
@@ -110,6 +107,8 @@ export const featuredProjects = [
          },
       ],
       projectURL: 'ochrid-gallery-cms',
+      readBtnStyles:
+         'bg-orange-700/16 dark:bg-orange-200/15 hover:bg-orange-700/55 dark:hover:bg-orange-300/40 text-orange-800/65 dark:text-orange-200/65 hover:text-orange-50 hover:shadow-hue hover:shadow-orange-700/25 dark:hover:shadow-orange-300/15',
    },
 
    {
@@ -141,6 +140,10 @@ export const featuredProjects = [
       projectURL: 'porta',
       codeLink: 'https://github.com/DanijelMaksic/porta.github.io',
       demoLink: 'https://danijelmaksic.github.io/porta.github.io/',
+      visitBtnStyles:
+         'bg-orange-700/16 dark:bg-orange-200/15 hover:bg-orange-700/55 dark:hover:bg-orange-300/40 text-orange-800/65 dark:text-orange-200/65 hover:text-orange-50 hover:shadow-hue hover:shadow-orange-700/25 dark:hover:shadow-orange-300/15',
+      readBtnStyles:
+         'bg-yellow-700/16 dark:bg-yellow-200/15 hover:bg-yellow-700/40 dark:hover:bg-yellow-300/40 text-yellow-800/65 dark:text-yellow-200/65 hover:text-yellow-50 hover:shadow-hue hover:shadow-yellow-700/25 dark:hover:shadow-yellow-300/15',
    },
 
    {
@@ -172,6 +175,10 @@ export const featuredProjects = [
       projectURL: 'judgment',
       codeLink: 'https://github.com/DanijelMaksic/judgment-site',
       demoLink: 'https://danijelmaksic.github.io/judgment-site/',
+      visitBtnStyles:
+         'bg-gray-700/16 dark:bg-gray-200/15 hover:bg-gray-700/55 dark:hover:bg-gray-300/40 text-gray-800/65 dark:text-gray-200/65 hover:text-gray-50 hover:shadow-hue hover:shadow-gray-700/25 dark:hover:shadow-gray-300/15',
+      readBtnStyles:
+         'bg-blue-700/16 dark:bg-blue-200/15 hover:bg-blue-700/55 dark:hover:bg-blue-300/40 text-blue-800/65 dark:text-blue-200/65 hover:text-blue-50 hover:shadow-hue hover:shadow-blue-700/25 dark:hover:shadow-blue-300/15',
    },
 ];
 
@@ -200,6 +207,10 @@ export const otherProjects = [
       projectURL: 'blog',
       codeLink: 'https://github.com/DanijelMaksic/My-Blog-App',
       demoLink: 'https://danijelmaksic.github.io/My-Blog-App/',
+      visitBtnStyles:
+         'bg-blue-700/16 dark:bg-blue-200/15 hover:bg-blue-700/55 dark:hover:bg-blue-300/40 text-blue-800/65 dark:text-blue-200/65 hover:text-blue-50 hover:shadow-hue hover:shadow-blue-700/25 dark:hover:shadow-blue-300/15',
+      readBtnStyles:
+         'bg-slate-700/16 dark:bg-slate-200/15 hover:bg-slate-700/55 dark:hover:bg-slate-300/40 text-slate-800/65 dark:text-slate-200/65 hover:text-slate-50 hover:shadow-hue hover:shadow-slate-700/25 dark:hover:shadow-slate-300/15',
    },
 
    {
@@ -226,6 +237,8 @@ export const otherProjects = [
       ],
       projectURL: 'quiz',
       codeLink: 'https://github.com/DanijelMaksic/old-world-history-quiz',
+      readBtnStyles:
+         'bg-orange-700/16 dark:bg-orange-200/15 hover:bg-orange-700/55 dark:hover:bg-orange-300/40 text-orange-800/65 dark:text-orange-200/65 hover:text-orange-50 hover:shadow-hue hover:shadow-orange-700/25 dark:hover:shadow-orange-300/15',
    },
 
    {
@@ -251,6 +264,8 @@ export const otherProjects = [
          },
       ],
       projectURL: 'use-book',
+      readBtnStyles:
+         'bg-orange-700/16 dark:bg-orange-200/15 hover:bg-orange-700/55 dark:hover:bg-orange-300/40 text-orange-800/65 dark:text-orange-200/65 hover:text-orange-50 hover:shadow-hue hover:shadow-orange-700/25 dark:hover:shadow-orange-300/15',
    },
 ];
 

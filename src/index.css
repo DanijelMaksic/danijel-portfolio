@@ -102,6 +102,8 @@ button,
    --color-primary-200: #e8e8e8;
    --color-primary-100: #f4f4f4;
    --color-primary-50: #fafafa;
+
+   --shadow-hue: 0 0 20px 0px;
 }
 
 @layer base {
