@@ -22,7 +22,7 @@ function ProjectPreview({ projectData }) {
    const currentLanguage = i18n.language;
 
    return (
-      <div className="rounded-xl flex flex-col shadow-[0_1px_4px_rgba(0,0,0,0.3)] dark:border dark:border-primary-200 overflow-hidden transition p-2 gap-2 dark:bg-primary-50">
+      <div className="rounded-xl grid grid-rows-[0.5fr_1fr_0.1fr] shadow-[0_1px_4px_rgba(0,0,0,0.3)] dark:border dark:border-primary-200 overflow-hidden transition p-2 gap-2 dark:bg-primary-50">
          <img
             src={image}
             loading="lazy"
