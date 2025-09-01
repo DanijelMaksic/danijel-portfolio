@@ -58,6 +58,14 @@ function HeroImage({ image, title }) {
       };
    }, [isDarkMode, isMobile]);
 
+   const hasLink =
+      featuredProject?.codeLink !== undefined ||
+      otherProject?.codeLink !== undefined;
+
+   const noLinks =
+      featuredProject?.codeLink === undefined &&
+      otherProject?.codeLink === undefined;
+
    return (
       <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[7rem] md:mx-[4rem] sm:mx-0! dark:border dark:border-primary-200 dark:bg-primary-50">
          <img
@@ -68,7 +76,11 @@ function HeroImage({ image, title }) {
             alt={featuredProject?.titleEn || otherProject?.titleEn}
          />
 
-         <div className="py-4 px-6 flex justify-between items-center gap-6">
+         <div
+            className={`py-4 px-6 flex justify-between items-center ${
+               noLinks ? 'gap-0!' : 'gap-6'
+            }`}
+         >
             <div className="flex items-center gap-2 flex-wrap ">
                {featuredProject?.techStack.map((tech) => (
                   <Tech icon={tech.icon} name={tech.name} key={tech.name} />
@@ -79,8 +91,7 @@ function HeroImage({ image, title }) {
             </div>
 
             <div className="flex items-center gap-3 sm:flex-col sm:gap-2">
-               {featuredProject?.codeLink !== undefined ||
-               otherProject?.codeLink !== undefined ? (
+               {hasLink ? (
                   <Link
                      to={featuredProject?.codeLink || otherProject?.codeLink}
                      target="_blank"
@@ -90,8 +101,7 @@ function HeroImage({ image, title }) {
                   </Link>
                ) : null}
 
-               {featuredProject?.demoLink !== undefined ||
-               otherProject?.demoLink !== undefined ? (
+               {hasLink ? (
                   <Link
                      to={featuredProject?.demoLink || otherProject?.demoLink}
                      target="_blank"
