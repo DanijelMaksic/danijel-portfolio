@@ -286,7 +286,7 @@ function Projects() {
             {t('Projects.h1')}
          </span>
 
-         <div className="grid grid-cols-2 gap-6 md:grid-cols-1 md:px-12 sm:px-0!">
+         <div className="grid grid-cols-2 gap-6 xs:gap-8 md:grid-cols-1 md:px-12 sm:px-0!">
             {featuredProjects.map((project) => (
                <ProjectPreview projectData={project} key={project.titleEn} />
             ))}
@@ -311,7 +311,7 @@ function Projects() {
             transition={{ duration: 0.8 }}
             className={`${open ? 'visible' : 'hidden'} flex flex-col gap-10`}
          >
-            <div className="grid grid-cols-2 md:grid-cols-1 gap-6 md:px-12 sm:px-0!">
+            <div className="grid grid-cols-2 md:grid-cols-1 gap-6 xs:gap-8 md:px-12 sm:px-0!">
                {otherProjects.map((project) => (
                   <ProjectPreview projectData={project} key={project.titleEn} />
                ))}
