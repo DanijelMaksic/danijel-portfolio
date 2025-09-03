@@ -18,7 +18,7 @@ function ProjectPreview({ projectData }) {
       visitBtnStyles,
       readBtnStyles,
    } = projectData;
-   const { i18n } = useTranslation();
+   const { i18n, t } = useTranslation();
    const currentLanguage = i18n.language;
 
    return (
@@ -51,18 +51,18 @@ function ProjectPreview({ projectData }) {
                <Link
                   to={demoLink}
                   target="_blank"
-                  className={`flex items-center justify-center gap-2 rounded-lg w-full py-2.5 font-semibold hover:-translate-y-1 transition font-mono ease-out hover:saturate-120 ${visitBtnStyles}`}
+                  className={`flex items-center justify-center gap-2 rounded-lg w-full py-3 font-semibold hover:-translate-y-1 transition font-mono ease-out hover:saturate-120 ${visitBtnStyles}`}
                >
-                  <span>Visit</span>
+                  <span>{t('Projects.visit')}</span>
                   <FiExternalLink className="stroke-[2.5px]" />
                </Link>
             )}
 
             <Link
                to={projectURL}
-               className={`flex items-center ease-out justify-center gap-2 rounded-lg w-full py-2.5 font-semibold hover:-translate-y-1 hover:saturate-120 transition font-mono ${readBtnStyles}`}
+               className={`flex items-center ease-out justify-center gap-2 rounded-lg w-full py-3 font-semibold hover:-translate-y-1 hover:saturate-120 transition font-mono ${readBtnStyles}`}
             >
-               <span>Read more</span>
+               <span>{t('Projects.read-more')}</span>
                <LuBookOpen className="stroke-[2.5px]" />
             </Link>
          </div>

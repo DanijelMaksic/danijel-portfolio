@@ -12,6 +12,8 @@
 
    "Projects": {
       "h1": "Selected projects",
+      "visit": "Visit",
+      "read-more": "Read more",
       "show-more-btn": "Show more",
       "show-less-btn": "Show less"
    },
