@@ -21,12 +21,9 @@
    "About": {
       "h1": "About me",
       "name": "Danijel Maksić",
-      "p1": "I'm a self-taught Front-End web developer based in Serbia. I'm 25 and learning Next.js and React.",
-      "p2-part1": "I learned of ",
-      "p2-part2": " and web development in 2021 and have started slowly looking into it throughout 2022. In 2023 I decided to pursue this career seriously, so I started building various small projects where I practiced HTML, CSS and Javascript.",
-      "p3-part1": "In 2024 I started learning ",
-      "p3-part2": " which completely changed the way I looked at coding. After acquainting myself with React, diving into ",
-      "p3-part3": " was the next logical step in my learning journey."
+      "p1": "I'm a self-taught Front-End web developer. I dedicate myself to building interactive and responsive web applications, with strong emphasis on user experience.",
+      "p2": "I learned of programming as a teenager, and tried studying it on my own, Java specifically. However, because of my poor knowledge of English at the time, I didn't go far. Years later, I chose to attend gastronomy university, but halfway trough I saw it wasn't for me. That was when I heard of Front-End web development, which combined my interests for computers and visual design. I remembered my attempt to learn Java, and knew this was the right career path for me.",
+      "p3": "During the last three years I studied web development on my own, using every resource on the web I could find: documentations, forums, blogs, coding challenges, Youtube, courses and recently AI models."
    },
 
    "Skills": {

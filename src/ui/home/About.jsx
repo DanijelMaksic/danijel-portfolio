@@ -34,17 +34,9 @@ function About() {
                <div className="flex flex-col gap-3 text-primary-700 leading-8 md:leading-8.5 xs:leading-9 2xs:leading-11">
                   <span>{t('About.p1')}</span>
 
-                  <span>
-                     {t('About.p2-part1')} <strong>JavaScript</strong>{' '}
-                     {t('About.p2-part2')}
-                  </span>
+                  <span>{t('About.p2')}</span>
 
-                  <span>
-                     {t('About.p3-part1')} <strong>React</strong>,
-                     {t('About.p3-part2')}
-                     <strong>Next.js</strong>
-                     {t('About.p3-part3')}
-                  </span>
+                  <span>{t('About.p3')}</span>
                </div>
 
                <span className="text-5xl text-primary-800 self-end font-stylish">
