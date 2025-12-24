@@ -58,13 +58,19 @@ function HeroImage({ image, title }) {
       };
    }, [isDarkMode, isMobile]);
 
-   const hasLink =
+   const hasCodeLink =
       featuredProject?.codeLink !== undefined ||
       otherProject?.codeLink !== undefined;
 
+   const hasDemoLink =
+      featuredProject?.demoLink !== undefined ||
+      otherProject?.demoLink !== undefined;
+
    const noLinks =
       featuredProject?.codeLink === undefined &&
-      otherProject?.codeLink === undefined;
+      otherProject?.codeLink === undefined &&
+      featuredProject?.demoLink === undefined &&
+      otherProject?.demoLink === undefined;
 
    return (
       <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[7rem] md:mx-[4rem] sm:mx-0! dark:border dark:border-primary-200 dark:bg-primary-50">
@@ -91,7 +97,7 @@ function HeroImage({ image, title }) {
             </div>
 
             <div className="flex items-center gap-3 sm:flex-col sm:gap-2">
-               {hasLink ? (
+               {hasCodeLink ? (
                   <Link
                      to={featuredProject?.codeLink || otherProject?.codeLink}
                      target="_blank"
@@ -101,7 +107,7 @@ function HeroImage({ image, title }) {
                   </Link>
                ) : null}
 
-               {hasLink ? (
+               {hasDemoLink ? (
                   <Link
                      to={featuredProject?.demoLink || otherProject?.demoLink}
                      target="_blank"

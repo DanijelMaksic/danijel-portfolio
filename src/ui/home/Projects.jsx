@@ -65,6 +65,7 @@ export const featuredProjects = [
          },
       ],
       projectURL: 'ochrid-gallery-store',
+      codeLink: 'https://github.com/DanijelMaksic/ochrid-gallery',
       demoLink: 'https://ochrid-gallery.vercel.app/',
       visitBtnStyles:
          'bg-blue-700/16 dark:bg-blue-200/15 hover:bg-blue-700/55 dark:hover:bg-blue-300/40 text-blue-800/65 dark:text-blue-200/65 hover:text-blue-50 hover:shadow-hue hover:shadow-blue-700/25 dark:hover:shadow-blue-300/15',
@@ -106,6 +107,7 @@ export const featuredProjects = [
             icon: <TbBrandFramerMotion />,
          },
       ],
+      codeLink: 'https://github.com/DanijelMaksic/ochrid-gallery-internal-app',
       projectURL: 'ochrid-gallery-cms',
       readBtnStyles:
          'bg-orange-700/16 dark:bg-orange-200/15 hover:bg-orange-700/55 dark:hover:bg-orange-300/40 text-orange-800/65 dark:text-orange-200/65 hover:text-orange-50 hover:shadow-hue hover:shadow-orange-700/25 dark:hover:shadow-orange-300/15',
