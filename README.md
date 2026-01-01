@@ -42,4 +42,4 @@ This project was inspired by following portfolios:
    </li>
 </ul>
 
-Special thanks to **Jonas Schmedtmann**, thanks to whom I learned everything I know; his work was an inspiration for most of my projects. If you are new at learning web development check his courses out!
+Special thanks to **Jonas Schmedtmann**, thanks to whom I learned a lot; his work was an inspiration for most of my projects. If you are new at learning web development check out his courses!
