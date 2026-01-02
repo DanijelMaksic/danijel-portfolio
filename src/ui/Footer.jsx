@@ -9,6 +9,9 @@ function Footer() {
    const location = useLocation();
    const pathname = location.pathname;
 
+   const startYear = 2025;
+   const currentYear = new Date().getFullYear();
+
    const isMobile = useMediaQuery({ maxWidth: 450 });
 
    return (
@@ -78,7 +81,14 @@ function Footer() {
             </span>
 
             <span className="text-base text-primary-700 text-center">
-               {t('Footer.p2')}
+               {t('Footer.copyright-1')}
+               <span>
+                  {startYear}
+                  <span className="font-bold">−</span>
+                  {currentYear}
+               </span>
+
+               {t('Footer.copyright-2')}
             </span>
          </div>
       </div>
