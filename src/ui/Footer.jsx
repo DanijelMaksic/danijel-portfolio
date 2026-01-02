@@ -83,7 +83,8 @@ function Footer() {
             <span className="text-base text-primary-700 text-center">
                {t('Footer.copyright-1')}
                <span>
-                  {startYear}c<span className="font-bold">−</span>
+                  {startYear}
+                  <span className="font-bold">−</span>
                   {currentYear}
                </span>
 
