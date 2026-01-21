@@ -27,7 +27,7 @@ function ProjectPreview({ projectData }) {
             src={image}
             loading="lazy"
             alt={currentLanguage === 'en' ? titleEn : titleSr}
-            className="w-full bg-primary-900 text-primary-50 h-56 rounded-xl object-cover shadow-sm dark:opacity-90"
+            className="w-full h-56 rounded-xl object-cover shadow-sm dark:opacity-90"
          />
 
          <div className="flex flex-col gap-2 p-3">
