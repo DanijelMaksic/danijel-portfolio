@@ -7,8 +7,8 @@ import {
    RiTailwindCssFill,
 } from 'react-icons/ri';
 import {
-   SiAdobephotoshop,
    SiJavascript,
+   SiPostgresql,
    SiReactquery,
    SiRedux,
    SiTypescript,
@@ -44,7 +44,7 @@ const otherTech = [
       name: 'Tailwind CSS',
    },
    { icon: <FaGithub className="size-8" />, name: 'Github' },
-   { icon: <SiAdobephotoshop className="size-8" />, name: 'Photoshop' },
+   { icon: <SiPostgresql className="size-8" />, name: 'PostgreSQL' },
 ];
 
 function Skills() {
