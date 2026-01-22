@@ -18,10 +18,10 @@ function HeroImage({ image, title }) {
 
    // Title is needed to figure out which is the current project, so we can get its techStack
    const [featuredProject] = featured.filter(
-      (item) => item.titleEn === title || item.titleSr === title
+      (item) => item.titleEn === title || item.titleSr === title,
    );
    const [otherProject] = other.filter(
-      (item) => item.titleEn === title || item.titleSr === title
+      (item) => item.titleEn === title || item.titleSr === title,
    );
 
    // Image Zoom logic
@@ -58,19 +58,11 @@ function HeroImage({ image, title }) {
       };
    }, [isDarkMode, isMobile]);
 
-   const hasCodeLink =
-      featuredProject?.codeLink !== undefined ||
-      otherProject?.codeLink !== undefined;
+   const hasCodeLink = featuredProject?.codeLink || otherProject?.codeLink;
 
-   const hasDemoLink =
-      featuredProject?.demoLink !== undefined ||
-      otherProject?.demoLink !== undefined;
+   const hasDemoLink = featuredProject?.demoLink || otherProject?.demoLink;
 
-   const noLinks =
-      featuredProject?.codeLink === undefined &&
-      otherProject?.codeLink === undefined &&
-      featuredProject?.demoLink === undefined &&
-      otherProject?.demoLink === undefined;
+   const noLinks = !hasCodeLink && !hasDemoLink;
 
    return (
       <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[7rem] md:mx-[4rem] sm:mx-0! dark:border dark:border-primary-200 dark:bg-primary-50">
