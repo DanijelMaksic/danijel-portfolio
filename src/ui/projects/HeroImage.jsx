@@ -30,7 +30,7 @@ function HeroImage({ image, title }) {
 
       if (isDarkMode) {
          zoom = mediumZoom('.parent img', {
-            margin: isMobile ? 22 : 100,
+            margin: isMobile ? 22 : 60,
 
             background: 'black',
          });
@@ -38,7 +38,7 @@ function HeroImage({ image, title }) {
 
       if (!isDarkMode) {
          zoom = mediumZoom('.parent img', {
-            margin: isMobile ? 22 : 100,
+            margin: isMobile ? 22 : 60,
 
             background: 'white',
          });
@@ -65,7 +65,7 @@ function HeroImage({ image, title }) {
    const noLinks = !hasCodeLink && !hasDemoLink;
 
    return (
-      <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[7rem] md:mx-[4rem] sm:mx-0! dark:border dark:border-primary-200 dark:bg-primary-50">
+      <div className="mt-10 mb-12 flex flex-col shadow rounded-2xl parent mx-[8rem] md:mx-[4rem] sm:mx-0! dark:border dark:border-primary-200 dark:bg-primary-50">
          <img
             src={image}
             data-zoom-src={image}
