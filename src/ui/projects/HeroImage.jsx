@@ -24,39 +24,16 @@ function HeroImage({ image, title }) {
       (item) => item.titleEn === title || item.titleSr === title,
    );
 
-   // Image Zoom logic
+   // Zoom logic for article images
    useEffect(() => {
-      let zoom;
-
-      if (isDarkMode) {
-         zoom = mediumZoom('.parent img', {
-            margin: isMobile ? 22 : 60,
-
-            background: 'black',
-         });
-      }
-
-      if (!isDarkMode) {
-         zoom = mediumZoom('.parent img', {
-            margin: isMobile ? 22 : 60,
-
-            background: 'white',
-         });
-      }
-
-      const handleClick = (e) => {
-         if (zoom.getZoomedImage() && !e.target.closest('.parent img')) {
-            zoom.close();
-         }
-      };
-
-      document.addEventListener('click', handleClick);
+      const zoom = mediumZoom('.parent img', {
+         margin: isMobile ? 20 : 60,
+      });
 
       return () => {
-         document.removeEventListener('click', handleClick);
          zoom.detach();
       };
-   }, [isDarkMode, isMobile]);
+   }, [isMobile]);
 
    const hasCodeLink = featuredProject?.codeLink || otherProject?.codeLink;
 
