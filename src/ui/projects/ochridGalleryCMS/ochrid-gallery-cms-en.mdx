@@ -13,6 +13,8 @@ import CmsImg7 from './../../../../assets/cms-7.webp';
 import CmsImg8 from './../../../../assets/cms-8.webp';
 import CmsImg9 from './../../../../assets/cms-9.webp';
 import CmsImg10 from './../../../../assets/cms-10.webp';
+import CmsImg11 from './../../../../assets/cms-11.png';
+import CmsImg12 from './../../../../assets/cms-12.png';
 import CmsImgLogin from './../../../../assets/cms-login.webp';
 import OchridGalleryCMSImg from './../../../../assets/ochrid-gallery-cms.webp';
 
@@ -22,7 +24,7 @@ import OchridGalleryCMSImg from './../../../../assets/ochrid-gallery-cms.webp';
 
 <HeroImage image={OchridGalleryCMSImg} title="Ochrid Gallery CMS" />
 
-This is the internal application of the public web store "Ochrid Gallery". This is the closed-off app that only selected employees of the business have access to. It is an SPA powered by **React**, providing user with fast navigation and dynamic content updates.
+This is the internal application of the public web store Ochrid Gallery. This is the closed-off app that only selected employees of the business have access to. It is an SPA powered by **React**, providing the user with fast navigation and dynamic content updates.
 
 <br />
 
@@ -33,11 +35,12 @@ The app's data is stored in the **Supabase** database, which also handles user a
 
 <TableOfContents
    h2Arr={[
-      'login-screen',
+      'authentication',
       'dashboard',
       'inventory-management',
       'order-management',
       'user-settings',
+      'qa-testing',
       'credits',
    ]}
 />
@@ -45,7 +48,7 @@ The app's data is stored in the **Supabase** database, which also handles user a
 <br />
 <br />
 
-<ArticleH2 id={'login-screen'} text={'Login Screen'} />
+<ArticleH2 id={'authentication'} text={'Authentication'} />
 
 Firstly, only approved users can log in. Existing users are the only ones who can create new user accounts. When a new user wants to gain access to the website, they use a password provided by an existing user and, after they verify their e-mail address, they can log in.
 
@@ -58,8 +61,8 @@ Firstly, only approved users can log in. Existing users are the only ones who ca
 
 <ArticleH2 id={'dashboard'} text={'Dashboard'} />
 
-After logging in, user will see the dashboard page, which contains all the relevant
-information and statistics about the business. Here user can also access the incoming
+After logging in, the user will see the dashboard page, which contains all the relevant
+information and statistics about the business. Here the user can also access the incoming
 orders in the Today section.
 
 <br />
@@ -69,7 +72,7 @@ orders in the Today section.
 <br />
 <br />
 
-<ArticleH2 id={'inventory-management'} text={'Inventory management'} />
+<ArticleH2 id={'inventory-management'} text={'Inventory Management'} />
 
 The first major part of the application is the inventory management. On this page user can add a new icon to the inventory.
 
@@ -98,7 +101,7 @@ Each icon has its own page with some relevant information about it.
 <br />
 <br />
 
-<ArticleH2 id={'order-management'} text={'Order management'} />
+<ArticleH2 id={'order-management'} text={'Order Management'} />
 
 Here comes the second major part of the app, the order management. Any incoming orders will be displayed here. Every order has its own Order ID, which can be used for keeping track of it.
 
@@ -136,9 +139,9 @@ This is the archived order page, which lists the details of a specific past orde
 <br />
 <br />
 
-<ArticleH2 id={'user-settings'} text={'User settings'} />
+<ArticleH2 id={'user-settings'} text={'User Settings'} />
 
-In the end we have the "Users" page, where new users can be added or existing ones be updated.
+In the end we have the Users page, where new users can be added or existing ones updated.
 
 <br />
 
@@ -152,6 +155,34 @@ The final page is the update account page, where user can edit account informati
 <br />
 
 <ArticleImage image={CmsImg10} alt="Update user page" />
+
+<br />
+<br />
+
+<ArticleH2 id={'qa-testing'} text={'QA Testing'} />
+
+In this project, both manual and automation testing approaches were utilized. Test cases were documented in a Test Cases table via Google Docs, where I structured the cases using the Given/When/Then format.
+
+<br />
+
+I automated tests using Playwright and Vitest. I used Playwright for visual and integration testing, while leveraging POM (Page Object Model) pattern for test reusability. Since some Playwright tests interact with the database, I built a custom fixture which makes sure that temporary test data doesn't remain in the real database.
+
+<br />
+
+<ArticleImage image={CmsImg11} alt="Test cases table" />
+
+<br />
+<br />
+
+For unit testing I chose Vitest over Jest as this project is run by Vite. With Vitest I tested individual functions to see how they reacted to valid, invalid and weird inputs. I tested the API with Playwright, confirming that basic CRUD operations work as intended.
+
+<br />
+
+I integrated all my tests into **CI** (Continuous Integration) pipeline with GitHub Actions, so that every time I push my local code to my remote GitHub repository, all tests will run automatically. This way if a new feature broke something, GitHub Actions would show me the error log with details about the regression.
+
+<br />
+
+<ArticleImage image={CmsImg12} alt="API testing" />
 
 <br />
 <br />

@@ -8,11 +8,11 @@ import {
 } from 'react-icons/ri';
 import {
    SiJavascript,
-   SiPostgresql,
    SiReactquery,
    SiRedux,
    SiTypescript,
 } from 'react-icons/si';
+import PlaywrightIcon from '../PlaywrightIcon';
 
 const coreTech = [
    { icon: <RiNextjsFill className="size-9" />, name: 'Next.js' },
@@ -43,8 +43,8 @@ const otherTech = [
       icon: <RiTailwindCssFill className="size-9" />,
       name: 'Tailwind CSS',
    },
-   { icon: <FaGithub className="size-8" />, name: 'Github' },
-   { icon: <SiPostgresql className="size-8" />, name: 'PostgreSQL' },
+   { icon: <FaGithub className="size-8" />, name: 'GitHub' },
+   { icon: <PlaywrightIcon size={36} />, name: 'Playwright' },
 ];
 
 function Skills() {

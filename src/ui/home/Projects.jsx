@@ -2,7 +2,13 @@ import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { TbApi, TbBrandFramerMotion } from 'react-icons/tb';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
-import { SiReactquery, SiRedux, SiZod, SiReactrouter } from 'react-icons/si';
+import {
+   SiReactquery,
+   SiRedux,
+   SiZod,
+   SiReactrouter,
+   SiVitest,
+} from 'react-icons/si';
 import {
    RiNextjsFill,
    RiSupabaseFill,
@@ -27,6 +33,7 @@ import useBookImg from './../../../assets/use-book.webp';
 import judgmentImg from './../../../assets/judgment.webp';
 import ochridGalleryCmsImg from './../../../assets/ochrid-gallery-cms.webp';
 import ochridGalleryStoreImg from './../../../assets/ochrid-gallery-store.webp';
+import PlaywrightIcon from '../PlaywrightIcon';
 
 // IF YOU WANT TO CHANGE THE TITLE OF A PROJECT, YOU ALSO NEED TO CHANGE IT IN MDX FILE OF THAT PROJECT
 export const featuredProjects = [
@@ -58,6 +65,14 @@ export const featuredProjects = [
          {
             name: 'Motion',
             icon: <TbBrandFramerMotion />,
+         },
+         {
+            name: 'Playwright',
+            icon: <PlaywrightIcon />,
+         },
+         {
+            name: 'Vitest',
+            icon: <SiVitest />,
          },
          {
             name: 'Responsive',
@@ -105,6 +120,14 @@ export const featuredProjects = [
          {
             name: 'Motion',
             icon: <TbBrandFramerMotion />,
+         },
+         {
+            name: 'Playwright',
+            icon: <PlaywrightIcon />,
+         },
+         {
+            name: 'Vitest',
+            icon: <SiVitest />,
          },
       ],
       projectURL: 'ochrid-gallery-cms',

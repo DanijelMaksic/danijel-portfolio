@@ -15,6 +15,8 @@ import StoreImg8 from './../../../../assets/store-8.webp';
 import StoreImg9 from './../../../../assets/store-9.webp';
 import StoreImg10 from './../../../../assets/store-10.webp';
 import StoreImg11 from './../../../../assets/store-11.webp';
+import StoreImg12 from './../../../../assets/store-12.png';
+import StoreImg13 from './../../../../assets/store-13.png';
 
 import StoreMobileImg0 from './../../../../assets/store-mobile-0.webp';
 import StoreMobileImg1 from './../../../../assets/store-mobile-1.webp';
@@ -43,11 +45,12 @@ Ochrid Gallery is a web store that enables its users to browse and order icons. 
 
 <TableOfContents
    h2Arr={[
-      'landing-page',
-      'icons-page',
-      'icon-details',
-      'checkout-process',
-      'account-section',
+      'gallery-overview',
+      'browsing-icons',
+      'icon-details-&-actions',
+      'the-checkout-flow',
+      'account-management',
+      'qa-testing',
       'credits',
    ]}
 />
@@ -55,9 +58,9 @@ Ochrid Gallery is a web store that enables its users to browse and order icons. 
 <br />
 <br />
 
-<ArticleH2 id={'landing-page'} text={'Landing page'} />
+<ArticleH2 id={'gallery-overview'} text={'Gallery Overview'} />
 
-Upon entering the website, user will first see the gallery's landing page. Some general information about the business is outlined here.
+Upon entering the website, the user will first see the gallery's landing page. Some general information about the business is outlined here.
 
 <br />
 
@@ -71,7 +74,7 @@ Upon entering the website, user will first see the gallery's landing page. Some 
 <br />
 <br />
 
-<ArticleH2 id={'icons-page'} text={'Icons page'} />
+<ArticleH2 id={'browsing-icons'} text={'Browsing Icons'} />
 
 On the icons page, users can browse various icons, which can be sorted and filtered based on user's preferences.
 
@@ -87,9 +90,9 @@ On the icons page, users can browse various icons, which can be sorted and filte
 <br />
 <br />
 
-<ArticleH2 id={'icon-details'} text={'Icon details'} />
+<ArticleH2 id={'icon-details-&-actions'} text={'Icon Details & Actions'} />
 
-Each icon has its own page with some more details and features, where user can add an icon to cart, wishlist and review it.
+Each icon has its own page with some more details and features, where the user can add an icon to cart, wishlist and review it.
 
 <br />
 
@@ -103,9 +106,9 @@ Each icon has its own page with some more details and features, where user can a
 <br />
 <br />
 
-<ArticleH2 id={'checkout-process'} text={'Checkout process'} />
+<ArticleH2 id={'the-checkout-flow'} text={'The Checkout Flow'} />
 
-After one or more icons have been added to cart, user can visit the "Shopping cart" page. This page contains cart management, a summary of the order and some featured popular products. Here user can start the checkout process, but in order to proceed to the next part, user needs to register/log in using their **Google** profile.
+After one or more icons have been added to cart, user can visit the Shopping cart page. This page contains cart management, a summary of the order and some featured popular products. Here the user can start the checkout process, but in order to proceed to the next part, the user needs to register/log in using their **Google** profile.
 
 <br />
 
@@ -119,7 +122,7 @@ After one or more icons have been added to cart, user can visit the "Shopping ca
 <br />
 <br />
 
-After logging in, user can continue to the "Billing information" page. Here user can choose an address from their address book or use some other address. Input validation is handled by **Zod** library.
+After logging in, user can continue to the Billing information page. Here the user can choose an address from their address book or use some other address. Input validation is handled by **Zod** library.
 
 <br />
 
@@ -133,7 +136,7 @@ After logging in, user can continue to the "Billing information" page. Here user
 <br />
 <br />
 
-Next is the "Payment method" page, where one of two methods can be chosen. Here, user can also leave an optional note if something about the order needs to be clarified.
+Next is the Payment method page, where one of two methods can be chosen. Here, the user can also leave an optional note if something about the order needs to be clarified.
 
 <br />
 
@@ -147,7 +150,7 @@ Next is the "Payment method" page, where one of two methods can be chosen. Here,
 <br />
 <br />
 
-For the final part of the checkout, we have the "Review order" page, where user can review all the details about the order. After making sure everything is correct, user can place the order, which will be sent to the store's Content Management System (CMS) app for an employee to confirm it.
+For the final part of the checkout, we have the Review order page, where the user can review all the details about the order. After making sure everything is correct, the user can place the order, which will be sent to the store's Content Management System (CMS) app for an employee to confirm it.
 
 <br />
 
@@ -161,9 +164,9 @@ For the final part of the checkout, we have the "Review order" page, where user 
 <br />
 <br />
 
-<ArticleH2 id={'account-section'} text={'Account section'} />
+<ArticleH2 id={'account-management'} text={'Account Management'} />
 
-After registering/logging in, user can access the account management part of the website. By default, user will be greeted by the "Profile overview" page, which includes certain account activity statistics.
+After registering/logging in, the user can access the account management part of the website. By default, the user will be greeted by the Profile overview page, which includes certain account activity statistics.
 
 <br />
 
@@ -177,7 +180,7 @@ After registering/logging in, user can access the account management part of the
 <br />
 <br />
 
-Next up is the "Order history" page, where past (completed) orders can be inspected.
+Next up is the Order history page, where past (completed) orders can be inspected.
 
 <br />
 
@@ -191,7 +194,7 @@ Next up is the "Order history" page, where past (completed) orders can be inspec
 <br />
 <br />
 
-Continuing, we come across the "Wishlist" page, where user's saved icons can be accessed.
+Continuing, we come across the Wishlist page, where the user's saved icons can be accessed.
 
 <br />
 
@@ -205,7 +208,7 @@ Continuing, we come across the "Wishlist" page, where user's saved icons can be 
 <br />
 <br />
 
-The following page showcases user's reviews. In order to review an icon, user first needs to be logged in and then buy it (more precisely, reviewing will be unlocked upon order confirmation and completion).
+The following page showcases the user's reviews. In order to review an icon, the user first needs to be logged in and then buy it (more precisely, reviewing will be unlocked upon order confirmation and completion).
 
 <br />
 
@@ -219,7 +222,7 @@ The following page showcases user's reviews. In order to review an icon, user fi
 <br />
 <br />
 
-Finally, we come to the "Address book" page, where user can save their addresses and choose their favorite one.
+Finally, we come to the Address book page, where the user can save their addresses and choose their favorite one.
 
 <br />
 
@@ -229,6 +232,34 @@ Finally, we come to the "Address book" page, where user can save their addresses
    alt="Address book"
    isResponsive={true}
 />
+
+<br />
+<br />
+
+<ArticleH2 id={'qa-testing'} text={'QA Testing'} />
+
+For this project I used both manual and automation approaches to testing. I documented tests in a Test Cases Table using Google Docs, where I structured each test case using the Given/When/Then format. For manual testing, I did basic tests such as trying out the happy path for product checkout, testing edge cases such as filling forms with weird input, and unhappy paths.
+
+<br />
+
+After manually testing the app, I decided to integrate test automation via Playwright and Vitest. I utilized Playwright for visual, integration and **E2E** (End to End) testing. In order to test accessibility, I used the axe-core library, which helped me find some accessibility issues I had overlooked (like anchor being nested in a button). For unit testing I chose Vitest over Jest as the other part of this project — <a href="https://danijelmaksic.vercel.app/ochrid-gallery-cms" target="\_blank" style={{textDecoration: "underline"}} rel="noopener noreferrer">Ochrid Gallery CMS</a> — is run by Vite. With Vitest I tested individual functions to see how they reacted to valid, invalid and weird inputs.
+
+<br />
+
+<ArticleImage image={StoreImg12} alt="Test cases table" />
+
+<br />
+<br />
+
+If a test failed, I linked it to the Bug Reports Table, where I recorded the bug with clear instructions of how to reproduce it. During development, most bugs were found via exploratory manual testing.
+
+<br />
+
+I integrated all my tests into **CI** (Continuous Integration) pipeline with GitHub Actions, so that every time I push my local code to my remote GitHub repository, all tests will run automatically. This way if a new feature broke something like the checkout flow, GitHub Actions would show me the error log with details about the regression.
+
+<br />
+
+<ArticleImage image={StoreImg13} alt="Bug reports table" />
 
 <br />
 <br />
