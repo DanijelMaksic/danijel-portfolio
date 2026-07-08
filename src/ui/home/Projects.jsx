@@ -8,6 +8,12 @@ import {
    SiZod,
    SiReactrouter,
    SiVitest,
+   SiExpress,
+   SiTypescript,
+   SiPostgresql,
+   SiDrizzle,
+   SiNodedotjs,
+   SiDocker,
 } from 'react-icons/si';
 import {
    RiNextjsFill,
@@ -31,6 +37,7 @@ import quizImg from './../../../assets/quiz.webp';
 import portaImg from './../../../assets/porta.webp';
 import useBookImg from './../../../assets/use-book.webp';
 import judgmentImg from './../../../assets/judgment.webp';
+import folioImg from './../../../assets/under-construction.webp';
 import ochridGalleryCmsImg from './../../../assets/ochrid-gallery-cms.webp';
 import ochridGalleryStoreImg from './../../../assets/ochrid-gallery-store.webp';
 import PlaywrightIcon from '../PlaywrightIcon';
@@ -136,6 +143,58 @@ export const featuredProjects = [
    },
 
    {
+      titleEn: 'Folio',
+      titleSr: 'Фолио',
+      image: folioImg,
+      descriptionEn: 'A full-stack document transcription app.',
+      descriptionSr: 'Апликација за транскрипцију докумената.',
+      techStack: [
+         {
+            name: 'Node.js',
+            icon: <SiNodedotjs />,
+         },
+         {
+            name: 'Express',
+            icon: <SiExpress />,
+         },
+         {
+            name: 'TypeScript',
+            icon: <SiTypescript />,
+         },
+         {
+            name: 'PostgreSQL',
+            icon: <SiPostgresql />,
+         },
+         {
+            name: 'Drizzle',
+            icon: <SiDrizzle />,
+         },
+         {
+            name: 'React',
+            icon: <FaReact />,
+         },
+         {
+            name: 'Zustand',
+            icon: <FaReact />,
+         },
+         {
+            name: 'Tailwind',
+            icon: <RiTailwindCssFill />,
+         },
+         {
+            name: 'Docker',
+            icon: <SiDocker />,
+         },
+      ],
+      projectURL: 'folio',
+      codeLink: 'https://github.com/DanijelMaksic/folio',
+      visitBtnStyles:
+         'bg-gray-700/16 dark:bg-gray-200/15 hover:bg-gray-700/55 dark:hover:bg-gray-300/40 text-gray-800/65 dark:text-gray-200/65 hover:text-gray-50 hover:shadow-hue hover:shadow-gray-700/25 dark:hover:shadow-gray-300/15',
+      readBtnStyles:
+         'bg-blue-700/16 dark:bg-blue-200/15 hover:bg-blue-700/55 dark:hover:bg-blue-300/40 text-blue-800/65 dark:text-blue-200/65 hover:text-blue-50 hover:shadow-hue hover:shadow-blue-700/25 dark:hover:shadow-blue-300/15',
+   },
+
+   {
       titleEn: 'Porta Website',
       titleSr: 'Порта Вебсајт',
       image: portaImg,
@@ -168,41 +227,6 @@ export const featuredProjects = [
          'bg-orange-700/16 dark:bg-orange-200/15 hover:bg-orange-700/55 dark:hover:bg-orange-300/40 text-orange-800/65 dark:text-orange-200/65 hover:text-orange-50 hover:shadow-hue hover:shadow-orange-700/25 dark:hover:shadow-orange-300/15',
       readBtnStyles:
          'bg-yellow-700/16 dark:bg-yellow-200/15 hover:bg-yellow-700/40 dark:hover:bg-yellow-300/40 text-yellow-800/65 dark:text-yellow-200/65 hover:text-yellow-50 hover:shadow-hue hover:shadow-yellow-700/25 dark:hover:shadow-yellow-300/15',
-   },
-
-   {
-      titleEn: 'Judgment Website Redesign',
-      titleSr: 'Judgment Вебсајт Редизајн',
-      image: judgmentImg,
-      descriptionEn:
-         'A complete redesign of the promotional website for the award-winning video-game Judgment.',
-      descriptionSr:
-         'Комплетан редизајн промоционалног вебсајта за награђивану видео-игру Judgment.',
-      techStack: [
-         {
-            name: 'HTML',
-            icon: <FaHtml5 />,
-         },
-         {
-            name: 'CSS',
-            icon: <FaCss3Alt />,
-         },
-         {
-            name: 'JavaScript',
-            icon: <FaJs />,
-         },
-         {
-            name: 'Responsive',
-            icon: <FaMobileScreenButton />,
-         },
-      ],
-      projectURL: 'judgment',
-      codeLink: 'https://github.com/DanijelMaksic/judgment-site',
-      demoLink: 'https://danijelmaksic.github.io/judgment-site/',
-      visitBtnStyles:
-         'bg-gray-700/16 dark:bg-gray-200/15 hover:bg-gray-700/55 dark:hover:bg-gray-300/40 text-gray-800/65 dark:text-gray-200/65 hover:text-gray-50 hover:shadow-hue hover:shadow-gray-700/25 dark:hover:shadow-gray-300/15',
-      readBtnStyles:
-         'bg-blue-700/16 dark:bg-blue-200/15 hover:bg-blue-700/55 dark:hover:bg-blue-300/40 text-blue-800/65 dark:text-blue-200/65 hover:text-blue-50 hover:shadow-hue hover:shadow-blue-700/25 dark:hover:shadow-blue-300/15',
    },
 ];
 
@@ -290,6 +314,41 @@ export const otherProjects = [
       projectURL: 'use-book',
       readBtnStyles:
          'bg-orange-700/16 dark:bg-orange-200/15 hover:bg-orange-700/55 dark:hover:bg-orange-300/40 text-orange-800/65 dark:text-orange-200/65 hover:text-orange-50 hover:shadow-hue hover:shadow-orange-700/25 dark:hover:shadow-orange-300/15',
+   },
+
+   {
+      titleEn: 'Judgment Website Redesign',
+      titleSr: 'Judgment Вебсајт Редизајн',
+      image: judgmentImg,
+      descriptionEn:
+         'A complete redesign of the promotional website for the award-winning video-game Judgment.',
+      descriptionSr:
+         'Комплетан редизајн промоционалног вебсајта за награђивану видео-игру Judgment.',
+      techStack: [
+         {
+            name: 'HTML',
+            icon: <FaHtml5 />,
+         },
+         {
+            name: 'CSS',
+            icon: <FaCss3Alt />,
+         },
+         {
+            name: 'JavaScript',
+            icon: <FaJs />,
+         },
+         {
+            name: 'Responsive',
+            icon: <FaMobileScreenButton />,
+         },
+      ],
+      projectURL: 'judgment',
+      codeLink: 'https://github.com/DanijelMaksic/judgment-site',
+      demoLink: 'https://danijelmaksic.github.io/judgment-site/',
+      visitBtnStyles:
+         'bg-gray-700/16 dark:bg-gray-200/15 hover:bg-gray-700/55 dark:hover:bg-gray-300/40 text-gray-800/65 dark:text-gray-200/65 hover:text-gray-50 hover:shadow-hue hover:shadow-gray-700/25 dark:hover:shadow-gray-300/15',
+      readBtnStyles:
+         'bg-blue-700/16 dark:bg-blue-200/15 hover:bg-blue-700/55 dark:hover:bg-blue-300/40 text-blue-800/65 dark:text-blue-200/65 hover:text-blue-50 hover:shadow-hue hover:shadow-blue-700/25 dark:hover:shadow-blue-300/15',
    },
 ];
 

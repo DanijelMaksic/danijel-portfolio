@@ -7,10 +7,16 @@ import {
    RiTailwindCssFill,
 } from 'react-icons/ri';
 import {
+   SiDocker,
+   SiDrizzle,
+   SiExpress,
    SiJavascript,
+   SiNodedotjs,
+   SiPostgresql,
    SiReactquery,
    SiRedux,
    SiTypescript,
+   SiVitest,
 } from 'react-icons/si';
 import PlaywrightIcon from '../PlaywrightIcon';
 
@@ -19,32 +25,42 @@ const coreTech = [
    { icon: <FaReact className="size-9" />, name: 'React' },
    {
       icon: <SiJavascript className="size-9 rounded-xs" />,
-      name: 'Javascript',
+      name: 'JavaScript',
    },
    {
       icon: <SiTypescript className="size-9" />,
       name: 'TypeScript',
    },
    {
-      icon: <FaCss3Alt className="size-9" />,
-      name: 'CSS',
+      icon: <SiNodedotjs className="size-9" />,
+      name: 'Node.js',
+   },
+   {
+      icon: <SiExpress className="size-9" />,
+      name: 'Express',
    },
    {
       icon: <FaHtml5 className="size-9" />,
       name: 'HTML',
    },
+   {
+      icon: <FaCss3Alt className="size-9" />,
+      name: 'CSS',
+   },
 ];
 
 const otherTech = [
-   { icon: <RiSupabaseFill className="size-8" />, name: 'Supabase' },
+   { icon: <SiPostgresql className="size-8" />, name: 'PostgreSQL' },
+   { icon: <SiDrizzle className="size-8" />, name: 'Drizzle' },
    { icon: <SiRedux className="size-8" />, name: 'Redux' },
-   { icon: <SiReactquery className="size-8" />, name: 'TanStack Query' },
    {
       icon: <RiTailwindCssFill className="size-9" />,
       name: 'Tailwind CSS',
    },
-   { icon: <FaGithub className="size-8" />, name: 'GitHub' },
+   { icon: <SiVitest className="size-8" />, name: 'Vitest' },
    { icon: <PlaywrightIcon size={36} />, name: 'Playwright' },
+   { icon: <FaGithub className="size-8" />, name: 'GitHub' },
+   { icon: <SiDocker className="size-8" />, name: 'Docker' },
 ];
 
 function Skills() {

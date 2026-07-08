@@ -7,6 +7,7 @@ import Layout from './ui/Layout';
 import Home from './ui/home/Home';
 import Blog from './ui/projects/blog/Blog';
 import Quiz from './ui/projects/quiz/Quiz';
+import Folio from './ui/projects/folio/Folio';
 import Porta from './ui/projects/porta/Porta';
 import PageNotFound from './ui/PageNotFound';
 import UseBook from './ui/projects/useBook/useBook';
@@ -30,10 +31,11 @@ function App() {
                      element={<OchridGalleryCMS />}
                   />
                   <Route path="/porta" element={<Porta />} />
+                  <Route path="/folio" element={<Folio />} />
                   <Route path="/blog" element={<Blog />} />
-                  <Route path="/judgment" element={<Judgment />} />
                   <Route path="/quiz" element={<Quiz />} />
                   <Route path="/use-book" element={<UseBook />} />
+                  <Route path="/judgment" element={<Judgment />} />
                </Route>
 
                <Route path="*" element={<PageNotFound />} />

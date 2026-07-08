@@ -41,8 +41,8 @@ function Navigation() {
                </li>
             ) : (
                <li>
-                  <Link
-                     to={'/'}
+                  <button
+                     onClick={() => window.history.back()}
                      className="transition hover:text-primary-700 flex"
                   >
                      {isMobile ? (
@@ -50,7 +50,7 @@ function Navigation() {
                      ) : (
                         <span>{t('Header.nav-link-4')}</span>
                      )}
-                  </Link>
+                  </button>
                </li>
             )}
 
