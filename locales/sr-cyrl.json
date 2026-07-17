@@ -28,8 +28,9 @@
 
    "Skills": {
       "h1": "Вештине",
-      "core-tech": "Основне Технологије",
-      "other-tech": "Датабазе, Библиотеке и Алатке"
+      "front-end-section": "Фронтенд",
+      "back-end-section": "Бекенд и Датабазе",
+      "tools-section": "Алатке и платформе"
    },
 
    "Footer": {
