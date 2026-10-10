@@ -188,6 +188,7 @@ export const featuredProjects = [
       ],
       projectURL: 'folio',
       codeLink: 'https://github.com/DanijelMaksic/folio',
+      demoLink: 'https://folio-transcription.vercel.app',
       visitBtnStyles:
          'bg-gray-700/16 dark:bg-gray-200/15 hover:bg-gray-700/55 dark:hover:bg-gray-300/40 text-gray-800/65 dark:text-gray-200/65 hover:text-gray-50 hover:shadow-hue hover:shadow-gray-700/25 dark:hover:shadow-gray-300/15',
       readBtnStyles:
