@@ -1,12 +1,13 @@
 # Portfolio website
 
-My portfolio website showcasing various Front-End projects.
+My portfolio website showcasing various Full-Stack and Front-End projects.
 
 You can check out the [live demo](https://danijelmaksic.vercel.app/).
 
 <br/>
 
 Installation:
+
 ```
 npm i
 npm run dev
