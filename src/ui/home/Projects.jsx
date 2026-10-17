@@ -1,4 +1,3 @@
-import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { TbApi, TbBrandFramerMotion } from 'react-icons/tb';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
@@ -38,7 +37,7 @@ import portaImg from './../../../assets/porta.webp';
 import useBookImg from './../../../assets/use-book.webp';
 import judgmentImg from './../../../assets/judgment.webp';
 import folioImg from './../../../assets/under-construction.webp';
-import ochridGalleryCmsImg from './../../../assets/ochrid-gallery-cms.webp';
+import previewImg from './../../../assets/ochrid-gallery-cms-preview.webp';
 import ochridGalleryStoreImg from './../../../assets/ochrid-gallery-store.webp';
 import PlaywrightIcon from '../PlaywrightIcon';
 
@@ -98,7 +97,7 @@ export const featuredProjects = [
    {
       titleEn: 'Ochrid Gallery CMS',
       titleSr: 'Охридска Галерија CMS',
-      image: ochridGalleryCmsImg,
+      image: previewImg,
       descriptionEn:
          'A Content Management System (CMS) app for a fictional gallery. Limited only to employees, it includes inventory and order management.',
       descriptionSr:
