@@ -1,3 +1,4 @@
+import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { TbApi, TbBrandFramerMotion } from 'react-icons/tb';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
