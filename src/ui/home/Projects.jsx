@@ -32,14 +32,14 @@ import {
 } from 'react-icons/fa6';
 
 import ProjectPreview from './ProjectPreview';
-import blogImg from './../../../assets/blog.webp';
-import quizImg from './../../../assets/quiz.webp';
-import portaImg from './../../../assets/porta.webp';
-import useBookImg from './../../../assets/use-book.webp';
-import judgmentImg from './../../../assets/judgment.webp';
-import folioImg from './../../../assets/under-construction.webp';
-import previewImg from './../../../assets/ochrid-gallery-cms-preview.webp';
-import ochridGalleryStoreImg from './../../../assets/ochrid-gallery-store.webp';
+import blogImg from './../../../assets//blog/blog.webp';
+import quizImg from './../../../assets/quiz/quiz.webp';
+import portaImg from './../../../assets/porta/porta.webp';
+import useBookImg from './../../../assets/use-book/use-book.webp';
+import judgmentImg from './../../../assets/judgment/judgment.webp';
+import folioImg from './../../../assets/folio/under-construction.webp';
+import ochridGalleryCMSImg from './../../../assets/cms/ochrid-gallery-cms-preview.webp';
+import ochridGalleryStoreImg from './../../../assets/store/ochrid-gallery-store.webp';
 import PlaywrightIcon from '../PlaywrightIcon';
 
 // IF YOU WANT TO CHANGE THE TITLE OF A PROJECT, YOU ALSO NEED TO CHANGE IT IN MDX FILE OF THAT PROJECT
@@ -98,7 +98,7 @@ export const featuredProjects = [
    {
       titleEn: 'Ochrid Gallery CMS',
       titleSr: 'Охридска Галерија CMS',
-      image: previewImg,
+      image: ochridGalleryCMSImg,
       descriptionEn:
          'A Content Management System (CMS) app for a fictional gallery. Limited only to employees, it includes inventory and order management.',
       descriptionSr:
